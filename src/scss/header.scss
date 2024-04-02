@@ -1,0 +1,303 @@
+//====================================================================================================
+.header {
+	position: relative;
+	z-index: 5;
+	padding-top: rem(24);
+	background-color: #fff;
+	// .header__wrapper
+
+	&__wrapper {
+	}
+
+	// .header__main
+
+	&__main {
+		&:not(:last-child){
+			margin-bottom: rem(16);
+		}
+	}
+
+	// .header__container
+
+	&__container {
+	}
+
+	// .header__navigation
+
+	&__navigation {
+
+	}
+}
+.main-header {
+
+	// .main-header__contacts
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 35px
+	}
+	&__contacts {
+	}
+
+	// .main-header__actions
+
+	&__actions {
+	}
+}
+.contacts-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 1 1 auto;
+	max-width: rem(1004);
+	gap: rem(25);
+	// .contacts-header__buttons
+
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .contacts-header__btn
+
+	&__btn {
+		font-size: rem(18);
+		font-weight: 700;
+		line-height: math.div(28.8, 18);
+		&:not(:last-child){
+			margin-bottom: rem(8);
+		}
+	}
+
+	// .contacts-header__email
+
+	&__email {
+		display: flex;
+		align-items: center;
+		font-family: "Rubik";
+		font-size: rem(18);
+		font-weight: 400;
+		line-height: math.div(28.8, 18);
+		color: #0587D6;
+		white-space: nowrap;
+		transition: $mainTransition;
+		@media (any-hover: hover){
+			&:hover { 
+			  color: #000; 
+		 } 
+	  }
+		svg {
+			flex: 0 0 rem(24);
+			height: rem(24);
+			width: rem(24);
+			margin-right: rem(8);
+		}
+	}
+
+	// .contacts-header__phones
+
+	&__phones {
+	}
+
+	// .contacts-header__phone
+
+	&__phone {
+		display: flex;
+		align-items: center;
+		font-family: "Rubik";
+		font-size: rem(42);
+		font-weight: 500;
+		line-height: math.div(44.97, 42);
+		letter-spacing: 0.04em;
+		white-space: nowrap;
+		transition: $mainTransition;
+		@media (any-hover: hover){
+			 &:hover { 
+				color: #004495; 
+		  } 
+		}
+		svg {
+			flex: 0 0 rem(34);
+			height: rem(34);
+			width: rem(34);
+			margin-right: rem(8);
+		}
+	}
+}
+.btn {
+}
+.phone-contact {
+	display: flex;
+	align-items: center;
+	font-family: "Rubik";
+	font-size: rem(24);
+	font-weight: 500;
+	line-height: math.div(38.4, 24);
+	white-space: nowrap;
+	transition: $mainTransition;
+	@media (any-hover: hover){
+		 &:hover { 
+			color: #004495; 
+	  } 
+	}
+	svg {
+		flex: 0 0 rem(24);
+		height: rem(24);
+		width: rem(24);
+		margin-right: rem(8);
+	}
+}
+.actions-header {
+	display: flex;
+	// flex: 0 0 rem(276);
+	width: rem(122);
+	justify-content: flex-end;
+	// .actions-header__icon-menu
+
+	&__icon-menu {
+	}
+
+	// .actions-header__logo
+
+	&__logo {
+
+	}
+}
+
+.icon-menu {
+}
+.logo {
+	display: flex;
+	flex: 0 0 rem(122);
+	height: rem(72);
+	width: rem(122);
+		// .logo__text
+
+		&__text {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			text-align: right;
+		}
+
+		// .logo__name
+
+		&__name {
+		font-family: "Rubik";
+		font-size: rem(21);
+		font-weight: 600;
+		line-height: math.div(18.93, 21);
+		color: #1C85B2;
+		}
+		&__subtext {
+			color: #4BB5E6;
+		}
+		&__icon {
+			flex: 0 0 rem(66);
+			height: 100%;
+		}
+}
+
+.navigation-header {
+	padding: rem(14) rem(24);
+	background-color: #004495;
+	// .navigation-header__list
+
+	&__list {
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	li {
+		display: flex;
+		&:not(:last-child){
+			margin-right: rem(35);
+		}
+	}
+	a {
+		font-family: "Rubik";
+		font-size: rem(22);
+		font-weight: 700;
+		line-height: math.div(26.07, 22);
+		text-align: center;
+		color: #fff;
+		padding: rem(3) 0;
+		transition: $mainTransition;
+		@media (any-hover: hover){
+			 &:hover { 
+			 color: #017AC3;
+		  } 
+		}
+	}
+}
+.menu-list {
+
+	// .menu-list__item
+
+	&__item {
+	}
+
+	// .menu-list__link
+
+	&__link {
+	}
+}
+
+//====================================================================================================
+
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+*/

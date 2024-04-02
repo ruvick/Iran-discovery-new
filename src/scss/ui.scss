@@ -1,0 +1,35 @@
+.page {
+
+	// .page__ui
+
+	&__ui {
+		padding: rem(55) 0;
+	}
+}
+.ui {
+
+	// .ui__container
+
+	&__container {
+	}
+
+	// .ui__inner
+
+	&__inner {
+		display: grid; 
+		grid-template-columns: repeat(auto-fit, minmax(rem(600), 1fr)); 
+		gap: rem(30);
+	}
+
+	// .ui__item
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .ui__col
+
+	&__col {
+	}
+}

@@ -1,0 +1,10 @@
+// Заголовки, общие БЄМ блоки и проче...
+.phone-contact--blue {
+	color: #0587D6;
+	transition: all 0.4s ease 0s;
+	@media (any-hover: hover){
+		 &:hover { 
+		  color: #444;
+	  } 
+	}
+}
