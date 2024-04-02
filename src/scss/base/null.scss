@@ -58,6 +58,11 @@ ul li {
 	list-style: none;
 }
 img {
+	max-width: 100%;
+	width: 100%;
+	vertical-align: top;
+	object-fit: cover;
+	height: 100%;
 	vertical-align: top;
 }
 h1,
