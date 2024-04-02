@@ -9,9 +9,11 @@
 	&__contacts {
 		padding-bottom: rem(16);
 		.footer__container {
-			display: grid; 
-			grid-template-columns: 1fr rem(122);
-			gap: rem(15);
+			@media (min-width:em(992)){
+				display: grid; 
+				grid-template-columns: 1fr rem(122);
+				gap: rem(15);
+			}
 		}
 	}
 
@@ -44,6 +46,10 @@
 		font-weight: 400;
 		line-height: math.div(20, 16);
 		color: #fff;
+		text-align: center;
+		@media (max-width: em(414)){
+			  font-size: rem(14);
+		}
 	}
 }
 .contacts-footer {
@@ -90,6 +96,9 @@
 	// .contacts-footer__logo
 
 	&__logo {
+		@media (max-width: em(991)){
+			 display: none; 
+		}
 	}
 }
 .footer {
@@ -114,6 +123,9 @@
 		gap: rem(25);
 		padding: rem(18) 0 rem(44) 0;
 		border-top: 1px solid #DCDBDB;
+		@media (max-width: em(540)){
+			grid-template-columns: repeat(auto-fit, minmax(rem(150), 1fr));  
+		}
 	}
 	.navigation-footer {
 
