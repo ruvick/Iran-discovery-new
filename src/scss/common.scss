@@ -1,4 +1,17 @@
 // Заголовки, общие БЄМ блоки и проче...
+.title	{
+	text-align: center;
+	color: #0587D6;
+	span {
+		padding-bottom: rem(3);
+		border-bottom: 1px dashed #0587D6;
+	}
+
+	&:not(:last-child){
+		margin-bottom: rem(48);
+	}
+}
+
 .phone-contact--blue {
 	color: #0587D6;
 	transition: all 0.4s ease 0s;
@@ -8,3 +21,4 @@
 	  } 
 	}
 }
+

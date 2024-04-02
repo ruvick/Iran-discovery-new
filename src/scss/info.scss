@@ -9,8 +9,13 @@
 
 	&__inner {
 		display: grid; 
-		grid-template-columns: repeat(auto-fit, minmax(rem(160), 1fr)); 
+		grid-template-columns: repeat(auto-fit, minmax(rem(160), rem(160))); 
+		justify-content: center;
 		gap: rem(30);
+	}
+
+	&__inner--big {
+		grid-template-columns: repeat(auto-fit, minmax(rem(250), rem(250))); 
 	}
 
 	// .info__item
