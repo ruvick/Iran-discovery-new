@@ -30,13 +30,21 @@
 	// .info__img
 
 	&__img {
+		position: relative;
+		padding-bottom: 100%;
 		width: 100%;
 		border-radius: 50%;
 		overflow: hidden;
 		&:not(:last-child){
 			margin-bottom: rem(12);
 		}
-	}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+	  }
+		}
+	
 
 	// .info__text
 

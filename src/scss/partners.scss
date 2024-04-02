@@ -2,14 +2,18 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
-	padding: rem(25);
 	border: 1px solid #DCDBDB;
 	border-radius: rem(10);
 	overflow: hidden;
-	max-height: rem(110);
+	position: relative;
+	padding-bottom: 8.5%;
 	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		height: 100%;
 		object-fit: contain;
+		padding: rem(23);
 	}
 }

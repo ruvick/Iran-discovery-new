@@ -22,3 +22,14 @@
 	}
 }
 
+.nuar-blk {
+	position: relative;
+	&::before{
+		content:''; 
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgb(0,0,0);
+		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(131,128,128,1) 70%);
+	}
+}
