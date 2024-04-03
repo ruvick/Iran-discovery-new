@@ -8,7 +8,7 @@
 .main-template {
 	display: flex;
 	justify-content: space-between;
-	gap: rem(30);
+	gap: rem(20);
 	@media (max-width: 991px){
 		 flex-wrap: wrap-reverse; 
 	}
