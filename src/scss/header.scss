@@ -204,6 +204,10 @@
 	}
 	// .actions-header__icon-menu
 	&__burger {
+		display: none;
+		@media (max-width: em(768)){
+			  display: flex;
+		}
 		flex: 0 0 rem(40);
 		height: rem(40);
 		padding: rem(13) rem(12);

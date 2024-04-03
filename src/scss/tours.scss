@@ -1,0 +1,95 @@
+
+.tours {
+
+	// .tours__container
+
+	&__container {
+	}
+
+	// .tours__title
+
+	&__title {
+	}
+
+	// .tours__banners
+
+	&__banners {
+		@include adaptiveValue("margin-bottom", 24, 16);
+	}
+}
+
+.banners-tours {
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr)); 
+	@include adaptiveValue("gap", 20, 14);
+	// .banners-tours__card
+	&__card {
+	}
+}
+
+.card-banner {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	@include adaptiveValue("padding-top", 32, 16);
+	@include adaptiveValue("padding-bottom", 32, 16);
+	@include adaptiveValue("padding-left", 40, 16);
+	@include adaptiveValue("padding-right", 40, 16);
+	@include adaptiveValue("min-height", 440, 232);
+	overflow: hidden;
+	border-radius: rem(10);
+	// .card-banner__descp
+	&__descp {
+		color: #fff;
+		z-index: 5;
+		direction: rtl;
+		text-align: right;
+	}
+
+	// .card-banner__city
+	&__city {
+		@include adaptiveValue("font-size", 20, 16);
+		font-weight: 400;
+		line-height: math.div(32, 16);
+		text-align: right;
+		&:not(:last-child){
+			// margin-bottom: rem(16);
+		}
+	}
+
+	// .card-banner__excursion
+	&__excursion {
+		@include adaptiveValue("font-size", 32, 20);
+		font-weight: 700;
+		line-height: 51.2px;
+		line-height: math.div(51.2, 32);
+		text-align: right;
+		&:not(:last-child){
+			// margin-bottom: rem(16);
+		}
+	}
+
+	&__prices {
+		font-size: rem(36);
+		@include adaptiveValue("font-size", 36, 24);
+		font-weight: 400;
+		line-height: math.div(57.6, 36);
+		text-align: right;
+		&:not(:last-child){
+			// margin-bottom: rem(16);
+		}
+	}
+
+	// .card-banner__time
+	&__time {
+		@include adaptiveValue("font-size", 20, 14);
+		font-weight: 400;
+		line-height: math.div(32, 20);
+		text-align: right;
+		&:not(:last-child){
+			// margin-bottom: rem(8);
+		}
+	}
+}
+
