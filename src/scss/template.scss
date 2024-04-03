@@ -1,0 +1,42 @@
+.template {
+}
+.template__container {
+}
+.template__main {
+
+}
+.main-template {
+	display: flex;
+	justify-content: space-between;
+	gap: rem(30);
+	@media (max-width: 991px){
+		 flex-wrap: wrap-reverse; 
+	}
+}
+.main-template__body {
+	flex: 1 1 auto;
+	@media (max-width: 991px){
+		 flex: 0 1 100%; 
+	}
+}
+.main-template__sidebar {
+	flex: 0 0 305px;
+	border: 1px solid #000;
+	@media (max-width: 991px){
+		 flex: 0 1 100%; 
+	}
+}
+.sidebar-template {
+	
+}
+.sidebar-template__body {
+	position: sticky;
+	top: rem(30);
+	@media (max-width: 1024px){
+		  position: static;
+	}
+}
+
+.template__requesites {
+	margin-top: rem(60);
+}

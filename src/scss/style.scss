@@ -158,7 +158,9 @@ body {
 @import "ui";
 @import "info";
 @import "partners"; 
-@import "tours";
+@import "tours"; 
+@import "application"; 
+@import "template";
 //========================================================================================================================================================
 
 h1 {
@@ -189,9 +191,6 @@ h2 {
 			font-weight: 700;
 			line-height: math.div(76.8, 64);
 		}
-	}
-	.main-banner__descp {
-		align-items: center;
 	}
 }
 
@@ -233,5 +232,15 @@ h2 {
 
 .page__regions {
 	@include adaptiveValue("padding-top", 40, 20);
+	@include adaptiveValue("padding-bottom", 40, 20);
+}
+
+.page__application {
+	@include adaptiveValue("padding-top", 40, 20);
+	@include adaptiveValue("padding-bottom", 40, 20);
+}
+
+.page__template {
+	@include adaptiveValue("padding-top", 40, 14);
 	@include adaptiveValue("padding-bottom", 40, 20);
 }

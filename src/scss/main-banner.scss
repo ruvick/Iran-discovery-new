@@ -11,7 +11,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center; 
-		min-height: rem(472);
+		align-items: center;
 		@include adaptiveValue("padding-top", 60, 20);
 		@include adaptiveValue("padding-bottom", 60, 20);
 		@include adaptiveValue("min-height", 472, 190);
@@ -19,3 +19,20 @@
 	&__body {
 	}
 }
+
+	.main-banner--inner {
+		// .main-banner__descp
+		.main-banner__descp {
+			justify-content: space-between;
+    		align-items: flex-end;
+			@include adaptiveValue("min-height", 464, 190);
+		}
+		.main-banner__header {
+			text-align: right;
+		}
+		.main-banner__body {
+			h1 {
+				text-align: right;
+			}
+		}
+	}

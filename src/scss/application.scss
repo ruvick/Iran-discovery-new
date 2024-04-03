@@ -1,0 +1,67 @@
+.application {
+
+	// .application__container
+
+	&__container {
+	}
+
+	// .application__box
+
+	&__box {
+	}
+}
+.box-application {
+	position: relative;
+	display: grid; 
+	grid-template-columns: rem(720) 1fr; 
+	gap: rem(10);
+	background: linear-gradient(171.22deg, rgba(221, 238, 255, 0.156) 2.84%, rgba(0, 162, 229, 0.6) 128.75%);
+	overflow: hidden;
+	border-radius: rem(10);
+	border: 1px solid #CEE5FF;
+	padding: 32px 80px;
+	// .box-application__descp
+
+	&__descp {
+		padding: 0 96px;
+		text-align: right;
+	}
+
+	// .box-application__title
+
+	&__title {
+		text-align: right;
+		color: #0587D6;
+		&:not(:last-child){
+			margin-bottom: rem(16);
+		}
+	}
+
+	// .box-application__subtitle
+
+	&__subtitle {
+		@include adaptiveValue("font-size", 32, 24);
+		font-weight: 400;
+		line-height: math.div(51.2, 32);
+		text-align: right;
+	}
+
+	// .box-application__form
+
+	&__form {
+	}
+
+	// .box-application__img
+
+	&__img {
+		position: relative;
+		bottom: -35px;
+		left: 0;
+		max-width: 650px;
+		width: 100%;
+		height: 392px;
+		background-size: cover !important;
+	}
+}
+.form-application {
+}
