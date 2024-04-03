@@ -105,7 +105,9 @@
 // 	padding: 0 15px;
 // }
 .typical-slider__container {
-	padding: 0;
+	@media (max-width: em(991)){
+		  padding: 0;
+	}
 }
 //========================================================================================================================================================
 .typical-slider {
@@ -177,5 +179,20 @@
 		text-align: right;
 	}
 }
-
+//========================================================================================================================================================
+.regions__slider {
+	.card-banner {
+		flex: 0 1 100%;
+		@include adaptiveValue("min-height", 182, 192);
+			text-align: right;
+			@include adaptiveValue("padding-top", 20, 14);
+			@include adaptiveValue("padding-bottom", 20, 14);
+			@include adaptiveValue("padding-left", 20, 10);
+			@include adaptiveValue("padding-right", 20, 10);
+	}
+	.card-banner__excursion {
+		font-size: rem(24);
+		line-height: math.div(28.8, 24);
+	}
+}
 
