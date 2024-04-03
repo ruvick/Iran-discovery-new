@@ -169,7 +169,7 @@ h1 {
 }
 h2 {
 	font-family: "Rubik";
-	font-size: rem(48);
+	@include adaptiveValue("font-size", 48, 28);
 	font-weight: 700;
 	line-height: math.div(76.8, 48);
 }
@@ -183,6 +183,11 @@ h2 {
 		max-width: rem(843);
 		width: 100%;
 		text-align: center;
+		h1 {
+			@include adaptiveValue("font-size", 64, 22);
+			font-weight: 700;
+			line-height: math.div(76.8, 64);
+		}
 	}
 	.main-banner__descp {
 		align-items: center;
@@ -191,9 +196,12 @@ h2 {
 
 .page__info {
 	padding: rem(64) 0 40px 0;
+	@include adaptiveValue("padding-top", 64, 45);
+	@include adaptiveValue("padding-bottom", 40, 20);
 }
 
 .page__partners {
-	padding: rem(40) 0;
+	@include adaptiveValue("padding-top", 40, 20);
+	@include adaptiveValue("padding-bottom", 40, 20);
 }
 

@@ -64,12 +64,13 @@
 		"vanilla-lazyload": "latest",
 		"vinyl-ftp": "latest",
 		"webp-converter": "2.2.3",
-		"webpack": "latest",
+		"webpack": "^5.91.0",
 		"webpack-cli": "latest",
 		"webpack-dev-server": "latest",
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"node-sass": "^9.0.0",
 		"simplebar": "latest"
 	}
 }

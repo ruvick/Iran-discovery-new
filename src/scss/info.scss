@@ -31,12 +31,15 @@
 
 	&__img {
 		position: relative;
-		padding-bottom: 100%;
+		// padding-bottom: 100%;
+		@include adaptiveValue("max-width", 138, 83);
+		@include adaptiveValue("height", 138, 83);
 		width: 100%;
 		border-radius: 50%;
 		overflow: hidden;
 		&:not(:last-child){
-			margin-bottom: rem(12);
+			// margin-bottom: rem(12);
+			@include adaptiveValue("margin-bottom", 12, 6);
 		}
 		img {
 			position: absolute;
@@ -49,7 +52,7 @@
 	// .info__text
 
 	&__text {
-		font-size: rem(24);
+		@include adaptiveValue("font-size", 24, 16);
 		font-weight: 700;
 		line-height: math.div(28.8, 24);
 		text-align: center;

@@ -2,7 +2,7 @@
 .header {
 	position: relative;
 	z-index: 50;
-	padding-top: rem(24);
+	@include adaptiveValue("padding-top", 24, 15);
 	background-color: #fff;
 
 	@media (min-width: em(1025)) {
@@ -57,7 +57,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 35px
+		gap: rem(35);
 	}
 	&__contacts {
 	}
@@ -207,7 +207,7 @@
 
 		&__name {
 		font-family: "Rubik";
-		font-size: rem(21);
+		@include adaptiveValue("font-size", 21, 13);
 		font-weight: 600;
 		line-height: math.div(18.93, 21);
 		color: #1C85B2;
@@ -216,7 +216,8 @@
 			color: #4BB5E6;
 		}
 		&__icon {
-			flex: 0 0 rem(66);
+			// flex: 0 0 rem(66);
+			@include adaptiveValue("width", 66, 43);
 			height: 100%;
 		}
 }
