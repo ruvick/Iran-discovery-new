@@ -78,7 +78,7 @@ body {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
+	// overflow: hidden;
 	// Прижимаем footer
 	> main {
 		flex: 1 1 auto;
@@ -162,6 +162,7 @@ body {
 @import "application"; 
 @import "template"; 
 @import "articles";
+@import "content";
 //========================================================================================================================================================
 
 h1 {
@@ -244,4 +245,32 @@ h2 {
 .page__template {
 	@include adaptiveValue("padding-top", 40, 14);
 	@include adaptiveValue("padding-bottom", 40, 20);
+}
+
+.page__content {
+	&:not(:last-child){
+		@include adaptiveValue("margin-bottom", 56, 40);
+	}
+}
+
+.page__notification-content {
+	&:not(:last-child){
+		@include adaptiveValue("margin-bottom", 57, 36);
+	}
+}
+
+.page__share {
+
+}
+
+.page__annotation {
+	&:not(:last-child){
+		@include adaptiveValue("margin-bottom", 32, 20);
+	}
+}
+
+.page__attractions {
+	&:not(:last-child){
+		margin-bottom: rem(44);
+	}
 }
