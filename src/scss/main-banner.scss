@@ -18,6 +18,14 @@
 	}
 	&__body {
 	}
+	&__top-title {
+		font-size: rem(24);
+		@include adaptiveValue("font-size", 24, 16);
+		font-weight: 600;
+		line-height: math.div(28.44, 24);
+		text-align: right;
+		color: #fff;
+	}
 }
 
 	.main-banner--inner {

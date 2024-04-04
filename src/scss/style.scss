@@ -281,3 +281,9 @@ h2 {
 		 display: none; 
 	}
 }
+
+.page__control {
+	&:not(:last-child){
+		margin-bottom: rem(32);
+	}
+}

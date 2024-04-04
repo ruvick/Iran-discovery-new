@@ -176,3 +176,56 @@
 	&__input {
 	}
 }
+//========================================================================================================================================================
+
+.cat-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.4s ease 0s;
+}
+
+.cat-button__btn {
+	position: relative;
+	font-size: rem(16);
+	font-weight: 400;
+	line-height: math.div(18.96, 16);
+	line-height: 18.96px;
+	text-align: center;
+	padding: rem(8) rem(12);
+	border-radius: rem(7);
+	background-color: #fff;
+	overflow: hidden;
+	transition: all 0.4s ease 0s;
+	@media (any-hover: hover){
+		 &:hover { 
+			background-color: #E7F2FF;
+	  } 
+	}
+}
+
+.cat-button input[type=radio]:checked+.cat-button__btn {
+	background-color: #E7F2FF;
+}
+
+.cat-button__name {
+
+}
+
+.control-page {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	direction: rtl;
+	@include adaptiveValue("gap", 25, 10);
+}
+
+.control-page__form {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	direction: rtl;
+	@include adaptiveValue("gap", 25, 10);
+}

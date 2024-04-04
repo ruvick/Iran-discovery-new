@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ar">
+@@include('html/_head.htm',{
+"title":"Tour catalog"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="page__main-banner main-banner main-banner--inner">
+				<div class="nuar-blk"></div>
+				<div class="main-banner__container">
+					<div class="main-banner__descp">
+						<div class="main-banner__header">
+							<nav class="breadcrumbs">
+								<ul class="breadcrumbs__list">
+									<li class="breadcrumbs__item">
+										<a href="home.html" class="breadcrumbs__link">صفحه اصلی</a>
+									</li>
+									<li class="breadcrumbs__item">
+										<span class="breadcrumbs__current">تورهای روسیه</span>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="main-banner__body">
+							<div class="main-banner__top-title">بدون واسطه</div>
+							<h1>رزرو تور های روسیه</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__template template">
+				<div class="template__container">
+
+					<div class="template__main main-template">
+
+						<sidebar class="main-template__sidebar sidebar-template">
+							<div class="sidebar-template__body">
+
+								<div class="sidebar-template__item">
+									<div class="sidebar-template__col">
+										<div class="sidebar-template__filters filters-sidebar">
+											filters
+										</div>
+									</div>
+								</div>
+
+								<div class="sidebar-template__item">
+									<div class="sidebar-template__col">
+										<div class="sidebar-template__tizers tizers">
+											<a href="#" class="tizers__item">
+												<div class="tizers__text">ویزای <br>روسیه</div>
+												<div class="tizers__img">
+													<img src="img/icons/content/03.svg" loading="lazy" alt="Картинка">
+												</div>
+											</a>
+											<a href="#" class="tizers__item">
+												<div class="tizers__text">تورهای <br>روسیه</div>
+												<div class="tizers__img">
+													<img src="img/icons/content/04.svg" loading="lazy" alt="Картинка">
+												</div>
+											</a>
+											<a href="#" class="tizers__item">
+												<div class="tizers__text">هتل های <br>روسیه</div>
+												<div class="tizers__img">
+													<img src="img/icons/content/18.svg" loading="lazy" alt="Картинка">
+												</div>
+											</a>
+											<a href="#" class="tizers__item">
+												<div class="tizers__text">حمل و نقل <br>در روسیه</div>
+												<div class="tizers__img">
+													<img src="img/icons/content/01.svg" loading="lazy" alt="Картинка">
+												</div>
+											</a>
+											<a href="#" class="tizers__item">
+												<div class="tizers__text">بیمه در روسیه</div>
+												<div class="tizers__img">
+													<img src="img/icons/content/19.svg" loading="lazy" alt="Картинка">
+												</div>
+											</a>
+											<a href="#" class="tizers__item">
+												<div class="tizers__text">فعالیت ها <br>در روسیه</div>
+												<div class="tizers__img">
+													<img src="img/icons/content/20.svg" loading="lazy" alt="Картинка">
+												</div>
+											</a>
+											<a href="#" class="tizers__item">
+												<div class="tizers__text">تورگاید در <br>روسیه</div>
+												<div class="tizers__img">
+													<img src="img/icons/content/21.svg" loading="lazy" alt="Картинка">
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sidebar-template__col">
+										<div class="sidebar-template__contacts contacts-sidebar">
+											<a href="tel:+98211373"
+												class="contacts-sidebar__item phone-contact phone-contact--big">
+												<svg>
+													<use xlink:href="img/icons/sprite.svg#phone"></use>
+												</svg>
+												+98 211373
+											</a>
+											<a href="tel:+98 1343425970" class="contacts-sidebar__item phone-contact">
+												<svg>
+													<use xlink:href="img/icons/sprite.svg#callback"></use>
+												</svg>
+												+98 1343425970
+											</a>
+											<a href="tel:+981343425970" class="contacts-sidebar__item phone-contact">
+												<svg>
+													<use xlink:href="img/icons/sprite.svg#message"></use>
+												</svg>
+												+98 1343425970
+											</a>
+											<a href="mailto:info@shomaltour.com"
+												class="contacts-sidebar__item phone-contact phone-contact--blue">
+												<svg>
+													<use xlink:href="img/icons/sprite.svg#email"></use>
+												</svg>
+												info@shomaltour.com
+											</a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</sidebar>
+
+						<div class="main-template__body">
+
+							<div class="page__control control-page">
+								<div class="control-page__name">اساس: </div>
+								<form action="#" class="control-page__form">
+
+									<label type="button" class="control-page__item cat-button">
+										<input class="cat-button__input" checked type="radio" name="radio">
+										<span class="cat-button__btn">
+											<span class="cat-button__name">محبوب ترین</span>
+										</span>
+									</label>
+
+									<label type="button" class="control-page__item cat-button">
+										<input class="cat-button__input" type="radio" name="radio">
+										<span class="cat-button__btn">
+											<span class="cat-button__name">ارزان ترین</span>
+										</span>
+									</label>
+
+									<label type="button" class="control-page__item cat-button">
+										<input class="cat-button__input" type="radio" name="radio">
+										<span class="cat-button__btn">
+											<span class="cat-button__name">گران ترین</span>
+										</span>
+									</label>
+
+								</form>
+
+							</div>
+
+							<div class="articles">
+
+								<div class="articles__inner">
+
+									<div class="articles__item item-articles item-articles--tour">
+										<div class="item-articles__descp">
+											<div class="item-articles__descp-inner">
+												<div class="item-articles__title title--dark">تور مسکو<br> سفر خاطر انگیز به پایتخت
+													روسیه</div>
+												<ul class="item-articles__list">
+													<li class="item-articles__item">جه فعالیت هایی در مسکو انجام میدهیم ؟</li>
+													<li class="item-articles__item">ٰمیبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود </li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+												</ul>
+											</div>
+
+											<div class="item-articles__panel panel-articles">
+												<div class="panel-articles__buttons">
+													<a href="#" class="panel-articles__link btn">رزرو تور </a>
+												</div>
+												<div class="panel-articles__info">
+													<div class="panel-articles__prices">30.000.000 تومان</div>
+													<div class="panel-articles__duration duration-panel">
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name"> 7 روز </div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#day"></use>
+															</svg>
+														</div>
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name">6 شب</div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#night"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="item-articles__img-ibg">
+											<img src="img/" loading="lazy" alt="Картинка">
+										</div>
+									</div>
+
+									<div class="articles__item item-articles item-articles--tour">
+										<div class="item-articles__descp">
+											<div class="item-articles__descp-inner">
+												<div class="item-articles__title title--dark">تور مسکو<br> سفر خاطر انگیز به پایتخت
+													روسیه</div>
+												<ul class="item-articles__list">
+													<li class="item-articles__item">جه فعالیت هایی در مسکو انجام میدهیم ؟</li>
+													<li class="item-articles__item">ٰمیبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود </li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+												</ul>
+											</div>
+
+											<div class="item-articles__panel panel-articles">
+												<div class="panel-articles__buttons">
+													<a href="#" class="panel-articles__link btn">رزرو تور </a>
+												</div>
+												<div class="panel-articles__info">
+													<div class="panel-articles__prices">30.000.000 تومان</div>
+													<div class="panel-articles__duration duration-panel">
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name"> 7 روز </div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#day"></use>
+															</svg>
+														</div>
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name">6 شب</div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#night"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="item-articles__img-ibg">
+											<img src="img/" loading="lazy" alt="Картинка">
+										</div>
+									</div>
+
+									<div class="articles__item item-articles item-articles--tour">
+										<div class="item-articles__descp">
+											<div class="item-articles__descp-inner">
+												<div class="item-articles__title title--dark">تور مسکو<br> سفر خاطر انگیز به پایتخت
+													روسیه</div>
+												<ul class="item-articles__list">
+													<li class="item-articles__item">جه فعالیت هایی در مسکو انجام میدهیم ؟</li>
+													<li class="item-articles__item">ٰمیبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود </li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+												</ul>
+											</div>
+
+											<div class="item-articles__panel panel-articles">
+												<div class="panel-articles__buttons">
+													<a href="#" class="panel-articles__link btn">رزرو تور </a>
+												</div>
+												<div class="panel-articles__info">
+													<div class="panel-articles__prices">30.000.000 تومان</div>
+													<div class="panel-articles__duration duration-panel">
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name"> 7 روز </div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#day"></use>
+															</svg>
+														</div>
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name">6 شب</div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#night"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="item-articles__img-ibg">
+											<img src="img/" loading="lazy" alt="Картинка">
+										</div>
+									</div>
+
+									<div class="articles__item item-articles item-articles--tour">
+										<div class="item-articles__descp">
+											<div class="item-articles__descp-inner">
+												<div class="item-articles__title title--dark">تور مسکو<br> سفر خاطر انگیز به پایتخت
+													روسیه</div>
+												<ul class="item-articles__list">
+													<li class="item-articles__item">جه فعالیت هایی در مسکو انجام میدهیم ؟</li>
+													<li class="item-articles__item">ٰمیبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود </li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+												</ul>
+											</div>
+
+											<div class="item-articles__panel panel-articles">
+												<div class="panel-articles__buttons">
+													<a href="#" class="panel-articles__link btn">رزرو تور </a>
+												</div>
+												<div class="panel-articles__info">
+													<div class="panel-articles__prices">30.000.000 تومان</div>
+													<div class="panel-articles__duration duration-panel">
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name"> 7 روز </div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#day"></use>
+															</svg>
+														</div>
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name">6 شب</div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#night"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="item-articles__img-ibg">
+											<img src="img/" loading="lazy" alt="Картинка">
+										</div>
+									</div>
+
+									<div class="articles__item item-articles item-articles--tour">
+										<div class="item-articles__descp">
+											<div class="item-articles__descp-inner">
+												<div class="item-articles__title title--dark">تور مسکو<br> سفر خاطر انگیز به پایتخت
+													روسیه</div>
+												<ul class="item-articles__list">
+													<li class="item-articles__item">جه فعالیت هایی در مسکو انجام میدهیم ؟</li>
+													<li class="item-articles__item">ٰمیبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود </li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+												</ul>
+											</div>
+
+											<div class="item-articles__panel panel-articles">
+												<div class="panel-articles__buttons">
+													<a href="#" class="panel-articles__link btn">رزرو تور </a>
+												</div>
+												<div class="panel-articles__info">
+													<div class="panel-articles__prices">30.000.000 تومان</div>
+													<div class="panel-articles__duration duration-panel">
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name"> 7 روز </div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#day"></use>
+															</svg>
+														</div>
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name">6 شب</div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#night"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="item-articles__img-ibg">
+											<img src="img/" loading="lazy" alt="Картинка">
+										</div>
+									</div>
+
+									<div class="articles__item item-articles item-articles--tour">
+										<div class="item-articles__descp">
+											<div class="item-articles__descp-inner">
+												<div class="item-articles__title title--dark">تور مسکو<br> سفر خاطر انگیز به پایتخت
+													روسیه</div>
+												<ul class="item-articles__list">
+													<li class="item-articles__item">جه فعالیت هایی در مسکو انجام میدهیم ؟</li>
+													<li class="item-articles__item">ٰمیبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود </li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+												</ul>
+											</div>
+
+											<div class="item-articles__panel panel-articles">
+												<div class="panel-articles__buttons">
+													<a href="#" class="panel-articles__link btn">رزرو تور </a>
+												</div>
+												<div class="panel-articles__info">
+													<div class="panel-articles__prices">30.000.000 تومان</div>
+													<div class="panel-articles__duration duration-panel">
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name"> 7 روز </div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#day"></use>
+															</svg>
+														</div>
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name">6 شب</div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#night"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="item-articles__img-ibg">
+											<img src="img/" loading="lazy" alt="Картинка">
+										</div>
+									</div>
+
+									<div class="articles__item item-articles item-articles--tour">
+										<div class="item-articles__descp">
+											<div class="item-articles__descp-inner">
+												<div class="item-articles__title title--dark">تور مسکو<br> سفر خاطر انگیز به پایتخت
+													روسیه</div>
+												<ul class="item-articles__list">
+													<li class="item-articles__item">جه فعالیت هایی در مسکو انجام میدهیم ؟</li>
+													<li class="item-articles__item">ٰمیبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود </li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+												</ul>
+											</div>
+
+											<div class="item-articles__panel panel-articles">
+												<div class="panel-articles__buttons">
+													<a href="#" class="panel-articles__link btn">رزرو تور </a>
+												</div>
+												<div class="panel-articles__info">
+													<div class="panel-articles__prices">30.000.000 تومان</div>
+													<div class="panel-articles__duration duration-panel">
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name"> 7 روز </div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#day"></use>
+															</svg>
+														</div>
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name">6 شب</div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#night"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="item-articles__img-ibg">
+											<img src="img/" loading="lazy" alt="Картинка">
+										</div>
+									</div>
+
+									<div class="articles__item item-articles item-articles--tour">
+										<div class="item-articles__descp">
+											<div class="item-articles__descp-inner">
+												<div class="item-articles__title title--dark">تور مسکو<br> سفر خاطر انگیز به پایتخت
+													روسیه</div>
+												<ul class="item-articles__list">
+													<li class="item-articles__item">جه فعالیت هایی در مسکو انجام میدهیم ؟</li>
+													<li class="item-articles__item">ٰمیبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود </li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+													<li class="item-articles__item">میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵
+														سال
+														پایتخت شود</li>
+												</ul>
+											</div>
+
+											<div class="item-articles__panel panel-articles">
+												<div class="panel-articles__buttons">
+													<a href="#" class="panel-articles__link btn">رزرو تور </a>
+												</div>
+												<div class="panel-articles__info">
+													<div class="panel-articles__prices">30.000.000 تومان</div>
+													<div class="panel-articles__duration duration-panel">
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name"> 7 روز </div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#day"></use>
+															</svg>
+														</div>
+														<div class="duration-panel__item item-duration">
+															<div class="item-duration__name">6 شب</div>
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#night"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="item-articles__img-ibg">
+											<img src="img/" loading="lazy" alt="Картинка">
+										</div>
+									</div>
+
+								</div>
+
+								<button type="button" class="articles__btn btn btn--light">نمایش بیشتر</button>
+
+							</div>
+
+							<div class="page__paggination paggination">
+								<button class="paggination__arrow _icon-arrow-sl-left">
+									<svg>
+										<use xlink:href="img/icons/sprite.svg#"></use>
+									</svg>
+								</button>
+								<ul class="paggination__list">
+									<li>
+										<a href="" class="paggination__item _active">1</a>
+									</li>
+									<li>
+										<a href="" class="paggination__item">2</a>
+									</li>
+									<li>
+										<a href="" class="paggination__item">3</a>
+									</li>
+									<li>
+										<a href="" class="paggination__item">4</a>
+									</li>
+									<li>
+										<a class="paggination__item">...</a>
+									</li>
+								</ul>
+								<button class="paggination__arrow _icon-arrow-sl-right">
+									<svg>
+										<use xlink:href="img/icons/sprite.svg#"></use>
+									</svg>
+								</button>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			@@include('html/components/_application.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

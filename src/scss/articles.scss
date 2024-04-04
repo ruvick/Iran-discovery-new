@@ -19,6 +19,7 @@
 		margin-top: rem(32); 
 	}
 }
+
 .item-articles {
 	 display: flex;
 	 border-radius: rem(10);
@@ -29,6 +30,7 @@
 	 }
 	// .item-articles__descp
 	&__descp {
+		flex: 1 1 auto;
 		text-align: right;
 		@include adaptiveValue("padding-top", 24, 14);
 		@include adaptiveValue("padding-bottom", 24, 14);
@@ -71,6 +73,96 @@
 			  padding-bottom: 65%;
 		}
 	}
+}
+
+.item-articles--tour {
+	.item-articles__item {
+		@include adaptiveValue("font-size", 16, 12);
+		font-weight: 400;
+		line-height: math.div(27.2, 16);
+		text-align: right;
+	}
+	.item-articles__descp {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	.item-articles__img-ibg {
+		flex: 0 0 rem(320);
+	}
+}
+.item-articles__descp-inner {
+	padding: rem(24) rem(24) rem(12) rem(24);
+	flex: 1 1 auto;
+}
+
+.title--dark {
+	color: #242440;
+}
+
+.item-articles__panel {
+	
+}
+.panel-articles {
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr)); 
+	gap: rem(15);
+	align-items: center;
+	padding: rem(12) rem(24);
+	background: #E7F2FF;
+	overflow: hidden;
+	@media (max-width: em(414)){
+		grid-template-columns: 1fr;
+	}
+}
+.panel-articles__buttons {
+	display: flex;
+}
+.panel-articles__link {
+	font-size: rem(22);
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.panel-articles__info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.panel-articles__prices {
+	direction: rtl;
+	font-size: rem(24);
+	font-weight: 700;
+	line-height: math.div(28.44, 24);
+	text-align: right;
+	color: #0587D6;
+}
+.panel-articles__duration {
+}
+.duration-panel {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	gap: rem(16);
+}
+.duration-panel__item {
+}
+.item-duration {
+	display: flex;
+	align-items: center;
+	gap: rem(6);
+	svg {
+		width: 24px;
+		height: 24px;
+		border: 1px solid #000;
+	}
+}
+.item-duration__name {
+	font-size: rem(16);
+	font-weight: 400;
+	line-height: math.div(18.96, 16);
+	text-align: right;
+	direction: rtl;
 }
 //========================================================================================================================================================
 .annotation {
