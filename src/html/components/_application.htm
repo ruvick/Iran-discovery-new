@@ -1,0 +1,47 @@
+<section class="page__application application">
+	<div class="application__container">
+
+		<div class="application__box box-application">
+			<div class="box-application__descp">
+				<h2 class="box-application__title">به ما درخواست بفرستید</h2>
+				<div class="box-application__subtitle">ما با شما تماس میگیریم </div>
+			</div>
+
+			<form action="#" class="box-application__form form-application">
+
+				<div class="form-application__item item-form">
+					<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
+					<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+						class="item-form__input input">
+				</div>
+
+				<div class="form-application__item item-form item-form--tel">
+					<label for="tel" class="item-form__label">شماره تماس <span>*</span></label>
+					<input id="tel" autocomplete="off" type="tel" name="form[]" data-value="Телефон"
+						class="item-form__input input phone">
+				</div>
+
+				<div class="form-application__item item-form">
+					<label for="textarea" class="item-form__label">درخواست</label>
+					<textarea autocomplete="off" name="" id="textarea" class="item-form__input input"></textarea>
+				</div>
+
+				<div class="form-application__item item-form">
+					<div class="checkbox">
+						<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+						<label for="c_1" class="checkbox__label"><span class="checkbox__text">من با پردازش داده های شخصی
+								با شرایط سیاست حفظ حریم خصوصی موافقم <a href="">سیاست حفظ حریم</a></span></label>
+					</div>
+				</div>
+
+				<button type="submit" class="form-application__btn btn">ارسال درخواست</button>
+
+			</form>
+
+			<div class="box-application__img" style="background: url('../img/application/02-bg.png');">
+				<img src="img/application/01.png" loading="lazy" alt="Картинка">
+			</div>
+		</div>
+
+	</div>
+</section>

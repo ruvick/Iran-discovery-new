@@ -67,9 +67,12 @@
 		align-items: center;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: rem(32);
+		@include adaptiveValue("gap", 32, 14);
 		&:not(:last-child){
 			margin-bottom: rem(18);
+		}
+		@media (max-width: em(414)){
+			  flex-direction: column;
 		}
 	}
 

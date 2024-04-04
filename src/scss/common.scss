@@ -149,3 +149,30 @@
 		}
 	}
 }
+//========================================================================================================================================================
+
+.item-form {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	// .item-form__label
+	&__label {
+		direction: rtl;
+	font-size: rem(20);
+	font-weight: 700;
+	line-height: math.div(32, 20);
+	text-align: right;
+	color: #242440;
+
+	span {
+		color: red;
+	}
+		&:not(:last-child){
+			margin-bottom: rem(8);
+		}
+	}
+
+	// .item-form__input
+	&__input {
+	}
+}

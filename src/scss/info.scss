@@ -12,6 +12,9 @@
 		grid-template-columns: repeat(auto-fit, minmax(rem(160), rem(160))); 
 		justify-content: center;
 		gap: rem(30);
+		@media (max-width: em(414)){
+			grid-template-columns: repeat(auto-fit, minmax(rem(130), rem(130))); 
+		}
 	}
 
 	&__inner--big {

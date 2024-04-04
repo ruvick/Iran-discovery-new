@@ -9,17 +9,26 @@ textarea {
 	appearance: none;
 }
 .input {
-	border-radius: 0 !important;
 	width: 100%;
 	display: block;
-	padding: 0px 20px;
-	border: 1px solid #eee;
+	font-size: rem(16);
+	font-weight: 400;
+	@include adaptiveValue("height", 56, 44);
+	color: #666;
+	text-align: right;
+	padding: rem(15) rem(20);
+	border-radius: rem(10);
+	border: 1px solid #CEE5FF;
 	&._form-focus {
 	}
 	&._form-error {
 	}
 }
+.item-form--tel .input {
+	text-align: left;
+}
 textarea.input {
+	min-height: rem(80);
 	resize: none;
-	padding: 0px 0px;
+	// padding: 0px 0px;
 }
