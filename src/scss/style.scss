@@ -274,3 +274,10 @@ h2 {
 		margin-bottom: rem(44);
 	}
 }
+
+.page__paggination {
+	margin-top: rem(24); 
+	@media (max-width: em(768)){
+		 display: none; 
+	}
+}

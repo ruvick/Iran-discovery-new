@@ -78,43 +78,39 @@
 }
 //========================================================================================================================================================
 
-.pagging {
+.paggination {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.pagging__arrow {
+.paggination__arrow {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-	flex: 0 0 rem(20);
-	width: rem(20);
-	height: rem(20);
-	background: #F0F2F8;
-	&::before{
-		font-size: rem(8);
-	}
-	@media (max-width: 414px){
-		flex: 0 0 rem(30);
-		width: rem(30);
-		height: rem(30);
+	flex: 0 0 rem(32);
+	width: rem(32);
+	height: rem(32);
+	background: #E7F2FF;
+	border-radius: 50%;
+	margin: 0 12px;
+	svg {
+		flex: 0 0 rem(12);
+		width: rem(12);
+		height: rem(8);
 	}
 }
-.pagging__list {
+.paggination__list {
 	display: flex;
 	align-items: center;
-	@media (max-width: 414px){
-		  li:nth-child(2),
-		  li:nth-child(3),
-		  li:nth-child(4),
-		  li:nth-child(5) {
-			display: none;
-		  }
+	li {
+		&:not(:last-child){
+			margin-right: rem(12);
+		}
 	}
 }
-.pagging__item {
+.paggination__item {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -123,22 +119,12 @@
 	font-weight: 400;
 	line-height: math.div(22, 16);
 	letter-spacing: 0em;
-	flex: 0 0 rem(20);
-	width: rem(20);
-	height: rem(20);
-	margin: 0 rem(10) 0 rem(10);
+	flex: 0 0 rem(32);
+	width: rem(32);
+	height: rem(32);
+	// margin: 0 rem(8) 0 rem(8);
+	border-radius: 50%;
 	transition: $mainTransition;
-
-	@media (max-width: 540px){
-		font-size: rem(14);
-		margin: 0 rem(3) 0 rem(3);
-	}
-
-	@media (max-width: 414px){
-		flex: 0 0 rem(30);
-		width: rem(30);
-		height: rem(30);
-	}
 
 	@media (any-hover: hover) {
 	&:hover {
@@ -146,7 +132,8 @@
 	}
 	}
 	&._active {
-		background: #F0F2F8;
+		border: 1px solid #CEE5FF;
 	}
 }
+
 
