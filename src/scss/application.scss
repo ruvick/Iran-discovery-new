@@ -16,7 +16,7 @@
 	display: grid; 
 	// grid-template-columns: rem(650) 1fr; 
 	grid-template-columns: repeat(auto-fit, minmax(rem(380), 1fr)); 
-	gap: rem(80);
+	@include adaptiveValue("gap", 80, 20);
 
 	background: linear-gradient(171.22deg, rgba(221, 238, 255, 0.156) 2.84%, rgba(0, 162, 229, 0.6) 128.75%);
 	overflow: hidden;
