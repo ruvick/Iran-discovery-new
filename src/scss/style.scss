@@ -197,6 +197,10 @@ h2 {
 	}
 }
 
+.page__title {
+	@include adaptiveValue("margin-bottom", 48, 20);
+}
+
 .page__info {
 	padding: rem(64) 0 40px 0;
 	@include adaptiveValue("padding-top", 64, 45);
