@@ -165,6 +165,7 @@ body {
 @import "articles";
 @import "content";
 @import "detail";
+@import "visa";
 //========================================================================================================================================================
 
 h1 {
@@ -300,4 +301,21 @@ h2 {
 
 .page__share {
 	@include adaptiveValue("margin-bottom", 46, 28);
+}
+//========================================================================================================================================================
+
+.page-visa {
+	.main-banner--inner .main-banner__body h1 {
+		text-align: center;
+  }
+}
+
+.page__types-visas {
+	@include adaptiveValue("padding-top", 40, 20);
+	@include adaptiveValue("padding-bottom", 40, 20);
+}
+
+.page__tour-banner {
+	@include adaptiveValue("padding-top", 40, 20);
+	@include adaptiveValue("padding-bottom", 40, 20);
 }
