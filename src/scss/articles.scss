@@ -154,9 +154,9 @@
 	align-items: center;
 	gap: rem(6);
 	svg {
-		width: 24px;
-		height: 24px;
-		border: 1px solid #000;
+		width: rem(24);
+		height: rem(24);
+		border: rem(1) solid #000;
 	}
 }
 .item-duration__name {
@@ -165,6 +165,20 @@
 	line-height: math.div(18.96, 16);
 	text-align: right;
 	direction: rtl;
+}
+.panel-articles--light {
+	// grid-template-columns: rem(200) 1fr; 
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #fff;
+	@media (max-width: em(700)){
+		 flex-wrap: wrap-reverse; 
+	}
+	.panel-articles__buttons {
+		@media (max-width: em(700)){
+			 width: 100%; 
+		}
+	}
 }
 //========================================================================================================================================================
 .annotation {
@@ -292,4 +306,73 @@
 } 
 //========================================================================================================================================================
 
+.item-articles {
+	// .item-articles__table
+	&__table {
+		&:not(:last-child){
+			margin-bottom: rem(14);
+		}
+	}
+}
+.table-articles {
+	direction: rtl;
+	display: grid; 
+	grid-template-columns: max-content 1fr;
+	// gap: rem(8);
 
+	// .table-articles__label
+	&__label {
+		font-size: rem(20);
+		line-height: math.div(26, 20);
+		text-align: right;
+		color: #788196;
+		margin-inline-end: rem(24);
+	}
+
+	// .table-articles__value
+	&__value {
+	font-size: rem(20);
+	line-height: math.div(23.7, 20);
+	text-align: right;
+	color: #242440;
+	}
+}
+
+//========================================================================================================================================================
+.item-articles__list {
+	&:not(:last-child){
+		margin-bottom: rem(14);
+	}
+}
+.item-articles__player {
+}
+.player-articles {
+	display: grid; 
+	// grid-template-columns: rem(406) 1fr; 
+	// grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr)); 
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	gap: rem(12);
+}
+.player-articles__text {
+	font-size: rem(20);
+	line-height: math.div(23.7, 20);
+	text-align: right;
+	color: #788196;
+	white-space: nowrap;
+}
+.player-articles__player {
+	flex: 0 1 406px;
+}
+
+.player {
+	width: 100%;
+	height: rem(36);
+	background: #E7F2FF;
+	border-radius: rem(10);
+	border: 1px solid #CEE5FF;
+	overflow: hidden;
+}
+//========================================================================================================================================================
