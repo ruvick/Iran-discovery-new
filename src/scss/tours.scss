@@ -239,4 +239,93 @@
 		line-height: math.div(28.8, 24);
 	}
 }
+//========================================================================================================================================================
 
+.item-articles__rating {
+	&:not(:last-child){
+		margin-bottom: rem(12);
+	}
+}
+.rating-articles {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: rem(13);
+}
+.rating-articles__text {
+	font-size: rem(20);
+	font-weight: 400;
+	line-height: math.div(23.7, 20);
+	text-align: right;
+	color: #FF6A00;
+} 
+.rating-articles__rating {
+}
+.full-stars {
+}
+.rating-group {
+}
+//========================================================================================================================================================
+
+.location-articles {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: rem(8);
+}
+.location-articles__item {
+	display: flex;
+	align-items: center;
+	gap: rem(8);
+	svg {
+		width: 24px;
+		flex: 0 0 24px;
+		height: 24px;
+		border: 1px solid #000;
+	}
+}
+.location-articles__text {
+	font-size: rem(20);
+	line-height: math.div(23.7, 20);
+	text-align: right;
+	color: #666;
+}
+
+.item-articles__location {
+	@include adaptiveValue("margin-bottom", 25, 10);
+    align-items: flex-start;
+    flex: 1 1 auto;
+}
+//========================================================================================================================================================
+
+.item-articles__available {
+	// @include adaptiveValue("padding-bottom", 24, 14);
+}
+.available-articles {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: rem(20);
+}
+.available-articles__item {
+}
+.item-available {
+	display: flex;
+	align-items: center;
+	gap: rem(8);
+	svg {
+		flex: 0 0 20px;
+		width: 20px;
+		height: 20px;
+		border: 1px solid #000;
+	}
+}
+.item-available__text {
+	font-size: rem(16);
+	font-weight: 400;
+	line-height: 18.96px;
+	line-height: math.div(18.96, 16);
+	text-align: right;
+}
