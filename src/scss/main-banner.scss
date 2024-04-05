@@ -19,6 +19,14 @@
 		@include adaptiveValue("min-height", 472, 190);
 	}
 	&__body {
+		max-width: rem(843);
+		width: 100%;
+		text-align: center;
+		h1 {
+			@include adaptiveValue("font-size", 64, 22);
+			font-weight: 700;
+			line-height: math.div(76.8, 64);
+		}
 	}
 	&__top-title {
 		font-size: rem(24);
@@ -41,6 +49,7 @@
 			text-align: right;
 		}
 		.main-banner__body {
+			max-width: 100%;
 			h1 {
 				text-align: right;
 			}

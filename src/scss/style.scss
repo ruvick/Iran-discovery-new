@@ -181,21 +181,21 @@ h2 {
 }
 //========================================================================================================================================================
 
-.page__main-banner {
-	// .page__main-banner
-	&__main-banner {
-	}
-	.main-banner__body {
-		max-width: rem(843);
-		width: 100%;
-		text-align: center;
-		h1 {
-			@include adaptiveValue("font-size", 64, 22);
-			font-weight: 700;
-			line-height: math.div(76.8, 64);
-		}
-	}
-}
+// .page__main-banner {
+// 	// .page__main-banner
+// 	&__main-banner {
+// 	}
+// 	.main-banner__body {
+// 		max-width: rem(843);
+// 		width: 100%;
+// 		text-align: center;
+// 		h1 {
+// 			@include adaptiveValue("font-size", 64, 22);
+// 			font-weight: 700;
+// 			line-height: math.div(76.8, 64);
+// 		}
+// 	}
+// }
 
 .page__title {
 	@include adaptiveValue("margin-bottom", 48, 20);
