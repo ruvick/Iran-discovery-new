@@ -17,3 +17,12 @@
 		padding: rem(23);
 	}
 }
+
+.partners__banners{
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr)); 
+	@include adaptiveValue("gap", 20, 8);
+	.partners__slide {
+		padding-bottom: 26.2%;
+  }
+}
