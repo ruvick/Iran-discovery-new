@@ -156,10 +156,16 @@
 		letter-spacing: 0.04em;
 		white-space: nowrap;
 		transition: $mainTransition;
+		&:not(:last-child){
+			@include adaptiveValue("margin-bottom", 15, 8);
+		}
 		@media (any-hover: hover){
 			 &:hover { 
 				color: #004495; 
 		  } 
+		}
+		span {
+			border-bottom: 1px dashed #333;
 		}
 		svg {
 			flex: 0 0 rem(34);
@@ -177,13 +183,16 @@
 	font-family: "Rubik";
 	@include adaptiveValue("font-size", 24, 18);
 	font-weight: 500;
-	line-height: math.div(38.4, 24);
+	line-height: 1;
 	white-space: nowrap;
 	transition: $mainTransition;
 	@media (any-hover: hover){
 		 &:hover { 
 			color: #004495; 
 	  } 
+	}
+	span {
+		border-bottom: 1px dashed #333;
 	}
 	svg {
 		flex: 0 0 rem(24);
