@@ -100,6 +100,16 @@
 		width: rem(12);
 		height: rem(8);
 	}
+	&._icon-arrow-sl-left {
+		svg {
+			transform: rotate(90deg);
+		}
+	}
+	&._icon-arrow-sl-right {
+		svg {
+			transform: rotate(-90deg);
+		}
+	}
 }
 .paggination__list {
 	display: flex;
