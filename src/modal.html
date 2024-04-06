@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Модальные окна"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template">
+
+			<section class="page__main-banner main-banner main-banner--inner"
+				style="background: url('../img/test/01.jpg') 0 0 no-repeat;">
+				<div class="nuar-blk"></div>
+				<div class="main-banner__container">
+					<div class="main-banner__descp">
+						<div class="main-banner__header">
+							<nav class="breadcrumbs">
+								<ul class="breadcrumbs__list">
+									<li class="breadcrumbs__item">
+										<a href="home.html" class="breadcrumbs__link">ویزا روسیه</a>
+									</li>
+									<li class="breadcrumbs__item">
+										<span class="breadcrumbs__current">پنجره های مودال</span>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="main-banner__body">
+							<h1>پنجره های مودال</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-template__modal modal-page">
+				<div class="modal-page__container">
+
+					<div class="modal-page__inner">
+						<button type="button" data-popup="#call-order" class="btn">Call Order</button>
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

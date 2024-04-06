@@ -40,6 +40,7 @@
 	line-height: math.div(38.4, 20);
 	text-align: center;
 	color: #242440;
+	flex: 1 1 auto;
 	@include adaptiveValue("margin-bottom", 10, 5);
 }
 .item-types-visas__subtitle {
