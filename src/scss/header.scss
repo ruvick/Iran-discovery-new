@@ -18,7 +18,7 @@
 		transform: translateY(-200%);
 		width: 100%;
 		background-color: #fff;
-		box-shadow: 0 0 rem(5) rgba(0, 0, 0, 0.6);
+		box-shadow: 0 0 rem(5) rgba(0, 0, 0, 0.6); 
 	}
 
 	&._header-show {
@@ -50,6 +50,15 @@
 
 	}
 }
+
+// Убираем скачок при блокировке 
+.lock .header {
+	@media (min-width:em(1025)){
+		left: auto;
+		right: rem(3.3);
+	}
+}
+
 .main-header {
 
 	// .main-header__contacts
