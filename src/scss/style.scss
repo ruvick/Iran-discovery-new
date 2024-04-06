@@ -167,6 +167,7 @@ body {
 @import "content";
 @import "detail";
 @import "visa";
+@import "details";
 //========================================================================================================================================================
 
 h1 {
@@ -333,6 +334,11 @@ h3 {
 }
 
 .page-template__modal {
+	@include adaptiveValue("padding-top", 40, 20);
+	@include adaptiveValue("padding-bottom", 40, 20);
+}
+
+.page__descp-details {
 	@include adaptiveValue("padding-top", 40, 20);
 	@include adaptiveValue("padding-bottom", 40, 20);
 }

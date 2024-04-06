@@ -1,0 +1,111 @@
+.descp-details {
+}
+
+.descp-details__container {
+}
+
+.descp-details__inner {
+	display: grid; 
+	grid-template-columns: rem(413) 1fr; 
+	gap: rem(20);
+	&:not(:last-child){
+		@include adaptiveValue("margin-bottom", 56, 20);
+	}
+	@media (max-width: em(991)){
+		grid-template-columns: 1fr;  
+	}
+}
+
+.box-info {
+
+	width: 100%;
+	border: rem(2) solid #CEE5FF;
+	border-radius: rem(10);
+	box-shadow: 0px 4px 40px 0px #0000001A;
+	overflow: hidden;
+	background-color: #fff;
+	z-index: 5;
+	height: 641px;
+}
+.box-info__header {
+	@include adaptiveValue("padding-top", 30, 18);
+	@include adaptiveValue("padding-bottom", 32, 14);
+	@include adaptiveValue("padding-left", 60, 14);
+	@include adaptiveValue("padding-right", 60, 14);
+
+	height: 178px;
+}
+.box-info__body {
+	@include adaptiveValue("padding-top", 32, 14);
+	@include adaptiveValue("padding-bottom", 26, 14);
+	@include adaptiveValue("padding-left", 30, 18);
+	@include adaptiveValue("padding-right", 30, 18);
+	background-color: #E7F2FF;
+
+	height: 461px;
+}
+
+.descp-details__box-info {
+	@media (min-width:em(992)){
+		transform: translateY(-230px);
+	}
+}
+
+.descp-details__text {
+	direction: rtl;
+	text-align: right;
+	ul {
+		&:not(:last-child){
+			@include adaptiveValue("margin-bottom", 32, 18);
+		}
+		li {
+			font-size: rem(20);
+			font-weight: 400;
+			line-height: math.div(34, 20);
+			text-align: right;
+		}
+	}
+}
+
+.descp-details__banners {
+
+}
+.item-full {
+	grid-column: span 2;
+	}
+	
+	.item-small {
+	grid-column: span 1;
+	}
+
+
+.banners-detail {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	@include adaptiveValue("gap", 20, 8);
+	@media (max-width: em(768)){
+		grid-template-columns: 1fr;
+	}
+}
+
+.banners-detail__col {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	@include adaptiveValue("gap", 20, 8);
+
+		@media (max-width: em(480)){
+			grid-template-columns: 1fr 1fr 1fr;
+		} 
+}
+
+.banners-detail__item-ibg {
+	border-radius: rem(10);
+	background-color: #C2C2C2;
+	padding-bottom: 64%;
+	overflow: hidden;
+}
+.banners-detail__item-ibg.item-full {
+	@media (max-width: em(480)){
+		grid-column: span 1;
+	}
+} 
