@@ -2,9 +2,298 @@
 <div id="call-order" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
+			<button data-close type="button" class="popup__close">x</button>
 			<div class="popup__text">
-				Text
+				<div class="popup__title">درخواست تماس</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-popup">
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">نام و نام خانوادگی<span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item item-form item-form--tel">
+							<label for="tel" class="item-form__label">شماره تماس<span>*</span></label>
+							<input id="tel" autocomplete="off" type="tel" name="form[]" data-value="Телефон"
+								class="item-form__input input phone">
+						</div>
+
+						<div class="form-popup__item">
+							<button type="submit" class="form-popup__btn btn">ارسال درخواست</button>
+						</div>
+
+						<div class="form-popup__item">
+							<div class="form-popup__policy">
+								با پر کردن فرم ، من با شرایط پردازش داده های شخصی مطابق با سیاست حفظ حریم خصوصی
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Shedule -->
+<div id="shedule" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">x</button>
+			<div class="popup__text">
+				<div class="popup__title">دریافت برنامه تور به صورت PDF</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-popup">
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item item-form item-form--tel">
+							<label for="name" class="item-form__label">پیام رسان <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item">
+							<div class="form-popup__options options">
+								<div class="options__item">
+									<input hidden id="o_1" class="options__input" type="radio" value="1" name="option">
+									<label for="o_1" class="options__label"><span class="options__text">واتس اپ</span></label>
+								</div>
+								<div class="options__item">
+									<input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+									<label for="o_2" class="options__label"><span class="options__text">تلگرام</span></label>
+								</div>
+								<div class="options__item">
+									<input hidden id="o_3" class="options__input" type="radio" value="3" name="option">
+									<label for="o_3" class="options__label"><span class="options__text">ایتا</span></label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-popup__item">
+							<button type="submit" class="form-popup__btn btn">دریافت برنامه</button>
+						</div>
+
+						<div class="form-popup__item">
+							<div class="form-popup__policy">
+								با پر کردن فرم ، من با شرایط پردازش داده های شخصی مطابق با سیاست حفظ حریم خصوصی
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Tour booking -->
+<div id="tour-booking" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">x</button>
+			<div class="popup__text">
+				<div class="popup__title popup__title--center">تور مسکو<br> سفر خاطر انگیز به پایتخت روسیه</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-popup">
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item item-form item-form--tel">
+							<label for="tel" class="item-form__label">شماره تماس <span>*</span></label>
+							<input id="tel" autocomplete="off" type="tel" name="form[]" data-value="Телефон"
+								class="item-form__input input phone">
+						</div>
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">تاریخ شروع تور <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">تعداد مهمان <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item">
+							<button type="submit" class="form-popup__btn btn">ارسال درخواست</button>
+						</div>
+
+						<div class="form-popup__item">
+							<div class="form-popup__policy">
+								با پر کردن فرم ، من با شرایط پردازش داده های شخصی مطابق با سیاست حفظ حریم خصوصی
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Hotel reservation -->
+<div id="hotel-reserv" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">x</button>
+			<div class="popup__text">
+				<div class="popup__title popup__title--center">مجتمع هتل آلباتروس</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-popup">
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item item-form item-form--tel">
+							<label for="tel" class="item-form__label">شماره تماس <span>*</span></label>
+							<input id="tel" autocomplete="off" type="tel" name="form[]" data-value="Телефон"
+								class="item-form__input input phone">
+						</div>
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">تاریخ ورود <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">تعداد مهمان <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">تعداد مهمان <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">انواع اتاق ها <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item">
+							<button type="submit" class="form-popup__btn btn">ارسال درخواست</button>
+						</div>
+
+						<div class="form-popup__item">
+							<div class="form-popup__policy">
+								با پر کردن فرم ، من با شرایط پردازش داده های شخصی مطابق با سیاست حفظ حریم خصوصی
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Activities booking -->
+<div id="activities-booking" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">x</button>
+			<div class="popup__text">
+				<div class="popup__title popup__title--center ">در قلب سرما<br> سورتمه با هاسکی </div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-popup">
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item item-form item-form--tel">
+							<label for="tel" class="item-form__label">شماره تماس <span>*</span></label>
+							<input id="tel" autocomplete="off" type="tel" name="form[]" data-value="Телефон"
+								class="item-form__input input phone">
+						</div>
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">تعداد مهمان <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item">
+							<button type="submit" class="form-popup__btn btn">ارسال درخواست</button>
+						</div>
+
+						<div class="form-popup__item">
+							<div class="form-popup__policy">
+								با پر کردن فرم ، من با شرایط پردازش داده های شخصی مطابق با سیاست حفظ حریم خصوصی
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Guide order -->
+<div id="guide-order" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">x</button>
+			<div class="popup__text">
+				<div class="popup__title popup__title--center ">راهنمای سفر به روسیه ، دانیال</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-popup">
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item item-form item-form--tel">
+							<label for="tel" class="item-form__label">شماره تماس <span>*</span></label>
+							<input id="tel" autocomplete="off" type="tel" name="form[]" data-value="Телефон"
+								class="item-form__input input phone">
+						</div>
+
+						<div class="form-popup__item item-form">
+							<label for="name" class="item-form__label">تاریخ <span>*</span></label>
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
+								class="item-form__input input">
+						</div>
+
+						<div class="form-popup__item">
+							<button type="submit" class="form-popup__btn btn">سفارش</button>
+						</div>
+
+						<div class="form-popup__item">
+							<div class="form-popup__policy">
+								با پر کردن فرم ، من با شرایط پردازش داده های شخصی مطابق با سیاست حفظ حریم خصوصی
+							</div>
+						</div>
+
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>

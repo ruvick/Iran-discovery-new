@@ -7,7 +7,8 @@
 	text-align: center;
 	padding: rem(9) rem(30);
 	font-family: Rubik;
-	font-size: rem(24);
+	// font-size: rem(24);
+	@include adaptiveValue("font-size", 24, 14);
 	font-weight: 700;
 	line-height: math.div(38.4, 24);
 	color: #fff;
