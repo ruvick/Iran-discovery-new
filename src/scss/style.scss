@@ -168,6 +168,7 @@ body {
 @import "detail";
 @import "visa";
 @import "details";
+@import "transfer";
 //========================================================================================================================================================
 
 h1 {
@@ -364,4 +365,9 @@ h3 {
 	&:not(:last-child){
 		margin-bottom: rem(40);
 	}
+}
+
+.page__transfer {
+	@include adaptiveValue("padding-top", 40, 20);
+	@include adaptiveValue("padding-bottom", 40, 20);
 }
