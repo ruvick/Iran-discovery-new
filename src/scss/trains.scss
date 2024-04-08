@@ -1,0 +1,34 @@
+
+.trains-info {
+}
+.trains-info__inner {
+	display: flex;
+	flex-direction: column;
+	@include adaptiveValue("gap", 40, 12);
+}
+.trains-info__item {
+}
+.item-trains-info {
+	direction: rtl;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	padding: rem(20);
+	border: 1px solid #CEE5FF;
+}
+.item-trains-info__title {
+	color: #242440;
+	&:not(:last-child){
+		margin-bottom: rem(20);
+	}
+}
+.item-trains-info__descp {
+	font-size: rem(20);
+	line-height: math.div(34, 20);
+	color: #242440;
+	p {
+		&:not(:last-child){
+			margin-bottom: rem(13);
+		}
+	}
+}
