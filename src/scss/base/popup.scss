@@ -77,6 +77,8 @@ body::after {
 	font-weight: 700;
 	line-height: math.div(42.66, 36);
 	color: #242440;
+	direction: rtl;
+	text-align: left;
 }
 .popup__title--center {
 	text-align: center;

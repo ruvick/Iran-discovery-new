@@ -54,6 +54,23 @@
 .descp-details__text {
 	direction: rtl;
 	text-align: right;
+	&:not(:last-child){
+		margin-bottom: rem(40);
+	}
+	p {
+	font-size: rem(20);
+	font-weight: 400;
+	line-height: math.div(34, 20); 
+
+		&:not(:last-child){
+			margin-bottom: rem(20);
+		}
+	}
+	h3 {
+		&:not(:last-child){
+			margin-bottom: rem(32);
+		}
+	}
 	ul {
 		&:not(:last-child){
 			@include adaptiveValue("margin-bottom", 32, 18);
@@ -88,15 +105,32 @@
 	}
 }
 
+.content-spollers__banners {
+	&:not(:last-child){
+		margin-bottom: rem(12);
+	}
+	@include adaptiveValue("gap", 10, 8);
+}
+
 .banners-detail__col {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	@include adaptiveValue("gap", 20, 8);
 
 		@media (max-width: em(480)){
-			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr; 
 		} 
 }
+
+.content-spollers__banners {
+	.banners-detail__col {
+		@include adaptiveValue("gap", 10, 8);
+		@media (max-width: em(480)){
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
 
 .banners-detail__item-ibg {
 	display: flex;
@@ -119,8 +153,165 @@
 	z-index: 5;
 	padding: rem(10);
 }
+
+.content-spollers__banners {
+	.banners-detail__title {
+		@include adaptiveValue("font-size", 20, 14);
+	}
+}
+
 .banners-detail__item-ibg.item-full {
 	@media (max-width: em(480)){
 		grid-column: span 1;
 	}
 } 
+
+.sale-banner {
+	padding-bottom: 35.3%;
+	overflow: hidden;
+	background-color: #C2C2C2;
+}
+.schedule-excursions {
+}
+.schedule-excursions__item {
+	&:not(:last-child){
+		margin-bottom: rem(56);
+	}
+}
+.schedule-excursions__title {
+	text-align: right;
+	&:not(:last-child){
+		margin-bottom: rem(24);
+	}
+}
+.schedule-excursions__btn {
+	width: 100%;
+	&:not(:last-child){
+		margin-bottom: rem(24);
+	}
+}
+
+.btn--pdf {
+	direction: rtl;
+	flex-direction: row-reverse;
+	padding-top: rem(4);
+	padding-bottom: rem(4);
+	background-color: #FFD3B3;
+	span {
+	@include adaptiveValue("font-size", 20, 16);
+	font-weight: 700;
+	// line-height: math.div(28.44, 20);
+	text-align: center;
+	color: #0587D6;
+	}
+	svg {
+		width: rem(36);
+		height: rem(40);
+		margin-left: rem(10);
+		border: 1px solid #000;
+	}
+}
+
+.schedule-excursions {
+	.spollers__content::before {
+		width: 100%;
+	}
+}
+
+.schedule-excursions__text {
+	text-align: right;
+	&:not(:last-child){
+		margin-bottom: rem(15);
+	}
+	p {
+		font-size: rem(20);
+		font-weight: 400;
+		line-height: math.div(34, 20);
+		&:not(:last-child){
+			margin-bottom: rem(12);
+		}
+	}
+}
+
+.schedule-excursions__subtitle {
+	font-size: rem(20);
+	font-weight: 400;
+	line-height: math.div(32, 20);
+	text-align: left;
+	color: #017AC3;
+	&:not(:last-child){
+		margin-bottom: rem(13);
+	}
+}
+
+.spollers__item {
+}
+.table-spollers {
+	padding: rem(24) rem(20);
+	@include adaptiveValue("padding-top", 24, 16);
+	@include adaptiveValue("padding-top", 24, 16);
+	@include adaptiveValue("padding-left", 20, 14);
+	@include adaptiveValue("padding-left", 20, 14);
+}
+.table-spollers__inner {
+	display: flex;
+	gap: rem(15);
+	&:not(:last-child){
+		margin-bottom: rem(13);
+	}
+	@media (max-width: em(700)){
+		 flex-direction: column-reverse; 
+	}
+}
+.table-spollers__item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	flex: 0 1 50%;
+}
+.table-spollers__title {
+	font-size: rem(20);
+	font-weight: 700;
+	line-height: math.div(28, 20);
+	line-height: 28px;
+	color: #242440;
+	&:not(:last-child){
+		@include adaptiveValue("margin-bottom", 24, 10);
+	}
+}
+.table-spollers__list {
+	direction: rtl;
+}
+
+.list-table-spollers__item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-direction: row-reverse;
+	font-size: rem(20);
+	line-height: math.div(34, 20);
+	text-align: right;
+	svg {
+		width: rem(20);
+		height: rem(20);
+		margin-left: rem(8);
+	}
+}
+
+.info-board {
+	display: flex;
+	flex-direction: column;
+	padding: rem(30);
+	border: 2px solid #CEE5FF;
+	background-color: #E7F2FF;
+	border-radius: rem(10);
+	overflow: hidden;
+}
+.info-board__header {
+}
+.info-board__body {
+}
+.info-board__footer {
+}

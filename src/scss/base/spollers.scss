@@ -144,6 +144,13 @@
 			@include adaptiveValue("margin-bottom", 20, 14);
 		}
 	}
+	ol {
+		direction: rtl;
+		padding-right: rem(25);
+		li {
+
+		}
+	}
 }
 
 .content-spollers__title {
@@ -221,3 +228,6 @@
 
 }
 
+.spollers__title.--end {
+	justify-content: flex-end;
+}

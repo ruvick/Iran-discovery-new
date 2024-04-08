@@ -347,3 +347,15 @@ h3 {
 	@include adaptiveValue("padding-top", 40, 20);
 	@include adaptiveValue("padding-bottom", 40, 20);
 }
+
+.page__schedule-excursions {
+	&:not(:last-child){
+		margin-bottom: rem(56);
+	}
+}
+
+.page__info-board {
+	&:not(:last-child){
+		margin-bottom: rem(56);
+	}
+} 

@@ -20,12 +20,37 @@
 		 flex: 0 1 100%; 
 	}
 }
+
+.page-tour-detail {
+	.main-template__body {
+		flex: 0 1 rem(739);
+		overflow: hidden;
+		@media (max-width: 991px){
+			 flex: 0 1 100%; 
+		}
+	}
+}
+
 .main-template__sidebar {
-	flex: 0 0 305px;
+	flex: 0 0 rem(305);
 	@media (max-width: 991px){
 		 flex: 0 1 100%; 
 	}
 }
+
+.page-tour-detail {
+	.main-template__sidebar {
+	 flex: 0 0 rem(412);
+	 z-index: 5;
+	 @media (min-width:em(992)){
+		transform: translateY(-230px);
+	 }
+	 @media (max-width: 991px){
+		flex: 0 1 100%; 
+  }
+ }
+ }
+
 .sidebar-template {
 	
 }
@@ -45,6 +70,7 @@
 .contacts-sidebar {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	@include adaptiveValue("gap", 17, 8);
 	// .contacts-sidebar__item
 	&__item {

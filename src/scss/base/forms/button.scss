@@ -42,6 +42,19 @@
 	}
 }
 
+.btn--pdf {
+	span {
+		transition: $mainTransition;
+	}
+	@media (any-hover: hover){
+		 &:hover { 
+		span {
+			color: #fff;
+		}
+	  } 
+	}
+}
+
 input[type=radio] {
 	position: absolute;
 	width: 0;
