@@ -21,6 +21,13 @@
 	}
 }
 
+.main-template__body--middle {
+	flex: 0 1 rem(848);
+	@media (max-width: 991px){
+		flex: 0 1 100%; 
+  }
+}
+
 .page-tour-detail {
 	.main-template__body {
 		flex: 0 1 rem(739);

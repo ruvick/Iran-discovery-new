@@ -359,3 +359,9 @@ h3 {
 		margin-bottom: rem(56);
 	}
 } 
+
+.page__action-board {
+	&:not(:last-child){
+		margin-bottom: rem(40);
+	}
+}

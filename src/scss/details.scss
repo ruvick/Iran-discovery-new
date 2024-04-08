@@ -76,10 +76,18 @@
 			@include adaptiveValue("margin-bottom", 32, 18);
 		}
 		li {
+			display: flex;
+			align-items: center;
 			font-size: rem(20);
 			font-weight: 400;
 			line-height: math.div(34, 20);
 			text-align: right;
+			svg {
+				width: rem(24);
+				height: rem(24);
+				margin-left: rem(11);
+				border: 1px solid #000;
+			}
 		}
 	}
 }
@@ -314,4 +322,29 @@
 .info-board__body {
 }
 .info-board__footer {
+}
+
+.action-board {
+	display: flex;
+	justify-content: space-between;
+	gap: rem(20);
+	padding: rem(24) rem(50);
+	border: 2px solid #CEE5FF;
+	background: #E7F2FF;
+	border-radius: rem(10);
+	overflow: hidden;
+}
+.action-board__item {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 50%;
+	gap: rem(16);
+}
+.action-board__price {
+}
+.price-item {
+}
+.action-board__btn {
+}
+.btn {
 }
