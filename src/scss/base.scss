@@ -46,6 +46,17 @@
 	}
 }
 
+[class*=-ico] {
+	display: flex;
+	align-items: center;
+	svg {
+		width: rem(24);
+		height: rem(24);
+		
+		border: 1px solid #000;
+	}
+}
+
 // Шаблоны (заготовки)
 // @extend %имя шаблона;
 // Сниппет (SCSS): ex

@@ -4,13 +4,14 @@
 // Блок со спойлерами
 .spollers {
 	display: grid;
-	gap: 15px;
+	gap: rem(15);
 }
 // Спойлер
 .spollers__item {
 	font-size: rem(20);  
 	border: 2px solid #CEE5FF;
 	border-radius: rem(10);
+	// padding: 0 rem(26) 0 rem(24);
 }
 // Заголовок спойлера
 .spollers__title {
@@ -23,43 +24,60 @@
 	cursor: default;
 	text-align: left;
 	// border: 1px solid #eee;
-	padding: rem(10) rem(86) rem(10) 0; 
+	padding: rem(10) rem(26) rem(10) 24px; 
 	border-radius: rem(5);
 	position: relative;
 	._spoller-init & {
 		cursor: pointer;
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			right: 10px;
-			top: 50%;
-			background-color: #000;
-			height: 2px;
-			width: 15px;
-			transition: transform 0.5s ease 0s;
-		}
-		&::before {
-			transform: translate(-75%, -50%) rotate(40deg);
-		}
-		&::after {
-			transform: translate(0, -50%) rotate(-40deg);
-		}
-		&._spoller-active {
-			&::before {
-				transform: translateX(-75%) rotate(-40deg);
-			}
-			&::after {
-				transform: rotate(40deg);
-			}
-		}
+		// &::before,
+		// &::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	right: 10px;
+		// 	top: 50%;
+		// 	background-color: #000;
+		// 	height: 2px;
+		// 	width: 15px;
+		// 	transition: transform 0.5s ease 0s;
+		// }
+		// &::before {
+		// 	transform: translate(-75%, -50%) rotate(40deg);
+		// }
+		// &::after {
+		// 	transform: translate(0, -50%) rotate(-40deg);
+		// }
+		// &._spoller-active {
+		// 	&::before {
+		// 		transform: translateX(-75%) rotate(-40deg);
+		// 	}
+		// 	&::after {
+		// 		transform: rotate(40deg);
+		// 	}
+		// }
 	}
 }
 // Контент спойлера
 .spollers__body {
-	padding: rem(20);
+	padding: rem(0) rem(24) rem(20) rem(26);
 	border-radius: rem(5);
-	// border: 1px solid #eee;
+}
+
+.spollers__content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	&::before{
+		content:''; 
+		// position: absolute;
+		float: left; 
+		width: 56.6%;
+		height: rem(1);
+		background: #CEE5FF;
+		margin-bottom: rem(20);
+		@media (max-width: em(515)){
+			  width: 100%;
+		}
+	}
 }
 
 .spollers__title-left {
@@ -72,11 +90,134 @@
 	padding: rem(10) rem(20);
 	border-radius: rem(7);
 	background-color: #E8E4E4;
+	@media (max-width: em(515)){
+		 width: 100%; 
+	}
 }
 
 .spollers__title-right {
-	font-size: rem(24);
+	position: relative;
+	@include adaptiveValue("font-size", 24, 16);
 	font-weight: 700;
 	line-height: math.div(33.6, 24);
 	color: #242440;
+
+	// @media (max-width: em(515)){
+	// 	 justify-content: space-between; 
+	// }
+
+	&::before{
+		content:''; 
+		position: absolute;
+		right: rem(-10);
+		flex: 0 0 rem(42);
+		height: rem(42);
+		width: rem(42); 
+		border-radius: rem(7);
+		background-color: #E7F2FF;
+		z-index: 1;
+	}
+	svg {
+		transition: $mainTransition;
+			margin-left: 20px;
+			z-index: 2;
+		}
+		._spoller-active & {
+			svg {
+				transform: rotate(-180deg);
+			}
+		}
 }
+.content-spollers__item {
+	text-align: right;
+	width: 100%;
+	&:not(:last-child){
+		margin-bottom: rem(20);
+	}
+}
+.content-spollers__text {
+	p {
+		font-size: rem(20);
+		line-height: math.div(34, 20);
+		text-align: right;
+		&:not(:last-child){
+			@include adaptiveValue("margin-bottom", 20, 14);
+		}
+	}
+}
+
+.content-spollers__title {
+	&:not(:last-child){
+		margin-bottom: rem(20);
+	}
+}
+
+
+.info-spollers {
+	// display: grid; 
+	// grid-template-columns: rem(313) 1fr; 
+	// gap: rem(30);
+	display: flex;
+	flex-wrap: wrap-reverse;
+	gap: rem(30);
+}
+.content-spollers__info {
+	@media (max-width: em(768)){
+		flex-direction: column-reverse;
+	}
+}
+.info-spollers__action {
+
+}
+
+.action-spollers {
+	direction: rtl;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: rem(12);
+}
+.action-spollers__item {
+	width: 100%;
+}
+.action-spollers__price {
+}
+.action-spollers__btn {
+	width: 100%;
+}
+.info-spollers__descp {
+	
+}
+
+.descp-spollers {
+	flex: 1 1 auto;
+	text-align: right;
+}
+
+.descp-spollers__table {
+	.table-articles__label {
+		font-size: rem(16);
+		font-weight: 400;
+		line-height: math.div(18.96, 16);
+		svg {
+			margin-left: rem(8);
+		}
+		&:not(:last-child){
+			margin-bottom: rem(10);
+		}
+	}
+	.table-articles__value {
+		font-size: rem(16);
+		font-weight: 400;
+		line-height: math.div(18.96, 16);
+		svg {
+			margin-left: rem(8);
+		}
+		&:not(:last-child){
+			margin-bottom: rem(10);
+		}
+	}
+
+}
+

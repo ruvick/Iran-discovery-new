@@ -323,3 +323,34 @@
 	border-bottom: 1px solid #CEE5FF;
 	min-height: 121px;
 }
+//========================================================================================================================================================
+
+.price-item {
+	direction: rtl;
+	font-size: rem(36);
+	font-weight: 700;
+	line-height: math.div(42.66, 36);
+	color: #0486D3;
+} 
+//========================================================================================================================================================
+
+
+.box-banner {
+}
+.box-banner__img {
+	&:not(:last-child){
+		margin-bottom: rem(20);
+	}
+}
+.img-box-banner-ibg {
+	padding-bottom: 27.5%;
+	border-radius: rem(10);
+	background-color: #C2C2C2;
+	overflow: hidden;
+}
+.box-banner__footnote {
+	font-size: rem(20);
+	font-weight: 400;
+	line-height: math.div(34, 20);
+	text-align: right;
+}
