@@ -162,6 +162,13 @@
 
 .box-stages__trajectory {
 	position: absolute;
+	max-width: 100%;
+	height: 100%;
+	overflow: hidden;
 	@include adaptiveValue("top", 150, 93);
 	@include adaptiveValue("left", 140, -100);
+	svg {
+		width: 100%;
+		height: 100%;
+	}
 }

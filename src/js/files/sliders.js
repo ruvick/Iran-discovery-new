@@ -19,7 +19,7 @@ EffectFade, Lazy, Manipulation
 // Базовые стили
 import "../../scss/base/swiper.scss";
 // Полный набор стилей из scss/libs/swiper.scss
-// import "../../scss/libs/swiper.scss";
+import "../../scss/libs/swiper.scss";
 // Полный набор стилей из node_modules
 // import 'swiper/css';
 
@@ -111,18 +111,18 @@ function initSliders() {
 		new Swiper('.typical-slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			// modules: [Navigation, Autoplay],
+			modules: [Navigation, Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1.1,
 			spaceBetween: 8.5,
-			centeredSlides: true,
+			// centeredSlides: true,
 			autoHeight: true,
 			speed: 800,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			loop: true,
 			//preloadImages: false,
 			lazy: true,
 
@@ -136,12 +136,11 @@ function initSliders() {
 			*/
 
 			// Пагинация
-			/*
+
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
 			},
-			*/
 
 			// Скроллбар
 			/*
@@ -194,13 +193,13 @@ function initSliders() {
 			observeParents: true,
 			slidesPerView: 1.1,
 			spaceBetween: 8.5,
-			centeredSlides: true,
+			// centeredSlides: true,
 			autoHeight: true,
 			speed: 800,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			loop: true,
 			//preloadImages: false,
 			lazy: true,
 
@@ -220,6 +219,11 @@ function initSliders() {
 				clickable: true,
 			},
 			*/
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
 
 			// Скроллбар
 			/*
@@ -283,7 +287,7 @@ function initSliders() {
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			loop: true,
 			//preloadImages: false,
 			lazy: true,
 
@@ -303,6 +307,11 @@ function initSliders() {
 				clickable: true,
 			},
 			*/
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
 
 			// Скроллбар
 			/*
