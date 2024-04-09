@@ -385,3 +385,8 @@ h3 {
 	max-width: rem(976);
 	margin: 0px auto;
 }
+
+.page__stages {
+	@include adaptiveValue("padding-top", 40, 20);
+	@include adaptiveValue("padding-bottom", 40, 20);
+}
