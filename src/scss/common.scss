@@ -323,6 +323,26 @@
 	border-bottom: 1px solid #CEE5FF;
 	min-height: 121px;
 }
+
+.box-cost-table__label--bg,
+.box-cost-table__value--bg {
+	font-size: rem(24);
+	line-height: math.div(33.6, 24);
+	font-weight: 700;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	color: #3C4061;
+	background: #E7F2FF;
+}
+
+.cost-table--center {
+	.box-cost-table__label,
+	.box-cost-table__value {
+		// align-items: center;
+		justify-content: center;
+	}
+}
 //========================================================================================================================================================
 
 .price-item {
