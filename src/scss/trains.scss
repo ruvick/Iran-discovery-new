@@ -107,6 +107,7 @@
 	line-height: math.div(71.1, 60);
 	text-align: center;
 	color: #FF8731;
+	@include adaptiveValue("width", 80, 30);
 }
 
 .box-stages__item {
@@ -130,4 +131,37 @@
 			}
 		}
 	}
+}
+
+.box-stages--air {
+	// min-height: 981px;
+	@include adaptiveValue("min-height", 981, 400);
+	.box-stages__inner {
+		@include adaptiveValue("gap", 32, 8);
+	}
+	.item-box-stages__inner {
+		background-color: #E7F2FF;
+		border: 1px solid #CEE5FF;
+	}
+	.box-stages__vertical-line {
+		display: none;
+	}
+	.box-stages__item {
+		align-self: flex-end;
+		&:nth-child(2n) {
+			align-self: flex-start;
+		}
+		&::before{
+			display: none;
+		}
+	}
+	.item-box-stages__number {
+		color: #0587D6B2;
+  }
+}
+
+.box-stages__trajectory {
+	position: absolute;
+	@include adaptiveValue("top", 150, 93);
+	@include adaptiveValue("left", 140, -100);
 }

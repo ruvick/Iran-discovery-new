@@ -26,6 +26,9 @@
 			@include adaptiveValue("font-size", 64, 22);
 			font-weight: 700;
 			line-height: math.div(76.8, 64);
+			&:not(:last-child){
+				@include adaptiveValue("margin-bottom", 36, 6);
+			}
 		}
 	}
 	&__top-title {
@@ -67,3 +70,11 @@
 			height: 100%;
 		}
 	}
+
+.main-banner__subtitle {
+	@include adaptiveValue("font-size", 40, 14);
+	font-weight: 700;
+	line-height: math.div(47.4, 40);
+	text-align: center;
+	color: #fff;
+}
