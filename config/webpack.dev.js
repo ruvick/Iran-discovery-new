@@ -1,32 +1,14 @@
-import fs from 'fs';
 import FileIncludeWebpackPlugin from 'file-include-webpack-plugin-replace';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyPlugin from "copy-webpack-plugin";
+
+//const devMode = process.env.NODE_ENV !== "production";
+//devMode ? "style-loader" : MiniCssExtractPlugin.loader,
 
 import * as path from 'path';
 
 const srcFolder = "src";
 const builFolder = "dist";
 const rootFolder = path.basename(path.resolve());
-
-let pugPages = fs.readdirSync(srcFolder).filter(fileName => fileName.endsWith('.pug'))
-let htmlPages = [];
-
-if (!pugPages.length) {
-	htmlPages = [new FileIncludeWebpackPlugin({
-		source: srcFolder,
-		htmlBeautifyOptions: {
-			"indent-with-tabs": true,
-			'indent_size': 3
-		},
-		replace: [
-			{ regex: '<link rel="stylesheet" href="css/style.min.css">', to: '' },
-			{ regex: '../img', to: 'img' },
-			{ regex: '@img', to: 'img' },
-			{ regex: 'NEW_PROJECT_NAME', to: rootFolder }
-		],
-	})];
-}
 
 const paths = {
 	src: path.resolve(srcFolder),
@@ -51,21 +33,10 @@ const config = {
 		static: paths.build,
 		open: true,
 		compress: true,
-		port: 'auto',
+		port: 8080,
 		hot: true,
-		host: 'local-ip', // localhost
-
-		// Расскоментировать на слабом ПК
-		// (в режиме разработчика, папка с результаттом будет создаваться на диске)
-		/*
-		devMiddleware: {
-			writeToDisk: true,
-		},
-		*/
-
 		watchFiles: [
 			`${paths.src}/**/*.html`,
-			`${paths.src}/**/*.pug`,
 			`${paths.src}/**/*.htm`,
 			`${paths.src}/img/**/*.*`
 		],
@@ -106,30 +77,23 @@ const config = {
 						}
 					}
 				],
-			}, {
-				test: /\.pug$/,
-				use: [
-					{
-						loader: 'pug-loader'
-					}, {
-						loader: 'string-replace-loader',
-						options: {
-							search: '@img',
-							replace: 'img',
-							flags: 'g'
-						}
-					}
-				]
-			}
+			},
 		],
 	},
 	plugins: [
-		...htmlPages,
-		...pugPages.map(pugPage => new HtmlWebpackPlugin({
-			minify: false,
-			template: `${srcFolder}/${pugPage}`,
-			filename: `${pugPage.replace(/\.pug/, '.html')}`
-		})),
+		new FileIncludeWebpackPlugin({
+			source: srcFolder,
+			htmlBeautifyOptions: {
+				"indent-with-tabs": true,
+				'indent_size': 3
+			},
+			replace: [
+				{ regex: '<link rel="stylesheet" href="css/style.min.css">', to: '' },
+				{ regex: '../img', to: 'img' },
+				{ regex: '@img', to: 'img' },
+				{ regex: 'NEW_PROJECT_NAME', to: rootFolder }
+			],
+		}),
 		new CopyPlugin({
 			patterns: [
 				{

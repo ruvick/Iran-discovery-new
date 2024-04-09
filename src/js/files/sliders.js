@@ -32,7 +32,7 @@ function initSliders() {
 		new Swiper('.partners__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			// modules: [Navigation],
+			modules: [Navigation],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 4,
