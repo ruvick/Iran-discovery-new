@@ -147,6 +147,13 @@
 	flex-direction: row-reverse;
 	gap: rem(16);
 }
+.duration-panel__name {
+	font-size: rem(20);
+	font-weight: 600;
+	line-height: math.div(23.7, 20);
+	text-align: right;
+	color: #242440;
+}
 .duration-panel__item {
 }
 .item-duration {

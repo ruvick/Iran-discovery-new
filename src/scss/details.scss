@@ -17,7 +17,6 @@
 }
 
 .box-info {
-
 	width: 100%;
 	border: rem(2) solid #CEE5FF;
 	border-radius: rem(10);
@@ -25,24 +24,88 @@
 	overflow: hidden;
 	background-color: #fff;
 	z-index: 5;
-	height: 641px;
 }
-.box-info__header {
-	@include adaptiveValue("padding-top", 30, 18);
-	@include adaptiveValue("padding-bottom", 32, 14);
-	@include adaptiveValue("padding-left", 60, 14);
-	@include adaptiveValue("padding-right", 60, 14);
 
-	height: 178px;
+.header-box-info {
+	display: flex;
+	flex-direction: column;
+	gap: rem(16);
+	direction: rtl;
 }
-.box-info__body {
+.header-box-info__item {
+}
+.header-box-info__price {
+	direction: rtl;
+}
+.header-box-info__notification {
+	line-height: 18.96px;
+	line-height: math.div(18.96, 16);
+	text-align: right;
+}
+.header-box-info__calendar {
+}
+.header-box-info__buttons {
+}
+.header-box-info__btn {
+	width: 100%;
+}
+.header-box-info__duration {
+	justify-content: flex-end;
+}
+.header-box-info__calendar {
+}
+.calendar-box-info {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	min-height: rem(48);
+	border: 1px solid #CEE5FF;
+	background-color: #fff;
+	border-radius: rem(10);
+	padding: rem(0) rem(20);
+}
+.calendar-box-info__arrow {
+	display: flex;
+	svg {
+		width: 15px;
+		height: 9px;
+		border: 1px solid #000;
+	}
+}
+.calendar-box-info__input {
+	flex: 1 1 auto;
+}
+
+.box-info__header {
 	@include adaptiveValue("padding-top", 32, 14);
 	@include adaptiveValue("padding-bottom", 26, 14);
 	@include adaptiveValue("padding-left", 30, 18);
 	@include adaptiveValue("padding-right", 30, 18);
 	background-color: #E7F2FF;
+}
 
-	height: 461px;
+.box-info__body {
+	// @include adaptiveValue("padding-top", 32, 14);
+	// @include adaptiveValue("padding-bottom", 26, 14);
+}
+
+.body-box-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+}
+
+.body-box-info__item {
+	width: 100%;
+	@include adaptiveValue("padding-top", 20, 14);
+	@include adaptiveValue("padding-bottom", 20, 14);
+	@include adaptiveValue("padding-left", 30, 18);
+	@include adaptiveValue("padding-right", 30, 18);
+	border-bottom: 1px solid #CEE5FF;
+	&:last-child{
+		border-bottom: none;
+	}
 }
 
 .descp-details__box-info {
