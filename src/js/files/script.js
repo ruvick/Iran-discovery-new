@@ -4,6 +4,22 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 //========================================================================================================================================================
+
+// new AirDatepicker('#input', {
+// 	inline: true
+// })
+
+// new index_es('#input', {
+// 	inline: true,
+// 	range: true,
+// 	multipleDatesSeparator: ' - '
+// });
+
+
+
+
+
+
 // gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
 // gsap.set("#motionSVG", { scale: 0.7, autoAlpha: 1 });
