@@ -85,31 +85,39 @@
 															<svg>
 																<use xlink:href="img/icons/sprite.svg#arrow-sl"></use>
 															</svg>
-															قیمت تومان
+															شهر
 														</button>
 														<div class="spoller-box__body">
-
-															<div class="price-filter">
-																<div data-range class="price-filter__body">
-																	<div class="price-filter__inputs">
-																		<label class="price-filter__input-label">
-																			<div class="price-filter__input-text">تا</div>
-																			<input data-range-to="14" autocomplete="off" type="text"
-																				name="form[]" value="14" class="price-filter__input">
-																		</label>
-																		<label class="price-filter__input-label">
-																			<div class="price-filter__input-text">از</div>
-																			<input data-range-from="0" autocomplete="off" type="text"
-																				name="form[]" value="0" class="price-filter__input">
-																		</label>
-																	</div>
-																	<div data-range-item class="price-filter__range"></div>
-																</div>
-															</div>
-
+															<select name="form[]" class="form">
+																<option value="1" selected="selected">یک شهر را انتخاب کنید</option>
+																<option value="2">یک شهر را انتخاب کنید</option>
+																<option value="3">یک شهر را انتخاب کنید</option>
+																<option value="4">یک شهر را انتخاب کنید</option>
+															</select>
 														</div>
 													</div>
-													<button type="button" class="spoller-box__btn-reset"> تنظیم مجدد</button>
+												</div>
+
+												<div class="body-box-info__item spoller-box">
+													<div class="spoller-box__item">
+														<button type="button" data-spoller
+															class="spoller-box__title _spoller-active ">
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#arrow-sl"></use>
+															</svg>
+															تعداد مهمان
+														</button>
+														<div class="spoller-box__body">
+															<select name="form[]" class="form">
+																<option value="1" selected="selected">1 بزرگسال</option>
+																<option value="2">1 بزرگسال</option>
+																<option value="3">1 بزرگسال</option>
+																<option value="4">1 بزرگسال</option>
+															</select>
+														</div>
+													</div>
+													<button type="button" class="spoller-box__btn-reset">پارامترهای تنظیم
+														مجدد</button>
 												</div>
 
 											</div>

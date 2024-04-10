@@ -128,7 +128,11 @@
 }
 .noUi-handle {
 	background: #fff;
-	cursor: pointer;
+	cursor: move; 
+	cursor: grab;
+	&:active{
+		cursor: grabbing;
+	}
 	border-radius: 50%;
 	border: 3px solid #DCDCDC;
 	// box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ebebeb, 0 3px 6px -3px #bbb;
