@@ -43,9 +43,58 @@
 							<div class="sidebar-template__body">
 
 								<div class="sidebar-template__item">
-									<div class="sidebar-template__col">
-										<div class="sidebar-template__filters filters-sidebar">
-											filters
+									<div class="sidebar-template__filters filters-sidebar">
+										<div class="box-info box-info--catalog">
+											<div data-spollers class="box-info__body body-box-info">
+
+												<div class="body-box-info__item spoller-box">
+													<div class="spoller-box__item">
+														<button type="button" data-spoller class="spoller-box__title">
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#arrow-sl"></use>
+															</svg>
+															قیمت تومان
+														</button>
+														<div class="spoller-box__body">
+
+															<div class="price-filter">
+																<div data-range class="price-filter__body">
+																	<div data-range-item class="price-filter__range"></div>
+																	<div class="price-filter__inputs">
+																		<label class="price-filter__input-label">
+																			<div class="price-filter__input-text">От</div>
+																			<input data-range-from="0" autocomplete="off" type="text"
+																				name="form[]" value="0" class="price-filter__input">
+																		</label>
+																		<label class="price-filter__input-label">
+																			<div class="price-filter__input-text">До</div>
+																			<input data-range-to="50000" autocomplete="off" type="text"
+																				name="form[]" value="50000" class="price-filter__input">
+																		</label>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+												</div>
+
+												<div class="body-box-info__item spoller-box">
+													<div class="spoller-box__item">
+														<button type="button" data-spoller class="spoller-box__title">
+															<svg>
+																<use xlink:href="img/icons/sprite.svg#arrow-sl"></use>
+															</svg>
+															مدت زمان روز
+														</button>
+														<div class="spoller-box__body">
+															456
+														</div>
+													</div>
+													<button type="button" class="spoller-box__btn-reset"> تنظیم مجدد</button>
+												</div>
+
+											</div>
 										</div>
 									</div>
 								</div>
