@@ -554,12 +554,19 @@
 }
 
 .box-info--catalog {
+	padding-top: rem(15);
 	padding-bottom: rem(30);
 	overflow: visible;
 	.body-box-info__item {
-		padding-left: rem(16);
-		padding-right: rem(16);
+		padding-left: rem(13);
+		padding-right: rem(13);
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+}
+
+.spoller-box__body {
+	.price-filter__body {
+		padding-bottom: 16px;
 	}
 }

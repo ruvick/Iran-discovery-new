@@ -557,14 +557,14 @@ textarea.input {
 /* Slider size and handle placement;
  */
 .noUi-horizontal {
-  height: 18px;
+  height: 0.4375rem;
 }
 
 .noUi-horizontal .noUi-handle {
-  width: 34px;
-  height: 28px;
-  right: -17px;
-  top: -6px;
+  width: 1.75rem;
+  height: 1.75rem;
+  right: -0.9375rem;
+  top: -0.625rem;
 }
 
 .noUi-vertical {
@@ -587,6 +587,8 @@ textarea.input {
  * Giving the connect element a border radius causes issues with using transform: scale
  */
 .noUi-target {
+  width: 90%;
+  margin: 0 auto;
   background: #fafafa;
   border-radius: 4px;
   border: 1px solid #d3d3d3;
@@ -598,7 +600,7 @@ textarea.input {
 }
 
 .noUi-connect {
-  background: #3fb8af;
+  background: #0587D6;
 }
 
 /* Handles and cursors;
@@ -612,11 +614,10 @@ textarea.input {
 }
 
 .noUi-handle {
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
   background: #fff;
-  cursor: default;
-  box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ebebeb, 0 3px 6px -3px #bbb;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #DCDCDC;
 }
 
 .noUi-active {
@@ -625,32 +626,17 @@ textarea.input {
 
 /* Handle stripes;
  */
-.noUi-handle:before,
 .noUi-handle:after {
   content: "";
   display: block;
   position: absolute;
-  height: 14px;
-  width: 1px;
-  background: #e8e7e6;
-  left: 14px;
-  top: 6px;
-}
-
-.noUi-handle:after {
-  left: 17px;
-}
-
-.noUi-vertical .noUi-handle:before,
-.noUi-vertical .noUi-handle:after {
-  width: 14px;
-  height: 1px;
-  left: 6px;
-  top: 14px;
-}
-
-.noUi-vertical .noUi-handle:after {
-  top: 17px;
+  height: 0.875rem;
+  width: 0.875rem;
+  background: #0587D6;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Disabled state;
@@ -1863,6 +1849,45 @@ body::after {
 
 .descp-details__cost-table:not(:last-child) {
   margin-bottom: 3.5rem;
+}
+
+.price-filter__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1875rem;
+}
+
+.price-filter__inputs {
+  display: grid;
+  grid-template-columns: 8.125rem 8.125rem;
+  gap: 0.625rem;
+}
+.price-filter__inputs input {
+  width: 100%;
+}
+
+.price-filter__input-label {
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2.5rem;
+  gap: 0.5rem;
+  padding: 0.5rem 0.625rem;
+  border: 1px solid #C2C2C2;
+  border-radius: 0.4375rem;
+}
+
+.price-filter__input-text {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: #666;
+}
+
+.price-filter__input {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: #444;
 }
 
 .header {
@@ -4993,14 +5018,19 @@ body::after {
 }
 
 .box-info--catalog {
+  padding-top: 0.9375rem;
   padding-bottom: 1.875rem;
   overflow: visible;
 }
 .box-info--catalog .body-box-info__item {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.8125rem;
+  padding-right: 0.8125rem;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.spoller-box__body .price-filter__body {
+  padding-bottom: 16px;
 }
 
 .cards-transfer {

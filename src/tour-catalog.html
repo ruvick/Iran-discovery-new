@@ -59,19 +59,19 @@
 
 															<div class="price-filter">
 																<div data-range class="price-filter__body">
-																	<div data-range-item class="price-filter__range"></div>
 																	<div class="price-filter__inputs">
 																		<label class="price-filter__input-label">
-																			<div class="price-filter__input-text">От</div>
+																			<div class="price-filter__input-text">تا</div>
+																			<input data-range-to="30000000" autocomplete="off" type="text"
+																				name="form[]" value="30000000" class="price-filter__input">
+																		</label>
+																		<label class="price-filter__input-label">
+																			<div class="price-filter__input-text">از</div>
 																			<input data-range-from="0" autocomplete="off" type="text"
 																				name="form[]" value="0" class="price-filter__input">
 																		</label>
-																		<label class="price-filter__input-label">
-																			<div class="price-filter__input-text">До</div>
-																			<input data-range-to="50000" autocomplete="off" type="text"
-																				name="form[]" value="50000" class="price-filter__input">
-																		</label>
 																	</div>
+																	<div data-range-item class="price-filter__range"></div>
 																</div>
 															</div>
 
@@ -85,10 +85,28 @@
 															<svg>
 																<use xlink:href="img/icons/sprite.svg#arrow-sl"></use>
 															</svg>
-															مدت زمان روز
+															قیمت تومان
 														</button>
 														<div class="spoller-box__body">
-															456
+
+															<div class="price-filter">
+																<div data-range class="price-filter__body">
+																	<div class="price-filter__inputs">
+																		<label class="price-filter__input-label">
+																			<div class="price-filter__input-text">تا</div>
+																			<input data-range-to="14" autocomplete="off" type="text"
+																				name="form[]" value="14" class="price-filter__input">
+																		</label>
+																		<label class="price-filter__input-label">
+																			<div class="price-filter__input-text">از</div>
+																			<input data-range-from="0" autocomplete="off" type="text"
+																				name="form[]" value="0" class="price-filter__input">
+																		</label>
+																	</div>
+																	<div data-range-item class="price-filter__range"></div>
+																</div>
+															</div>
+
 														</div>
 													</div>
 													<button type="button" class="spoller-box__btn-reset"> تنظیم مجدد</button>

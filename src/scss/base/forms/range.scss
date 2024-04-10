@@ -80,13 +80,13 @@
 /* Slider size and handle placement;
  */
 .noUi-horizontal {
-	height: 18px;
+	height: rem(7);
 }
 .noUi-horizontal .noUi-handle {
-	width: 34px;
-	height: 28px;
-	right: -17px;
-	top: -6px;
+	width: rem(28);
+	height: rem(28);
+	right: rem(-15);
+	top: rem(-10);
 }
 .noUi-vertical {
 	width: 18px;
@@ -105,6 +105,8 @@
  * Giving the connect element a border radius causes issues with using transform: scale
  */
 .noUi-target {
+	width: 90%;
+   margin: 0 auto;
 	background: #fafafa;
 	border-radius: 4px;
 	border: 1px solid #d3d3d3;
@@ -114,7 +116,7 @@
 	border-radius: 3px;
 }
 .noUi-connect {
-	background: #3fb8af;
+	background: #0587D6;
 }
 /* Handles and cursors;
  */
@@ -125,41 +127,43 @@
 	cursor: ns-resize;
 }
 .noUi-handle {
-	border: 1px solid #d9d9d9;
-	border-radius: 3px;
 	background: #fff;
-	cursor: default;
-	box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ebebeb, 0 3px 6px -3px #bbb;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 3px solid #DCDCDC;
+	// box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ebebeb, 0 3px 6px -3px #bbb;
 }
 .noUi-active {
 	box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ddd, 0 3px 6px -3px #bbb;
 }
 /* Handle stripes;
  */
-.noUi-handle:before,
+// .noUi-handle:before,
 .noUi-handle:after {
 	content: "";
 	display: block;
 	position: absolute;
-	height: 14px;
-	width: 1px;
-	background: #e8e7e6;
-	left: 14px;
-	top: 6px;
+	height: rem(14);
+	width: rem(14);
+	background: #0587D6;
+	left: 50%;
+	top: 50%;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
 }
-.noUi-handle:after {
-	left: 17px;
-}
-.noUi-vertical .noUi-handle:before,
-.noUi-vertical .noUi-handle:after {
-	width: 14px;
-	height: 1px;
-	left: 6px;
-	top: 14px;
-}
-.noUi-vertical .noUi-handle:after {
-	top: 17px;
-}
+// .noUi-handle:after {
+// 	left: 17px;
+// }
+// .noUi-vertical .noUi-handle:before,
+// .noUi-vertical .noUi-handle:after {
+// 	width: 14px;
+// 	height: 1px;
+// 	left: 6px;
+// 	top: 14px;
+// }
+// .noUi-vertical .noUi-handle:after {
+// 	top: 17px;
+// }
 /* Disabled state;
  */
 [disabled] .noUi-connect {
