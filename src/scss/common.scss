@@ -460,10 +460,21 @@
 .actions__box {
 }
 .box-actions {
+	position: relative;
 	@include adaptiveValue("padding", 40, 18);
 	background: #EFF7FF;
 	border: 1px solid #CEE5FF;
 	border-radius: rem(10);
+}
+.box-actions__img {
+	position: absolute; 
+	top: 0%; 
+	// left: 0%; 
+	right: 0;
+	z-index: 5; 
+	width: 100%; 
+	height: 100%;
+	background: linear-gradient(171.22deg, rgba(221, 238, 255, 0.156) 2.84%, rgba(0, 162, 229, 0.6) 128.75%);
 }
 .box-actions__title {
 	@include adaptiveValue("font-size", 40, 28);
@@ -488,13 +499,18 @@
 .box-actions__form {
 }
 .form-box-actions {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	gap: rem(26);
 	@media (max-width: em(768)){
 		 .item-form__label {
 			display: none;
 		 } 
 	}
 }
-.form-box-actions__row {
+.form-box-actions__col {
 	display: flex;
 	align-items: flex-end;
 	display: grid; 
@@ -504,6 +520,19 @@
 	justify-content: space-between;
 	@media (max-width: em(768)){
 		grid-template-columns: 1fr;  
+	}
+}
+
+.form-box-actions__line {
+
+}
+
+.form-box-actions__row {
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr)); 
+	gap: rem(21);
+	@media (max-width: em(630)){
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -525,5 +554,47 @@
 	color: #C2C2C2;
 	@media (max-width: em(768)){
 		 order: 3; 
+	}
+}
+
+.form-box-actions__input {
+}
+.input-box-actions {
+	padding: rem(20);
+	border: 1px solid #CEE5FF;
+	background-color: #fff;
+	border-radius: rem(10);
+}
+.input-box-actions__line {
+	display: grid; 
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(rem(200), 1fr)); 
+	gap: rem(56);
+	max-width: rem(530);
+	margin: 0px auto;
+	// @media (max-width: em(540)){
+	// 	grid-template-columns: 1fr;
+	// }
+}
+.input-box-actions__text {
+	font-size: rem(20);
+	font-weight: 500;
+	line-height: math.div(24.38, 20);
+	color: #6B748B;
+	@media (max-width: em(630)){
+		display: none;
+	}
+}
+.input-box-actions__btn {
+	font-size: rem(16);
+	padding-top: rem(10.5);
+	padding-bottom: rem(10.5);
+}
+
+.form-box-actions__row--actions {
+	@media (max-width: em(630)){
+		  .form-box-actions__btn {
+			order: 2;
+		  }
 	}
 }

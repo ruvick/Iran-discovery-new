@@ -1910,6 +1910,7 @@ body::after {
 }
 
 .box-actions {
+  position: relative;
   background: #EFF7FF;
   border: 1px solid #CEE5FF;
   border-radius: 0.625rem;
@@ -1923,6 +1924,16 @@ body::after {
   .box-actions {
     padding: calc(1.125rem + 1.375 * (100vw - 20rem) / 61.875);
   }
+}
+
+.box-actions__img {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(171.22deg, rgba(221, 238, 255, 0.156) 2.84%, rgba(0, 162, 229, 0.6) 128.75%);
 }
 
 .box-actions__title {
@@ -1979,13 +1990,20 @@ body::after {
   }
 }
 
+.form-box-actions {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}
 @media (max-width: 48em) {
   .form-box-actions .item-form__label {
     display: none;
   }
 }
 
-.form-box-actions__row {
+.form-box-actions__col {
   display: flex;
   align-items: flex-end;
   display: grid;
@@ -1994,16 +2012,27 @@ body::after {
   justify-content: space-between;
 }
 @supports (gap: clamp( 0.875rem , 0.4103535354rem  +  2.3232323232vw , 2.3125rem )) {
-  .form-box-actions__row {
+  .form-box-actions__col {
     gap: clamp( 0.875rem , 0.4103535354rem  +  2.3232323232vw , 2.3125rem );
   }
 }
 @supports not (gap: clamp( 0.875rem , 0.4103535354rem  +  2.3232323232vw , 2.3125rem )) {
-  .form-box-actions__row {
+  .form-box-actions__col {
     gap: calc(0.875rem + 1.4375 * (100vw - 20rem) / 61.875);
   }
 }
 @media (max-width: 48em) {
+  .form-box-actions__col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-box-actions__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.125rem, 1fr));
+  gap: 1.3125rem;
+}
+@media (max-width: 39.375em) {
   .form-box-actions__row {
     grid-template-columns: 1fr;
   }
@@ -2047,6 +2076,46 @@ body::after {
 @media (max-width: 48em) {
   .result-box-actions {
     order: 3;
+  }
+}
+
+.input-box-actions {
+  padding: 1.25rem;
+  border: 1px solid #CEE5FF;
+  background-color: #fff;
+  border-radius: 0.625rem;
+}
+
+.input-box-actions__line {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  gap: 3.5rem;
+  max-width: 33.125rem;
+  margin: 0px auto;
+}
+
+.input-box-actions__text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.219;
+  color: #6B748B;
+}
+@media (max-width: 39.375em) {
+  .input-box-actions__text {
+    display: none;
+  }
+}
+
+.input-box-actions__btn {
+  font-size: 1rem;
+  padding-top: 0.65625rem;
+  padding-bottom: 0.65625rem;
+}
+
+@media (max-width: 39.375em) {
+  .form-box-actions__row--actions .form-box-actions__btn {
+    order: 2;
   }
 }
 
@@ -6217,6 +6286,10 @@ h3 {
   .page__actions {
     padding-bottom: calc(1.25rem + 1.25 * (100vw - 20rem) / 61.875);
   }
+}
+
+.swiper-slide, swiper-slide {
+  display: flex !important;
 }
 /**
  * Swiper 9.4.1
