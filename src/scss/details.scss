@@ -60,6 +60,7 @@
 .header-box-info__calendar {
 }
 .calendar-box-info {
+	direction: rtl;
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
@@ -78,6 +79,7 @@
 }
 .calendar-box-info__input {
 	flex: 1 1 auto;
+	width: 100%;
 }
 
 .box-info__header {
