@@ -21,7 +21,7 @@ EffectFade, Lazy, Manipulation
 // Полный набор стилей из scss/libs/swiper.scss
 // import "../../scss/libs/swiper.scss";
 // Полный набор стилей из node_modules
-import 'swiper/css';
+// import 'swiper/css';
 
 // Инициализация слайдеров
 function initSliders() {
@@ -135,8 +135,13 @@ function initSliders() {
 			},
 			*/
 
-			// Пагинация
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-button-next',
+			},
 
+			// Пагинация
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
@@ -149,12 +154,6 @@ function initSliders() {
 				draggable: true,
 			},
 			*/
-
-			// Кнопки "влево/вправо"
-			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
-			},
 
 			// Брейкпоинты
 

@@ -747,21 +747,29 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
-						<div class="swiper-pagination"></div>
-						<button type="button" class="swiper-button-prev"></button>
-						<button type="button" class="swiper-button-next"></button>
-						<!-- </div> -->
+						<div class="typical-slider__swiper-pagination swiper-pagination"></div>
 					</div>
 
+					<button type="button" class="typical-slider__button-prev swiper-button-prev">
+						<svg>
+							<use xlink:href="img/icons/sprite.svg#arrow-left"></use>
+						</svg>
+					</button>
+					<button type="button" class="typical-slider__button-next swiper-button-next">
+						<svg>
+							<use xlink:href="img/icons/sprite.svg#arrow-right"></use>
+						</svg>
+					</button>
 				</div>
-			</section>
 
-			@@include('html/components/_application.htm',{})
+	</div>
+	</section>
 
-		</main>
-		@@include('html/_footer.htm',{})
+	@@include('html/components/_application.htm',{})
+
+	</main>
+	@@include('html/_footer.htm',{})
 	</div>
 	@@include('html/_popup.htm',{})
 	@@include('html/_js.htm',{})
