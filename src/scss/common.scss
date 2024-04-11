@@ -347,7 +347,8 @@
 
 .price-item {
 	direction: rtl;
-	font-size: rem(36);
+	// font-size: rem(36);
+	@include adaptiveValue("font-size", 36, 26);
 	font-weight: 700;
 	line-height: math.div(42.66, 36);
 	color: #0486D3;
@@ -709,6 +710,3 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 	color: #666;	
 }
 
-.item-choice__price {
-	@include adaptiveValue("font-size", 32, 26);
-}

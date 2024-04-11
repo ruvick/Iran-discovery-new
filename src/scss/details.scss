@@ -478,19 +478,31 @@
 
 .action-board {
 	display: flex;
+	align-items: flex-end;
 	justify-content: space-between;
-	gap: rem(20);
+	@include adaptiveValue("gap", 20, 14);
 	padding: rem(24) rem(50);
+	@include adaptiveValue("padding-top", 24, 18);
+	@include adaptiveValue("padding-bottom", 24, 18);
+	@include adaptiveValue("padding-left", 50, 18);
+	@include adaptiveValue("padding-right", 50, 18);
 	border: 2px solid #CEE5FF;
 	background: #E7F2FF;
 	border-radius: rem(10);
 	overflow: hidden;
+	@media (max-width: em(700)){
+		align-items: normal;
+		  flex-direction: column-reverse;
+	}	
 }
 .action-board__item {
 	display: flex;
 	flex-direction: column;
 	flex: 0 1 50%;
 	gap: rem(16);
+	@media (max-width: em(700)){
+		 flex: 0 1 100%; 
+	}
 }
 .action-board__price {
 }
