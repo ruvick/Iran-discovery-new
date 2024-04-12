@@ -59,6 +59,7 @@
 		z-index: 5;
 		direction: rtl;
 		text-align: right;
+		width: 100%;
 	}
 
 	// .card-banner__city
@@ -112,6 +113,19 @@
 		  }
 	 } 
   }
+}
+
+.card-banner__icons {
+}
+.icons-card-banner {
+	display: flex;
+	align-items: center;
+	gap: rem(20);
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(rem(100), 1fr)); 
+	gap: rem(20);
+}
+.icons-card-banner__item {
 }
 //========================================================================================================================================================
 .tours__slider {
