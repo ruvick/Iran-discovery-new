@@ -52,16 +52,22 @@
 		width: rem(12);
 		height: rem(18);
 	}
-	@media (max-width: em(768)){
+	@media (max-width: em(1024)){
 		 display: none; 
 	}
 }
 
 .swiper-button-next {
 	right: rem(-8);
+	@media (max-width: em(1360)){
+		 right: rem(10);
+	}
 }
 .swiper-button-prev {
 	left: rem(-8);
+	@media (max-width: em(1360)){
+		 left: rem(10);
+	}
 }  
 
 .typical-slider__container {
@@ -72,12 +78,12 @@
 }
 
 .swiper-pagination {
-	display: none;
+	display: none !important;
 	align-items: center;
 	justify-content: center;
 	gap: rem(6);
-	@media (max-width: em(768)){
-		 display: flex; 
+	@media (max-width: em(1024)){
+		 display: flex !important; 
 	}
 }
 

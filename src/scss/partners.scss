@@ -6,7 +6,10 @@
 	border-radius: rem(10);
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 8.5%;
+	// padding-bottom: 8.5%;
+	// padding-bottom: 35%;
+	// min-height: rem(64);
+	@include adaptiveValue("min-height", 110, 64);
 	img {
 		position: absolute;
 		top: 50%;
@@ -14,7 +17,8 @@
 		transform: translate(-50%, -50%);
 		height: 100%;
 		object-fit: contain;
-		padding: rem(23);
+		// padding: rem(23);
+		@include adaptiveValue("padding", 23, 10);
 	}
 }
 
@@ -25,4 +29,15 @@
 	.partners__slide {
 		padding-bottom: 26.2%;
   }
+}
+
+.partners__container {
+	@media (max-width: em(1280)){
+		 padding: 0; 
+	}
+}
+
+.partners__wrapper {
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
