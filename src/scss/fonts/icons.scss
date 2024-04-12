@@ -1,3 +1,29 @@
+// %ic {
+// 	font-family: "icons";
+// 	font-style: normal;
+// 	font-weight: normal;
+// 	font-variant: normal;
+// 	text-transform: none;
+// 	line-height: 1;
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// }
+// [class*="_icon-"] {
+// 	&:before {
+// 		@extend %ic;
+// 		display: block;
+// 	}
+// }
+
+@font-face {
+	font-family: "icons";
+	font-display: swap;
+	src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2#icons") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
 %ic {
 	font-family: "icons";
 	font-style: normal;
@@ -6,11 +32,93 @@
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale; 
 }
-[class*="_icon-"] {
+
+[class^="_icon-"],
+[class*=" _icon-"] {
 	&:before {
 		@extend %ic;
 		display: block;
 	}
 }
+
+._icon-arrow:before {
+	content: "\e900";
+ }
+ ._icon-arrow-left:before {
+	content: "\e901";
+ }
+ ._icon-arrow-right:before {
+	content: "\e902";
+ }
+ ._icon-arrow-spollers:before {
+	content: "\e903";
+ }
+ ._icon-arrows-top-bottom:before {
+	content: "\e904";
+ }
+ ._icon-check:before {
+	content: "\e907";
+ }
+ ._icon-check-c:before {
+	content: "\e908";
+ }
+ ._icon-check-soc:before {
+	content: "\e909";
+ }
+ ._icon-check-x:before {
+	content: "\e90a";
+ }
+ ._icon-coffe:before {
+	content: "\e90c";
+ }
+ ._icon-conference:before {
+	content: "\e90d";
+ }
+ ._icon-day:before {
+	content: "\e90e";
+ }
+ ._icon-e-soc:before {
+	content: "\e90f";
+ }
+ ._icon-instagram:before {
+	content: "\e912";
+ }
+ ._icon-location:before {
+	content: "\e913";
+ }
+ ._icon-map-location:before {
+	content: "\e914";
+ }
+ ._icon-night:before {
+	content: "\e915";
+ }
+ ._icon-nutrition:before {
+	content: "\e916";
+ }
+ ._icon-pdf:before {
+	content: "\e917";
+ }
+ ._icon-persons:before {
+	content: "\e919";
+ }
+ ._icon-swimming:before {
+	content: "\e91b";
+ }
+ ._icon-tea:before {
+	content: "\e91c";
+ }
+ ._icon-telegram:before {
+	content: "\e91d";
+ }
+ ._icon-viber:before {
+	content: "\e91f";
+ }
+ ._icon-whatsapp:before {
+	content: "\e920";
+ }
+ ._icon-wi-fi:before {
+	content: "\e921";
+ }
+ 

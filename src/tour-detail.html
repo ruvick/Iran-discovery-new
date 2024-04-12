@@ -78,8 +78,7 @@
 															<use xlink:href="img/icons/sprite.svg#arrow-down"></use>
 														</svg>
 													</div>
-													<input id="input" type="text" placeholder="تاریخ"
-														class="calendar-box-info__input">
+													<input type="text" placeholder="تاریخ" class="calendar-box-info__input">
 												</div>
 											</div>
 											<div class="header-box-info__item">
@@ -1100,9 +1099,75 @@
 							</div>
 
 							<div class="page__info-board info-board">
-								<div class="info-board__header"></div>
-								<div class="info-board__body"></div>
-								<div class="info-board__footer"></div>
+								<div class="info-board__header header-info-board">
+									<div class="header-info-board__title">هزینه تور و انواع اتاق</div>
+								</div>
+								<div class="info-board__body body-info-board">
+									<div class="body-info-board__table table-body-info-board">
+										<div class="table-body-info-board__row">
+											<div class="table-body-info-board__checbox">
+												<div class="checkbox">
+													<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
+														value="1" name="form[]" checked>
+													<label for="c_1" class="checkbox__label">
+														<span class="checkbox__text">30.000.000
+															تومان
+														</span>
+													</label>
+												</div>
+											</div>
+											<div class="table-body-info-board__text">
+												تک نفره
+											</div>
+											<div class="table-body-info-board__value">
+												SGL
+											</div>
+										</div>
+										<div class="table-body-info-board__row">
+											<div class="table-body-info-board__checbox">
+												<div class="checkbox">
+													<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox"
+														value="1" name="form[]">
+													<label for="c_2" class="checkbox__label">
+														<span class="checkbox__text">30.000.000
+															تومان
+														</span>
+													</label>
+												</div>
+											</div>
+											<div class="table-body-info-board__text">
+												دو نفره
+											</div>
+											<div class="table-body-info-board__value">
+												DBL
+											</div>
+										</div>
+										<div class="table-body-info-board__row">
+											<div class="table-body-info-board__checbox">
+												<div class="checkbox">
+													<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox"
+														value="1" name="form[]">
+													<label for="c_3" class="checkbox__label">
+														<span class="checkbox__text">30.000.000
+															تومان
+														</span>
+													</label>
+												</div>
+											</div>
+											<div class="table-body-info-board__text">
+												دو تک نفره
+											</div>
+											<div class="table-body-info-board__value">
+												TWN
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="info-board__footer footer-info-board">
+									<div class="header-info-board__buttons">
+										<button type="button" class="header-info-board__btn btn">سفارش </button>
+									</div>
+								</div>
 							</div>
 
 							<div class="page__share share">
@@ -1126,7 +1191,37 @@
 										</a>
 										<a href="#" class="social-share__icon icon-social">
 											<svg>
-												<use xlink:href="img/icons/sprite.svg#instagram"></use>
+												<g clip-path="url(#clip0_734_28175)">
+													<path
+														d="M30.625 0H9.375C4.19733 0 0 4.19733 0 9.375V30.625C0 35.8027 4.19733 40 9.375 40H30.625C35.8027 40 40 35.8027 40 30.625V9.375C40 4.19733 35.8027 0 30.625 0Z"
+														fill="url(#paint0_radial_734_28175)" />
+													<path
+														d="M30.625 0H9.375C4.19733 0 0 4.19733 0 9.375V30.625C0 35.8027 4.19733 40 9.375 40H30.625C35.8027 40 40 35.8027 40 30.625V9.375C40 4.19733 35.8027 0 30.625 0Z"
+														fill="url(#paint1_radial_734_28175)" />
+													<path
+														d="M20.0012 6.99976C16.4706 6.99976 16.0275 7.01523 14.6409 7.07828C13.2569 7.14171 12.3122 7.36076 11.4857 7.68225C10.6305 8.01427 9.90524 8.45847 9.1827 9.18126C8.45951 9.90393 8.0153 10.6292 7.68224 11.4839C7.35984 12.3107 7.14053 13.2558 7.07826 14.6391C7.01625 16.0258 7 16.4691 7 19.9998C7 23.5304 7.0156 23.9721 7.07852 25.3587C7.14222 26.7427 7.36127 27.6874 7.6825 28.5139C8.01478 29.369 8.45899 30.0943 9.18179 30.8168C9.9042 31.54 10.6295 31.9852 11.484 32.3173C12.3112 32.6387 13.256 32.8578 14.6397 32.9212C16.0264 32.9843 16.4692 32.9998 19.9996 32.9998C23.5305 32.9998 23.9723 32.9843 25.3589 32.9212C26.7428 32.8578 27.6886 32.6387 28.5158 32.3173C29.3705 31.9852 30.0948 31.54 30.817 30.8168C31.5402 30.0943 31.9843 29.369 32.3175 28.5143C32.637 27.6874 32.8565 26.7424 32.9215 25.359C32.9837 23.9724 33 23.5304 33 19.9998C33 16.4691 32.9837 16.0261 32.9215 14.6394C32.8565 13.2554 32.637 12.3109 32.3175 11.4843C31.9843 10.6292 31.5402 9.90393 30.817 9.18126C30.094 8.45821 29.3708 8.01401 28.515 7.68238C27.6862 7.36076 26.741 7.14158 25.357 7.07828C23.9703 7.01523 23.5288 6.99976 19.9971 6.99976H20.0012ZM18.8349 9.34246C19.1811 9.34194 19.5674 9.34246 20.0012 9.34246C23.4723 9.34246 23.8836 9.35494 25.2543 9.41721C26.5218 9.47519 27.2098 9.68696 27.668 9.86493C28.2748 10.1005 28.7073 10.3822 29.162 10.8373C29.617 11.2923 29.8986 11.7256 30.1348 12.3323C30.3128 12.7899 30.5248 13.4779 30.5825 14.7453C30.6448 16.1158 30.6583 16.5274 30.6583 19.9968C30.6583 23.4662 30.6448 23.8779 30.5825 25.2482C30.5245 26.5157 30.3128 27.2036 30.1348 27.6614C29.8992 28.2681 29.617 28.7 29.162 29.1548C28.707 29.6098 28.275 29.8914 27.668 30.127C27.2103 30.3058 26.5218 30.517 25.2543 30.575C23.8839 30.6373 23.4723 30.6508 20.0012 30.6508C16.5299 30.6508 16.1185 30.6373 14.7481 30.575C13.4806 30.5165 12.7927 30.3048 12.334 30.1268C11.7274 29.8911 11.294 29.6095 10.839 29.1545C10.384 28.6995 10.1024 28.2673 9.86624 27.6603C9.68827 27.2026 9.47624 26.5146 9.41852 25.2472C9.35625 23.8767 9.34377 23.4651 9.34377 19.9935C9.34377 16.522 9.35625 16.1125 9.41852 14.7421C9.4765 13.4746 9.68827 12.7866 9.86624 12.3284C10.1019 11.7217 10.384 11.2884 10.8392 10.8334C11.2942 10.3784 11.7274 10.0967 12.3342 9.86064C12.7924 9.68189 13.4806 9.47064 14.7481 9.4124C15.9474 9.35819 16.4121 9.34194 18.8349 9.33921V9.34246ZM26.9406 11.501C26.0793 11.501 25.3806 12.1991 25.3806 13.0604C25.3806 13.9217 26.0793 14.6204 26.9406 14.6204C27.8018 14.6204 28.5006 13.9217 28.5006 13.0604C28.5006 12.1992 27.8018 11.5004 26.9406 11.5004V11.501ZM20.0012 13.3237C16.3144 13.3237 13.3251 16.3129 13.3251 19.9998C13.3251 23.6866 16.3144 26.6744 20.0012 26.6744C23.6881 26.6744 26.6763 23.6866 26.6763 19.9998C26.6763 16.313 23.6878 13.3237 20.0009 13.3237H20.0012ZM20.0012 15.6664C22.3943 15.6664 24.3346 17.6064 24.3346 19.9998C24.3346 22.3929 22.3943 24.3331 20.0012 24.3331C17.6079 24.3331 15.6679 22.3929 15.6679 19.9998C15.6679 17.6064 17.6079 15.6664 20.0012 15.6664Z"
+														fill="white" />
+												</g>
+												<defs>
+													<radialGradient id="paint0_radial_734_28175" cx="0" cy="0" r="1"
+														gradientUnits="userSpaceOnUse"
+														gradientTransform="translate(10.625 43.0808) rotate(-90) scale(39.643 36.8711)">
+														<stop stop-color="#FFDD55" />
+														<stop offset="0.1" stop-color="#FFDD55" />
+														<stop offset="0.5" stop-color="#FF543E" />
+														<stop offset="1" stop-color="#C837AB" />
+													</radialGradient>
+													<radialGradient id="paint1_radial_734_28175" cx="0" cy="0" r="1"
+														gradientUnits="userSpaceOnUse"
+														gradientTransform="translate(-6.70016 2.88141) rotate(78.681) scale(17.7206 73.045)">
+														<stop stop-color="#3771C8" />
+														<stop offset="0.128" stop-color="#3771C8" />
+														<stop offset="1" stop-color="#6600FF" stop-opacity="0" />
+													</radialGradient>
+													<clipPath id="clip0_734_28175">
+														<rect width="40" height="40" fill="white" />
+													</clipPath>
+												</defs>
 											</svg>
 										</a>
 										<a href="#" class="social-share__icon icon-social">

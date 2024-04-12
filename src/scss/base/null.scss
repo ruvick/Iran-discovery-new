@@ -38,6 +38,7 @@ button,
 textarea {
 	font-family: $fontFamily;
 	font-size: inherit;
+	outline:none;
 }
 button {
 	cursor: pointer;

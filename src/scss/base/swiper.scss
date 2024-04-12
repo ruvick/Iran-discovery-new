@@ -62,15 +62,17 @@
 }
 .swiper-button-prev {
 	left: rem(-8);
-}
+}  
 
 .typical-slider__container {
 	position: relative;
+	&:not(:last-child){
+		margin-bottom: rem(35);
+	}
 }
 
 .swiper-pagination {
 	display: none;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: rem(6);

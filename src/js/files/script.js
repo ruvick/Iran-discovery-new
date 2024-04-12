@@ -2,18 +2,8 @@
 import { isMobile } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
-
 //========================================================================================================================================================
 
-// new AirDatepicker('#input', {
-// 	inline: true
-// })
-
-// new index_es('#input', {
-// 	inline: true,
-// 	range: true,
-// 	multipleDatesSeparator: ' - '
-// });
 
 
 

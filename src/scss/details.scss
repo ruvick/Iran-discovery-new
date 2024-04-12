@@ -79,7 +79,7 @@
 }
 .calendar-box-info__input {
 	flex: 1 1 auto;
-	width: 100%;
+	width: 100%; 
 }
 
 .box-info__header {
@@ -464,16 +464,107 @@
 	display: flex;
 	flex-direction: column;
 	padding: rem(30);
+	@include adaptiveValue("padding-top", 30, 20);
+	@include adaptiveValue("padding-botom", 30, 20);
+	@include adaptiveValue("padding-left", 30, 24);
+	@include adaptiveValue("padding-right", 30, 24);
 	border: 2px solid #CEE5FF;
 	background-color: #E7F2FF;
 	border-radius: rem(10);
 	overflow: hidden;
+	gap: rem(24);
 }
 .info-board__header {
+
 }
+.header-info-board {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: rem(10);
+}
+.header-info-board__title {
+	@include adaptiveValue("font-size", 40, 24);
+	font-weight: 600;
+	line-height: math.div(47.4, 40);
+	text-align: right;
+}
+.body-info-board {
+	
+}
+.body-info-board__table {
+
+} 
+.table-body-info-board__row {
+	display: grid; 
+	grid-template-columns: 300px 1fr 1fr;
+	@include adaptiveValue("gap", 20, 8);
+	text-align: right;
+	padding: rem(20) 0;
+	&:not(:last-child){
+		border-bottom: 1px solid #CEE5FF;
+	}
+	@media (max-width: em(630)){
+		grid-template-columns: 1fr;
+	}
+}
+.table-body-info-board {
+	display: flex;
+	flex-direction: column;
+}
+.table-body-info-board__checbox {
+	.checkbox {
+		display: flex;
+		align-items: center;
+		direction: ltr;
+	}
+	.checkbox__text {
+		font-size: rem(28);
+		font-weight: 700;
+		line-height: math.div(44.8, 28);
+		white-space: nowrap;
+	}
+	.checkbox__label:before {
+		align-self: center;
+	}
+	.checkbox__label {
+		flex-wrap: wrap;
+  }
+}
+.table-body-info-board__text {
+	font-size: rem(24);
+	font-weight: 600;
+	line-height: math.div(38.4, 24);
+	text-align: right;
+}
+.table-body-info-board__value {
+	font-size: rem(28);
+	font-weight: 600;
+	line-height: math.div(44.8, 28);
+	text-align: right;
+	text-transform: uppercase;
+}
+
 .info-board__body {
 }
+.footer-info-board {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: rem(10);
+}
 .info-board__footer {
+
+}
+.header-info-board__buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: rem(10);
+	width: 100%;
+}
+.header-info-board__btn {
+	width: 100%;
 }
 
 .action-board {
