@@ -20,7 +20,7 @@
 	}
 }
 
-.item-articles {
+.item-articles { 
 	 display: flex;
 	 border-radius: rem(10);
 	 border: 1px solid #CEE5FF;
@@ -68,10 +68,24 @@
 		// height: 100%;
 		padding-bottom: 31.5%;
 		background: #C2C2C2;
+		overflow: hidden;
 		@media (max-width: em(540)){
 			  flex: 0 1 100%;
 			  padding-bottom: 65%;
 		}
+		img {
+			transition: $mainTransition;
+		}
+	}
+}
+
+@media (any-hover: hover){
+	.item-articles {
+		&:hover { 
+			.item-articles__img-ibg img {
+				transform: scale(1.05);
+			}
+	  } 
 	}
 }
 
