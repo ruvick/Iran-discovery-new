@@ -396,6 +396,15 @@ h3 {
 	@include adaptiveValue("padding-bottom", 40, 20);
 }
 
+.page__article-sl {
+	@include adaptiveValue("padding-bottom", 40, 20);
+}
+
 .swiper-slide, swiper-slide {
 	display: flex !important ;
+}
+
+.page__text-info {
+	@include adaptiveValue("padding-top", 40, 20);
+	@include adaptiveValue("padding-bottom", 40, 20);
 }

@@ -274,11 +274,14 @@
 	color: #FF6A00;
 } 
 .rating-articles__rating {
+	display: flex;
+	align-items: center;
+	svg {
+		width: rem(32);
+		height: rem(32);
+	}
 }
-.full-stars {
-}
-.rating-group {
-}
+
 //========================================================================================================================================================
 
 .location-articles {

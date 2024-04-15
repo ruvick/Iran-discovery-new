@@ -172,3 +172,27 @@
 		height: 100%;
 	}
 }
+
+
+.text-info {
+	direction: rtl;
+}
+.text-info__container {
+}
+.text-info__descp {
+	p {
+		@include adaptiveValue("font-size", 20, 12);
+		line-height: 32px;
+		line-height: math.div(32, 20);
+		text-align: right;
+			&:not(:last-child){
+				margin-bottom: rem(15);
+			}
+		}
+}
+.text-info__descp-size-m {
+	max-width: 73%;
+	@media (max-width: em(991)){
+		 max-width: 100%; 
+	}
+}
