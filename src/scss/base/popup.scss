@@ -109,10 +109,13 @@ body::after {
 	.input {
 		@include adaptiveValue("height", 60, 38);
 		border: rem(1) solid #C2C2C2;
-		&:not(:last-child){
-			@include adaptiveValue("margin-bottom", 24, 15);
-		}
+			&:not(:last-child){
+		@include adaptiveValue("margin-bottom", 24, 15);
 	}
+	}
+	// &:not(:last-child){
+	// 	@include adaptiveValue("margin-bottom", 24, 15);
+	// }
 }
 
 .form-popup__options {
