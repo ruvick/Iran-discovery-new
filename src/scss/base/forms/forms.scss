@@ -8,10 +8,15 @@
 	&__line {
 	}
 	&__input {
+	
 	}
 	&__button {
 	}
 	&__error {
+		padding-right: rem(8);
+		color: red;
+		font-size: rem(14);
+		margin-top: rem(8);
 	}
 }
 //</FORM>

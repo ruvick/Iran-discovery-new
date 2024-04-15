@@ -54,7 +54,7 @@ body::after {
 	@include adaptiveValue("padding-top", 32, 24);
 	@include adaptiveValue("padding-bottom", 32, 24);
 	@include adaptiveValue("padding-left", 62, 30);
-	@include adaptiveValue("padding-right", 62, 30);
+	@include adaptiveValue("padding-right", 62, 33);
 	width: 100%;
 	max-width: rem(740);
 	border-radius: rem(10);
@@ -70,6 +70,10 @@ body::after {
 	@include adaptiveValue("right", 32, 13);
 	right: rem(32);
 	font-size: rem(32);
+	svg {
+		@include adaptiveValue("width", 30, 20);
+		@include adaptiveValue("height", 30, 20);
+	}
 }
 
 .popup__title {
@@ -134,3 +138,30 @@ body::after {
 		color: #0587D6;
 	}
 }
+
+.popup__content--dev {
+	@include adaptiveValue("padding-top", 45, 24);
+	@include adaptiveValue("padding-bottom", 55, 24);
+	// @include adaptiveValue("padding-left", 62, 30);
+	// @include adaptiveValue("padding-right", 62, 30);
+	.popup__body {
+		@include adaptiveValue("padding-top", 65, 20);
+		@include adaptiveValue("padding-bottom", 30, 20);
+	}
+	.popup__title {
+		text-align: center;
+	}
+}
+
+.form-popup__check-popup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	svg {
+		width: rem(83);
+		height: rem(63);
+	}
+}
+
+
+

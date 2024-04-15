@@ -7,18 +7,18 @@
 				<div class="box-application__subtitle">ما با شما تماس میگیریم </div>
 			</div>
 
-			<form action="#" class="box-application__form form-application">
+			<form data-dev data-popup-message="#sending" action="#" class="box-application__form form-application">
 
 				<div class="form-application__item item-form">
 					<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
-					<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value=""
-						class="item-form__input input">
+					<input id="name" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
+						class="item-form__input input" data-required>
 				</div>
 
 				<div class="form-application__item item-form item-form--tel">
 					<label for="tel" class="item-form__label">شماره تماس <span>*</span></label>
-					<input id="tel" autocomplete="off" type="tel" name="form[]" placeholder="+98" data-value="Телефон"
-						class="item-form__input input phone">
+					<input id="tel" autocomplete="off" type="tel" name="form[]" placeholder="+98"
+						data-error="فیلد را پر کنید" class="item-form__input input phone" data-required>
 				</div>
 
 				<div class="form-application__item item-form">
