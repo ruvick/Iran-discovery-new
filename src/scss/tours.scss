@@ -343,3 +343,22 @@
 	line-height: math.div(18.96, 16);
 	text-align: right;
 }
+
+.icons-card-banner__item-ico {
+	flex-direction: row-reverse;
+	&:nth-child(1)	{
+		text-align: right;
+		justify-content: flex-end;
+		svg {
+			width: rem(30);
+			height: rem(30);
+		}
+	}
+
+	&:nth-child(2)	{
+		svg {
+			width: rem(35);
+			height: rem(23);
+		}
+	}
+}
