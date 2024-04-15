@@ -116,6 +116,9 @@ body::after {
 	// &:not(:last-child){
 	// 	@include adaptiveValue("margin-bottom", 24, 15);
 	// }
+	.form__error {
+		margin-top: -0.625rem;
+  }
 }
 
 .form-popup__options {
