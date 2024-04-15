@@ -1,14 +1,52 @@
 // Подключение функционала "Чертогов Фрилансера"
-import { isMobile } from "./functions.js";
+import { isMobile, bodyLockToggle, bodyLock, bodyUnlock, removeClasses } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
 //========================================================================================================================================================
 
+// const controlPopupBtn = document.querySelector('.js-control-popup');
+// const controlPagePopup = document.querySelector('.control-page-popup');
 
+// if (controlPopupBtn) {
+// 	controlPopupBtn.addEventListener("click", function (e) {
+// 		if (controlPagePopup) {
+// 			controlPagePopup.classList.toggle('_active');
+// 			bodyLockToggle();
+// 		}
+// 	});
+// }
 
+window.onload = function () {
 
+	document.addEventListener("click", documentActions);
 
+	function documentActions(e) {
 
+		const targetElement = e.target;
+
+		if (window.innerWidth <= 540) {
+
+			// Popup чекбоксов
+			if (targetElement.classList.contains('js-control-popup') || targetElement.closest('.js-control-popup')) {
+				targetElement.closest('.control-page').classList.toggle('_active');
+				bodyLock();
+			}
+
+			const controlPagePopup = targetElement.closest('.control-page-popup');
+			const controlPagePopupInner = targetElement.closest('.control-page-popup__inner');
+
+			if (controlPagePopup && !controlPagePopupInner) {
+				controlPagePopup.closest('.control-page').classList.remove('_active');
+				bodyUnlock();
+			}
+			//========================================================================================================================================================
+
+		}
+
+	}
+
+}
+//========================================================================================================================================================
 
 // gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 

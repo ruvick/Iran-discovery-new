@@ -239,8 +239,10 @@
 	direction: rtl;
 	@include adaptiveValue("gap", 25, 10);
 }
-
 .control-page__form {
+	gap: rem(20); 
+}
+.control-page-popup__inner {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -710,3 +712,107 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 	color: #666;	
 }
 
+.control-page-popup {
+	@media (max-width: em(540)){
+		visibility: hidden;
+    	// transform: scale(0);
+    	transition: all 0.3s ease 0s;
+		position: fixed; 
+		top: 0;
+		left: 0;
+		z-index: 60; 
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: rem(15);
+
+		.control-page-popup__inner {
+			visibility: hidden;
+			transform: scale(0);
+			flex-direction: column;
+			align-items: flex-start;
+			gap: rem(12);
+			max-width: rem(320);
+			width: 100%; 
+			padding: rem(20);
+			background-color: #fff;
+			border-radius: rem(10);
+			box-shadow: 0px 4px 30px 0px #0000001A;
+			transition: all 0.3s ease 0s;
+		}
+
+		.cat-button {
+			width: 100%;
+			justify-content: flex-start;
+			transition: none;
+	  }
+	  .cat-button__btn {
+		padding: 0;
+		width: 100%;
+		text-align: right;
+		position: relative;
+		transition: none;
+		}
+  		.cat-button input[type=radio]:checked + .cat-button__btn {
+			background-color: #fff;
+			&::before{
+				position: absolute;
+				content:''; 
+				top: 50%; 
+				left: 0%;
+				transform: translateY(-50%);
+				flex: 0 0 rem(18); 
+				width: rem(18);
+				height: rem(13);
+				background-size: 100%; 
+				background-position: 0 0; 
+				background-repeat: no-repeat; 
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxOCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOCAxLjMyOTQ5TDYuMTMyIDEzTDAgNi45NzAwNUwxLjM1MTk5IDUuNjQwNTVMNi4xMzIgMTAuMzQxTDE2LjY0OCAwTDE4IDEuMzI5NDlaIiBmaWxsPSIjNDQ0NDQ0Ii8+Cjwvc3ZnPgo=');
+			}
+		}
+	}
+}
+
+.control-page__name--mob {
+	@media (max-width: em(540)){
+		 display: none; 
+	}
+}
+
+.control-page__mob {
+	display: none;
+	@media (max-width: em(540)){
+		 display: flex; 
+	}
+}
+.mob-control {
+	flex-direction: row-reverse;
+	align-items: center;
+	gap: rem(8);
+}
+.mob-control__name {
+	font-size: rem(20);
+	font-weight: 700;
+	line-height: math.div(23.7, 20);
+}
+.mob-control__button {
+	flex: 0 0 rem(22);
+	width: rem(22);
+	height: rem(22);
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+} 
+
+.control-page._active {
+	@media (max-width: em(540)){
+		.control-page-popup__inner,
+		.control-page-popup {
+				visibility: visible;
+				transform: scale(1);
+		}
+	}
+}

@@ -173,6 +173,11 @@
 	}
 }
 
+#tractor {
+	// transform: translate(100px,100px);
+	// transform: rotate(-10deg);
+}
+
 
 .text-info {
 	direction: rtl;
@@ -186,7 +191,7 @@
 		line-height: math.div(32, 20);
 		text-align: right;
 			&:not(:last-child){
-				margin-bottom: rem(15);
+				margin-bottom: rem(15); 
 			}
 		}
 }
