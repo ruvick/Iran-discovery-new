@@ -182,11 +182,15 @@
 	flex: 0 1 100%;
 	overflow: hidden;
 	border-radius: rem(10);
-	border: 1px solid #CEE5FF;
+	border: 1px solid #CEE5FF; 
 	// .article-card__img
 	&__img-ibg {
 		background: #C2C2C2;
 		padding-bottom: 72%;
+		overflow: hidden;
+		img {
+			transition: $mainTransition;
+		}
 	}
 
 	// .article-card__descp
@@ -235,6 +239,15 @@
 		font-weight: 400;
 		line-height: math.div(28, 20);
 		text-align: right;
+	}
+}
+.article-card {
+	@media (any-hover: hover){
+		 &:hover { 
+			.article-card__img-ibg img {
+				transform: scale(1.05);
+			}
+	  } 
 	}
 }
 //========================================================================================================================================================
