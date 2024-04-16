@@ -119,6 +119,10 @@ body::after {
 	.form__error {
 		margin-top: -0.625rem;
   }
+  .select__value {
+	min-height: rem(60);
+	padding-left: rem(23);
+  }
 }
 
 .form-popup__options {

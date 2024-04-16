@@ -27,3 +27,9 @@ new AirDatepicker('.calendar-box-info__input', {
 	multipleDatesSeparator: ' - ',
 	buttons: [buttonAir, 'clear']
 })
+
+new AirDatepicker('#tour-booking', {
+	// locale: localeEn,
+	range: true,
+	multipleDatesSeparator: ' - ',
+})

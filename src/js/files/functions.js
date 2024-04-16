@@ -1,6 +1,7 @@
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
 
+
 /* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
 export function isWebp() {
 	// Проверка поддержки webp
@@ -416,6 +417,10 @@ export function menuInit() {
 			if (bodyLockStatus && e.target.closest('.icon-menu')) {
 				bodyLockToggle();
 				document.documentElement.classList.toggle("menu-open");
+			}
+			if (bodyLockStatus && !e.target.closest('.navigation-header')) {
+				bodyLockToggle();
+				document.documentElement.classList.remove("menu-open");
 			}
 		});
 	};
