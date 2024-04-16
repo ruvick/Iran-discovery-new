@@ -325,19 +325,25 @@
 
 							</div>
 
-							<div class="page__action-board action-board">
+							<form action="#" class="page__action-board action-board">
 								<div class="action-board__item">
 									<div class="action-board__price price-item">30.000.000 تومان</div>
-									<button type="button" class="action-board__btn btn">سفارش </button>
+									<button type="submit" class="action-board__btn btn">سفارش </button>
 								</div>
 								<div class="action-board__item">
+
 									<div class="item-form">
 										<label for="name" class="item-form__label">تعداد بازدیدکنندگان</label>
-										<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-											data-value="" class="item-form__input input">
+										<select name="form[]" class="form">
+											<option value="1" selected="selected">1 بزرگسال</option>
+											<option value="2">2 بزرگسال</option>
+											<option value="3">3 بزرگسال</option>
+											<option value="4">4 بزرگسال</option>
+										</select>
 									</div>
+
 								</div>
-							</div>
+							</form>
 
 							<div class="page__share share">
 								<a href="articles-catalog.html" class="share__link btn btn--light">بازگشت به مقالات</a>

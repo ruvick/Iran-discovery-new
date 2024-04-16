@@ -681,13 +681,17 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 	border: 1px solid #CEE5FF;
 	background-color: #E7F2FF;
 	border-radius: rem(10);
+	.input-item {
+		@include adaptiveValue("height", 48, 40);
+		border: 1px solid #CEE5FF;
+	}
 }
 
 .item-choice__row {
 	display: grid; 
 	grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr)); 
 	@include adaptiveValue("gap", 30, 14);
-	align-items: start;
+	align-items: center;
 	@media (max-width: em(414)){
 		grid-template-columns: 1fr;  
 	}

@@ -580,7 +580,7 @@
 	border: 2px solid #CEE5FF;
 	background: #E7F2FF;
 	border-radius: rem(10);
-	overflow: hidden;
+	// overflow: hidden;
 	@media (max-width: em(700)){
 		align-items: normal;
 		  flex-direction: column-reverse;
@@ -594,12 +594,17 @@
 	@media (max-width: em(700)){
 		 flex: 0 1 100%; 
 	}
+	.select {
+		// height: rem(48);
+	}
 }
 .action-board__price {
 }
 .price-item {
 }
 .action-board__btn {
+	padding: rem(5) rem(30);
+	min-height: rem(48);
 }
 .btn {
 }
