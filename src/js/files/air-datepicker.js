@@ -21,15 +21,17 @@ let buttonAir = {
 	}
 }
 
-new AirDatepicker('.calendar-box-info__input', {
+new AirDatepicker('.detail-calendar', {
 	// locale: localeEn,
 	range: true,
 	multipleDatesSeparator: ' - ',
 	buttons: [buttonAir, 'clear']
 })
 
-new AirDatepicker('#tour-booking', {
-	// locale: localeEn,
-	range: true,
-	multipleDatesSeparator: ' - ',
+new AirDatepicker('.tour-booking-calendar', {
+
+})
+
+new AirDatepicker('.hotel-reservation-calendar', {
+
 })

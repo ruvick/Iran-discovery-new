@@ -183,7 +183,7 @@
 										<use xlink:href="img/icons/sprite.svg#arrow-down"></use>
 									</svg>
 								</div>
-								<input id="tour-booking" type="text" class="calendar-box-info__input" placeholder="تاریخ">
+								<input type="text" class="calendar-box-info__input tour-booking-calendar" placeholder="تاریخ">
 							</div>
 						</div>
 
@@ -248,8 +248,8 @@
 										<use xlink:href="img/icons/sprite.svg#arrow-down"></use>
 									</svg>
 								</div>
-								<input id="tour-booking" type="text" class="calendar-box-info__input" placeholder="تاریخ"
-									data-required>
+								<input type="text" class="calendar-box-info__input hotel-reservation-calendar"
+									placeholder="تاریخ" data-required>
 							</div>
 						</div>
 
@@ -263,20 +263,23 @@
 						</div>
 
 						<div class="form-popup__item item-form">
-							<input autocomplete="off" type="text" placeholder="تعداد مهمان" name="form[]"
-								data-error="فیلد را پر کنید" class="item-form__input input" data-required>
-						</div>
-
-						<div class="form-popup__item item-form">
-							<label for="name4" class="item-form__label">تعداد مهمان <span>*</span></label>
-							<input id="name4" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
-								class="item-form__input input" data-required>
+							<label for="name" class="item-form__label">تعداد مهمان <span>*</span></label>
+							<select name="form[]" class="form">
+								<option value="1" selected="selected">1 بزرگسال</option>
+								<option value="2">2 بزرگسال</option>
+								<option value="3">3 بزرگسال</option>
+								<option value="4">4 بزرگسال</option>
+							</select>
 						</div>
 
 						<div class="form-popup__item item-form">
 							<label for="name5" class="item-form__label">انواع اتاق ها <span>*</span></label>
-							<input id="name5" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
-								class="item-form__input input" data-required>
+							<select name="form[]" class="form">
+								<option value="1" selected="selected">انواع اتاق ها</option>
+								<option value="2">انواع اتاق ها</option>
+								<option value="3">انواع اتاق ها</option>
+								<option value="4">انواع اتاق ها</option>
+							</select>
 						</div>
 
 						<div class="form-popup__item">
@@ -324,8 +327,12 @@
 
 						<div class="form-popup__item item-form">
 							<label for="name" class="item-form__label">تعداد مهمان <span>*</span></label>
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
-								class="item-form__input input" data-required>
+							<select name="form[]" class="form">
+								<option value="1" selected="selected">1 بزرگسال</option>
+								<option value="2">2 بزرگسال</option>
+								<option value="3">3 بزرگسال</option>
+								<option value="4">4 بزرگسال</option>
+							</select>
 						</div>
 
 						<div class="form-popup__item">
@@ -373,8 +380,28 @@
 
 						<div class="form-popup__item item-form">
 							<label for="name" class="item-form__label">تاریخ <span>*</span></label>
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
-								class="item-form__input input" data-required>
+
+							<div class="input-item">
+								<div class="input-item__icon">
+									<svg>
+										<use xlink:href="img/icons/sprite.svg#arrow-down"></use>
+									</svg>
+								</div>
+								<div class="input-item__input">
+									<input autocomplete="off" type="text" name="form[]">
+								</div>
+								<div class="input-item__icon-calendar">
+									<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.125 11.875H26.875M3.125 11.875V25C3.125 25.3315 3.2567 25.6495 3.49112 25.8839C3.72554 26.1183 4.04348 26.25 4.375 26.25H25.625C25.9565 26.25 26.2745 26.1183 26.5089 25.8839C26.7433 25.6495 26.875 25.3315 26.875 25V11.875M3.125 11.875V5.625C3.125 5.29348 3.2567 4.97554 3.49112 4.74112C3.72554 4.5067 4.04348 4.375 4.375 4.375H25.625C25.9565 4.375 26.2745 4.5067 26.5089 4.74112C26.7433 4.97554 26.875 5.29348 26.875 5.625V11.875"
+											stroke="#0587D6" stroke-width="1.8" stroke-linejoin="round" />
+										<path
+											d="M10 2.5V7.5M20 2.5V7.5M17.5 21.25H21.25M8.75 21.25H12.5M17.5 16.25H21.25M8.75 16.25H12.5"
+											stroke="#0587D6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+
 						</div>
 
 						<div class="form-popup__item">
