@@ -23,7 +23,7 @@
 	// .checkbox__label
 	&__label {
 		cursor: pointer;
-		display: inline-flex;
+		display: inline-flex; 
 		align-items: center;
 		position: relative;
 		gap: 10px;
@@ -34,7 +34,7 @@
 			width: rem(24);
 			height: rem(24);
 			border-radius: rem(4);
-			border: rem(1) solid #FF6A00;
+			border: rem(1) solid #C2C2C2;
 		}
 	}
 	// .checkbox__text
@@ -46,5 +46,14 @@
 		a {
 			color: #0587D6;
 		}
+	}
+}
+
+.checkbox._form-error {
+	.checkbox__label:before {
+		border: 1px solid red;
+	}
+	.form__error {
+		display: none;
 	}
 }

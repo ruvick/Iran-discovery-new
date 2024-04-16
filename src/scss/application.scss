@@ -97,4 +97,7 @@
 	// .form-application__item
 	&__item {
 	}
+	.checkbox__label:before {
+		border: rem(1) solid #FF6A00;
+	}
 }
