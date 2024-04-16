@@ -247,9 +247,10 @@
 }
 .logo {
 	display: flex;
-	flex: 0 0 rem(122);
+	// flex: 0 0 rem(122);
 	// height: rem(72);
-	width: rem(122);
+	// width: rem(122);
+	@include adaptiveValue("width", 122, 76);
 		// .logo__text
 
 		&__text {
@@ -273,7 +274,8 @@
 		}
 		&__icon {
 			// flex: 0 0 rem(66);
-			@include adaptiveValue("width", 66, 43);
+			// @include adaptiveValue("width", 66, 43);
+			width: 100%;
 			height: 100%;
 		}
 }
