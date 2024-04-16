@@ -78,3 +78,11 @@
 	text-align: center;
 	color: #fff;
 }
+
+.main-banner__body--center {
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
