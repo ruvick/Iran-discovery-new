@@ -1,9 +1,13 @@
 .main-banner {
 	position: relative;
 	background-size: cover !important;
-
+	&__slider {
+		position: relative;
+		background-size: cover !important;
+	}
 	// .main-banner__container
 	&__container {
+		width: 100%;
 	}
 
 	// .main-banner__descp
