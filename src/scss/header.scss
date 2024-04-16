@@ -59,6 +59,15 @@
 	}
 }
 
+.IsAdmin #panel {
+	position: static !important;
+	z-index: 5000;
+	width: 100%;
+	&:not(:last-child){
+		margin-bottom: rem(20);
+	}
+}
+
 .main-header {
 
 	// .main-header__contacts 
