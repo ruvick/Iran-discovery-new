@@ -25,7 +25,7 @@
 
 	// .footer__navigation
 
-	&__navigation {
+	&__navigation { 
 		
 	}
 
@@ -162,32 +162,55 @@
 
 }
 
-.menu-footer {
-
-	// .menu-footer__item
-
-	&__item {
-		display: inline-flex;
-		&:not(:last-child){
-			margin-bottom: rem(14);
+.navigation-footer {
+	ul {
+		li {
+			display: inline-flex;
+			&:not(:last-child){
+				margin-bottom: rem(14);
+			}
 		}
-	}
-
-	// .menu-footer__link
-
-	&__link {
-		font-size: rem(16);
-		font-weight: 400;
-		line-height: math.div(18.96, 16);
-		color: #0587D6;
-		transition: all 0.4s ease 0s;
-		@media (any-hover: hover){
-			 &:hover { 
-			 color: #444; 
-		  } 
+		a {
+			font-size: rem(16);
+			font-weight: 400;
+			line-height: math.div(18.96, 16);
+			color: #0587D6;
+			transition: all 0.4s ease 0s;
+			@media (any-hover: hover){
+				 &:hover { 
+				 color: #444; 
+			  } 
+			}
 		}
 	}
 }
+
+// .menu-footer {
+
+// 	// .menu-footer__item
+
+// 	&__item {
+// 		display: inline-flex;
+// 		&:not(:last-child){
+// 			margin-bottom: rem(14);
+// 		}
+// 	}
+
+// 	// .menu-footer__link
+
+// 	&__link {
+// 		font-size: rem(16);
+// 		font-weight: 400;
+// 		line-height: math.div(18.96, 16);
+// 		color: #0587D6;
+// 		transition: all 0.4s ease 0s;
+// 		@media (any-hover: hover){
+// 			 &:hover { 
+// 			 color: #444; 
+// 		  } 
+// 		}
+// 	}
+// }
 
 .phone-contact {
 }

@@ -418,10 +418,10 @@ export function menuInit() {
 				bodyLockToggle();
 				document.documentElement.classList.toggle("menu-open");
 			}
-			if (bodyLockStatus && !e.target.closest('.navigation-header')) {
-				bodyLockToggle();
-				document.documentElement.classList.remove("menu-open");
-			}
+			// if (bodyLockStatus && !e.target.closest('.navigation-header')) {
+			// 	bodyUnlock();
+			// 	document.documentElement.classList.remove("menu-open");
+			// }
 		});
 	};
 }
