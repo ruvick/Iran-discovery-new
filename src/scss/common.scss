@@ -468,6 +468,16 @@
 	background: #EFF7FF;
 	border: 1px solid #CEE5FF;
 	border-radius: rem(10);
+	.input-item {
+		border: 1px solid #CEE5FF;
+	}
+	.input-item__icon-calendar {
+		border-left: 1px solid #CEE5FF;
+	}
+}
+.box-actions--size-m .box-actions__wrapper {
+	max-width: rem(955);
+	margin: 0px auto;
 }
 .box-actions__img {
 	position: absolute; 
@@ -512,6 +522,9 @@
 			display: none;
 		 } 
 	}
+	.checkbox__label:before {
+		background-color: #fff;
+  }
 }
 .form-box-actions__col {
 	display: flex;
@@ -527,7 +540,26 @@
 }
 
 .form-box-actions__line {
+	.input-item {
+		border: 1px solid #CEE5FF;
+		input {
+			font-size: rem(20);
+			color: #C2C2C2;
+		}
+	}
+}
 
+.form-box-actions__label {
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	font-size: rem(20);
+	font-weight: 700;
+	line-height: math.div(23.7, 20);
+	color: #242440;
+	&:not(:last-child){
+		margin-bottom: rem(17);
+	}
 }
 
 .form-box-actions__row {
@@ -600,6 +632,17 @@
 			order: 2;
 		  }
 	}
+}
+
+.form-box-actions__options {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	@include adaptiveValue("gap", 40, 20);
+	flex-wrap: wrap;
+	.options__label:before {
+		background-color: #fff;
+  }
 }
 //========================================================================================================================================================
 
