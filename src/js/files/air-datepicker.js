@@ -29,7 +29,9 @@ new AirDatepicker('.detail-calendar', {
 })
 
 new AirDatepicker('.tour-booking-calendar', {
-
+	// inline: true
+	// language: 'en',
+	// minDate: new Date()
 })
 
 new AirDatepicker('.hotel-reservation-calendar', {

@@ -1,3 +1,124 @@
 .air-datepicker-global-container {
 	z-index: 150 !important;
 }
+.air-datepicker {
+	min-width: rem(353) !important;
+	width: 100%;
+}
+.air-datepicker.-inline- {
+	// position: absolute !important;
+	// left: 50% !important;
+	// top: 50% !important;
+	border: rem(1) solid #CEE5FF;
+	border-radius: rem(10);
+	// width: rem(353) !important;
+	// width: 100%;
+	// min-width: 353px !important;
+}
+ .air-datepicker-nav--action {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: rem(38) !important;
+	height: rem(38);
+	border-radius: 50% !important;
+	background: #E7F2FF;
+	overflow: hidden;
+	@media (any-hover: hover){
+		 &:hover { 
+			background: #E7F2FF !important;
+	  } 
+	}
+}
+.air-datepicker-nav--action svg {
+
+}
+.air-datepicker-nav--action path {
+	stroke: #0587D6 !important;
+}
+.air-datepicker--navigation {
+	padding: rem(12) rem(45) rem(8) rem(45);
+}
+.air-datepicker-nav {
+	border: none !important;
+}
+.air-datepicker--content {
+	padding: rem(12) rem(45) rem(24) rem(45) !important;
+}
+.air-datepicker--buttons, .air-datepicker--time {
+	border: none !important;
+}
+.air-datepicker-button {
+	color: #0587D6;
+}
+.air-datepicker-nav--title {
+	font-family: "Rubik" !important;
+	text-transform: uppercase;
+	color: #242440 !important;
+	font-weight: 500;
+	@media (any-hover: hover){
+		 &:hover { 
+		  background-color: #fff !important;
+	  } 
+	}
+}
+.air-datepicker-nav--title i {
+	color: #666;
+	font-weight: 500;
+}
+.air-datepicker-button {
+	transition: $mainTransition;
+	@media (any-hover: hover){
+		 &:hover { 
+			color: #fff !important;
+			background-color: #0587D6 !important;
+			border-radius: rem(7) !important;
+	  } 
+	}
+}
+.air-datepicker-cell.-range-to-.-range-from- {
+	background-color: #FF6A00	!important;
+	border-radius: rem(16) 0 0 rem(16) !important;
+	font-family: "Rubik" !important;
+}
+.air-datepicker-cell.-selected- {
+	color: #fff;
+	background-color: #FF6A00	!important;
+	border-radius: rem(16) 0 0 rem(16) !important;
+	border-right: rem(1) solid #fff !important;
+	font-family: "Rubik" !important;
+}
+.air-datepicker-cell.-range-to- {
+	border: none !important;
+	border-radius: 0 rem(16) rem(16) 0 !important;
+	background-color: #FF6A00	!important;
+	color: #fff !important;
+	border-left: rem(1) solid #fff !important;
+	font-family: "Rubik" !important;
+}
+.air-datepicker-cell.-in-range- {
+	color: #242440 !important;
+	background-color: #CEE5FF !important;
+	font-family: "Rubik" !important;
+}
+.air-datepicker-body--cells.-days- {
+	grid-row-gap: rem(5) !important;
+}
+.air-datepicker-body--day-name {
+	font-family: "Rubik" !important;
+	font-size: rem(16) !important;
+	font-weight: 400 !important;
+	line-height: math.div(18.96, 16) !important;
+	text-align: center !important;
+	color: #242440 !important;
+	margin-bottom: rem(10) !important;
+	text-transform: none !important;
+}
+.air-datepicker-button.custom-button-classname {
+	color: #fff !important;
+	background-color: #0587D6 !important;
+	border-radius: rem(7) !important;
+}
+.air-datepicker--buttons, .air-datepicker--time {
+	padding: 0 rem(45) rem(24) rem(45) !important;
+}
