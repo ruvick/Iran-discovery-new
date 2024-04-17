@@ -413,16 +413,19 @@ export function tabs() {
 */
 export function menuInit() {
 	if (document.querySelector(".icon-menu")) {
+
 		document.addEventListener("click", function (e) {
 			if (bodyLockStatus && e.target.closest('.icon-menu')) {
 				bodyLockToggle();
 				document.documentElement.classList.toggle("menu-open");
 			}
-			// if (bodyLockStatus && !e.target.closest('.navigation-header')) {
-			// 	bodyUnlock();
-			// 	document.documentElement.classList.remove("menu-open");
-			// }
+
+			if (e.target.closest('.navigation-header') && !e.target.closest('.navigation-header__list')) {
+				bodyLockToggle();
+				document.documentElement.classList.remove("menu-open");
+			}
 		});
+
 	};
 }
 export function menuOpen() {
