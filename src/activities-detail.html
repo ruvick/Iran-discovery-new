@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" prefix="og: https://ogp.me/ns/website#">
 @@include('html/_head.htm',{
 "title":"Activities detail"
 })
@@ -34,7 +34,7 @@
 								</div>
 								<div class="main-banner__body">
 									<div class="main-banner__top-title">در قلب سرما </div>
-									<h1>سورتمه با هاسکی</h1>
+									<h1 itemprop="name">سورتمه با هاسکی</h1>
 								</div>
 							</div>
 						</div>
@@ -62,7 +62,7 @@
 								</div>
 								<div class="main-banner__body">
 									<div class="main-banner__top-title">در قلب سرما </div>
-									<h1>سورتمه با هاسکی</h1>
+									<h1 itemprop="name">سورتمه با هاسکی</h1>
 								</div>
 							</div>
 						</div>
@@ -76,7 +76,8 @@
 
 					<div class="template__main main-template">
 
-						<sidebar class="main-template__sidebar sidebar-template">
+						<sidebar class="main-template__sidebar sidebar-template" itemscope
+							itemtype="http://schema.org/WPSideBar">
 							<div class="sidebar-template__body">
 
 								<div class="sidebar-template__item">
@@ -430,7 +431,7 @@
 
 			<section class="page__hotels hotels">
 				<div class="hotels__container">
-					<h2 class="page__title title title--dark">فعالیت های مشابه </h2>
+					<h2 class="page__title title title--dark" itemprop="name">فعالیت های مشابه </h2>
 				</div>
 
 				<div class="typical-slider__container">

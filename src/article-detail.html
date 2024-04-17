@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" prefix="og: https://ogp.me/ns/website#">
 @@include('html/_head.htm',{
 "title":"Articles detail"
 })
@@ -32,7 +32,7 @@
 									</nav>
 								</div>
 								<div class="main-banner__body">
-									<h1>مقاله سفر به مسکو </h1>
+									<h1 itemprop="name">مقاله سفر به مسکو </h1>
 								</div>
 							</div>
 						</div>
@@ -58,7 +58,7 @@
 									</nav>
 								</div>
 								<div class="main-banner__body">
-									<h1>مقاله سفر به مسکو </h1>
+									<h1 itemprop="name">مقاله سفر به مسکو </h1>
 								</div>
 							</div>
 						</div>
@@ -72,7 +72,8 @@
 
 					<div class="template__main main-template">
 
-						<sidebar class="main-template__sidebar sidebar-template">
+						<sidebar class="main-template__sidebar sidebar-template" itemscope
+							itemtype="http://schema.org/WPSideBar">
 							<div class="sidebar-template__body">
 
 								<!-- <div class="sidebar-template__item">
@@ -132,27 +133,29 @@
 									</div>
 									<div class="sidebar-template__col">
 										<div class="sidebar-template__contacts contacts-sidebar">
-											<a href="tel:+98211373"
-												class="contacts-sidebar__item phone-contact phone-contact--big">
+											<a href="tel:+98211373" class="contacts-sidebar__item phone-contact phone-contact--big"
+												itemprop="telephone">
 												<svg>
 													<use xlink:href="img/icons/sprite.svg#phone"></use>
 												</svg>
 												<span>+98 211373</span>
 											</a>
-											<a href="tel:+98 1343425970" class="contacts-sidebar__item phone-contact">
+											<a href="tel:+98 1343425970" class="contacts-sidebar__item phone-contact"
+												itemprop="telephone">
 												<svg>
 													<use xlink:href="img/icons/sprite.svg#callback"></use>
 												</svg>
 												<span>+98 1343425970</span>
 											</a>
-											<a href="https://telegram.org" class="contacts-sidebar__item phone-contact">
+											<a href="https://telegram.org" class="contacts-sidebar__item phone-contact"
+												itemprop="telephone">
 												<svg>
 													<use xlink:href="img/icons/sprite.svg#message"></use>
 												</svg>
 												<span>+98 1343425970</span>
 											</a>
 											<a href="mailto:info@shomaltour.com"
-												class="contacts-sidebar__item phone-contact phone-contact--blue">
+												class="contacts-sidebar__item phone-contact phone-contact--blue" itemprop="email">
 												<svg>
 													<use xlink:href="img/icons/sprite.svg#email"></use>
 												</svg>
@@ -206,7 +209,7 @@
 							</div>
 
 							<div id="content" class="page__content content">
-								<h2>دانیال:</h2>
+								<h2 itemprop="name">دانیال:</h2>
 								<p>
 									اگر از تعطیلات دیدنی کلاسیک خسته شده اید و می خواهید تعطیلات غیرمعمول سال نو را برای خود
 									ترتیب دهید ، به جای مناسب آمده اید! <br>
@@ -321,7 +324,7 @@
 							</div>
 
 							<div id="content" class="page__content content">
-								<h2>دانیال:</h2>
+								<h2 itemprop="name">دانیال:</h2>
 								<p>
 									اگر از تعطیلات دیدنی کلاسیک خسته شده اید و می خواهید تعطیلات غیرمعمول سال نو را برای خود
 									ترتیب دهید ، به جای مناسب آمده اید! <br>
@@ -411,7 +414,7 @@
 
 			<section class="page__articles articles">
 				<div class="articles__container">
-					<h2 class="page__title title title--dark">همچنین بخوانید</h2>
+					<h2 class="page__title title title--dark" itemprop="name">همچنین بخوانید</h2>
 				</div>
 
 				<div class="typical-slider__container">

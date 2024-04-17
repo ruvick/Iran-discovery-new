@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" prefix="og: https://ogp.me/ns/website#">
 @@include('html/_head.htm',{
 "title":"Tour detail"
 })
@@ -38,7 +38,7 @@
 								</div>
 								<div class="main-banner__body">
 									<div class="main-banner__top-title">تور مسکو</div>
-									<h1>سفر خاطر انگیز به پایتخت روسیه</h1>
+									<h1 itemprop="name">سفر خاطر انگیز به پایتخت روسیه</h1>
 								</div>
 							</div>
 						</div>
@@ -70,7 +70,7 @@
 								</div>
 								<div class="main-banner__body">
 									<div class="main-banner__top-title">تور مسکو</div>
-									<h1>سفر خاطر انگیز به پایتخت روسیه</h1>
+									<h1 itemprop="name">سفر خاطر انگیز به پایتخت روسیه</h1>
 								</div>
 							</div>
 						</div>
@@ -84,7 +84,8 @@
 
 					<div class="template__main main-template">
 
-						<sidebar class="main-template__sidebar sidebar-template">
+						<sidebar class="main-template__sidebar sidebar-template" itemscope
+							itemtype="http://schema.org/WPSideBar">
 							<div class="sidebar-template__body">
 
 								<div class="sidebar-template__item">
@@ -346,27 +347,29 @@
 									</div>
 									<div class="sidebar-template__col">
 										<div class="sidebar-template__contacts contacts-sidebar">
-											<a href="tel:+98211373"
-												class="contacts-sidebar__item phone-contact phone-contact--big">
+											<a href="tel:+98211373" class="contacts-sidebar__item phone-contact phone-contact--big"
+												itemprop="telephone">
 												<svg>
 													<use xlink:href="img/icons/sprite.svg#phone"></use>
 												</svg>
 												<span>+98 211373</span>
 											</a>
-											<a href="tel:+98 1343425970" class="contacts-sidebar__item phone-contact">
+											<a href="tel:+98 1343425970" class="contacts-sidebar__item phone-contact"
+												itemprop="telephone">
 												<svg>
 													<use xlink:href="img/icons/sprite.svg#callback"></use>
 												</svg>
 												<span>+98 1343425970</span>
 											</a>
-											<a href="https://telegram.org" class="contacts-sidebar__item phone-contact">
+											<a href="https://telegram.org" class="contacts-sidebar__item phone-contact"
+												itemprop="telephone">
 												<svg>
 													<use xlink:href="img/icons/sprite.svg#message"></use>
 												</svg>
 												<span>+98 1343425970</span>
 											</a>
 											<a href="mailto:info@shomaltour.com"
-												class="contacts-sidebar__item phone-contact phone-contact--blue">
+												class="contacts-sidebar__item phone-contact phone-contact--blue" itemprop="email">
 												<svg>
 													<use xlink:href="img/icons/sprite.svg#email"></use>
 												</svg>
@@ -492,7 +495,8 @@
 							</div>
 
 							<div class="page__articles articles">
-								<h2 class="page__title title title-right title--dark">چه فعالیت هایی در تور مسکو انجام میدهیم؟
+								<h2 class="page__title title title-right title--dark" itemprop="name">چه فعالیت هایی در تور مسکو
+									انجام میدهیم؟
 								</h2>
 
 								<div class="articles-detail-slider  typical-slider swiper">
@@ -1449,7 +1453,7 @@
 			<section class="page__tours tours">
 				<div class="tours__container">
 
-					<h3 class="page__title title title-right title--dark">تورهای روسیه</h3>
+					<h3 class="page__title title title-right title--dark" itemprop="name">تورهای روسیه</h3>
 
 				</div>
 
