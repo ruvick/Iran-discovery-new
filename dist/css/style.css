@@ -3256,10 +3256,9 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 @media (max-width: 48em) {
   .navigation-header li {
     width: 100%;
-    margin-right: 0;
   }
   .navigation-header li:not(:last-child) {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 }
 .navigation-header a {

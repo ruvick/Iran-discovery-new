@@ -351,9 +351,8 @@
 		@media (max-width: em(768)){
 			width: 100%;
 			  &:not(:last-child){
-				margin-right: 0;
+				margin-right: 0 !important;
 			  }
-			  margin-right: 0;
 		}
 	}
 	a {
