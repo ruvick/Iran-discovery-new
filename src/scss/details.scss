@@ -247,7 +247,7 @@
 .descp-details__banners {
 
 }
-.item-full {
+.item-full { 
 	grid-column: span 2;
 	}
 	
@@ -299,7 +299,15 @@
 	border-radius: rem(10);
 	background-color: #C2C2C2;
 	padding-bottom: 64%;
-	overflow: hidden;
+	overflow: hidden; 
+	img {
+		transition: $mainTransition;
+	}
+	&:hover{
+		img {
+			transform: scale(1.05);
+		}
+	}
 }
 .banners-detail__title {
 	position: absolute;

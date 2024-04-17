@@ -17,14 +17,18 @@
 .spollers__title {
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap-reverse;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: rem(8);
 	width: 100%;
 	cursor: default;
 	text-align: left;
 	// border: 1px solid #eee;
-	padding: rem(10) rem(26) rem(10) 24px; 
+	// padding: rem(10) rem(26) rem(10) 24px; 
+	@include adaptiveValue("padding-top", 10, 6);
+	@include adaptiveValue("padding-bottom", 10, 6);
+	@include adaptiveValue("padding-left", 24, 14);
+	@include adaptiveValue("padding-right", 26, 14);
 	border-radius: rem(5);
 	position: relative;
 	._spoller-init & {
@@ -91,7 +95,10 @@
 	border-radius: rem(7);
 	background-color: #E8E4E4;
 	@media (max-width: em(515)){
-		 width: 100%; 
+		//  width: 100%; 
+		 &:not(:last-child){
+			margin-bottom: rem(10);
+		 }
 	}
 }
 
@@ -102,9 +109,11 @@
 	line-height: math.div(33.6, 24);
 	color: #242440;
 
-	// @media (max-width: em(515)){
-	// 	 justify-content: space-between; 
-	// }
+	@media (max-width: em(515)){
+		 justify-content: space-between; 
+		 width: 100%;
+			margin-bottom: rem(10);
+	}
 
 	&::before{
 		content:''; 
