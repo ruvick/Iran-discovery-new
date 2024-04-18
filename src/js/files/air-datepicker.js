@@ -37,3 +37,12 @@ new AirDatepicker('.tour-booking-calendar', {
 new AirDatepicker('.hotel-reservation-calendar', {
 
 })
+
+new AirDatepicker('.hotel-reservation-calendar-2', {
+
+})
+
+new AirDatepicker('.guide-calendar', {
+
+})
+

@@ -8,6 +8,19 @@ textarea {
 	-moz-appearance: none;
 	appearance: none;
 }
+// Убираем стрелки у цифрового инпута
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { 
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0;
+	/* <-- Apparently some margin are still there even though it's hidden */
+}
+//========================================================================================================================================================
+
 .input {
 	width: 100%;
 	display: block;
@@ -18,7 +31,7 @@ textarea {
 	text-align: right;
 	padding: rem(15) rem(20);
 	border-radius: rem(10);
-	border: 1px solid #CEE5FF;
+	border: 1px solid #CEE5FF; 
 	&._form-focus {
 	}
 	&._form-error {
@@ -79,5 +92,14 @@ textarea.input {
 	svg {
 		@include adaptiveValue("width", 30, 20);
 		@include adaptiveValue("height", 30, 20);
+	}
+}
+
+.item-form--number {
+	.calendar-box-info__arrow {
+		svg {
+			width: rem(15);
+			height: rem(24);
+		}
 	}
 }
