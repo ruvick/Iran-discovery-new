@@ -85,7 +85,7 @@
 
 												<div class="body-box-info__item spoller-box">
 													<div class="spoller-box__item">
-														<button type="button" data-spoller class="spoller-box__title">
+														<button type="button" data-spoller class="spoller-box__title _spoller-active">
 															<svg>
 																<use xlink:href="img/icons/sprite.svg#arrow-sl"></use>
 															</svg>
@@ -117,7 +117,7 @@
 
 												<div class="body-box-info__item spoller-box">
 													<div class="spoller-box__item">
-														<button type="button" data-spoller class="spoller-box__title">
+														<button type="button" data-spoller class="spoller-box__title _spoller-active">
 															<svg>
 																<use xlink:href="img/icons/sprite.svg#arrow-sl"></use>
 															</svg>
@@ -137,19 +137,28 @@
 												<div class="body-box-info__item spoller-box">
 													<div class="spoller-box__item">
 														<button type="button" data-spoller
-															class="spoller-box__title _spoller-active ">
+															class="spoller-box__title _spoller-active _spoller-active">
 															<svg>
 																<use xlink:href="img/icons/sprite.svg#arrow-sl"></use>
 															</svg>
 															تعداد مهمان
 														</button>
 														<div class="spoller-box__body">
-															<select name="form[]" class="form">
-																<option value="1" selected="selected">1 بزرگسال</option>
-																<option value="2">1 بزرگسال</option>
-																<option value="3">1 بزرگسال</option>
-																<option value="4">1 بزرگسال</option>
-															</select>
+
+															<div class="item-form item-form--number">
+																<!-- <label for="name" class="item-form__label">تعداد مهمان<span>*</span></label> -->
+																<div class="calendar-box-info item-form input">
+																	<div class="calendar-box-info__arrow">
+																		<svg>
+																			<use xlink:href="img/icons/sprite.svg#number"></use>
+																		</svg>
+																	</div>
+																	<input type="number" name="form[]" class="calendar-box-info__input"
+																		placeholder="1 بزرگسال" data-error="فیلد را پر کنید"
+																		data-required>
+																</div>
+															</div>
+
 														</div>
 													</div>
 													<button type="button" class="spoller-box__btn-reset">پارامترهای تنظیم

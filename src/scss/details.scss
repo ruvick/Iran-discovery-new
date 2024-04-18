@@ -25,13 +25,21 @@
 	overflow: hidden;
 	background-color: #fff;
 	z-index: 5;
-}
+	.input {
+		height: 48px;
+		border: 1px solid #C2C2C2;
+	} 
+	input {
+		width: 100%;
+	}
+} 
 
 .header-box-info {
 	display: flex;
 	flex-direction: column;
 	gap: rem(16);
 	direction: rtl;
+	
 }
 .header-box-info__item {
 }
@@ -44,6 +52,8 @@
 	text-align: right;
 }
 .header-box-info__calendar {
+	direction: ltr;
+	height: rem(48);
 }
 .header-box-info__buttons {
 }
