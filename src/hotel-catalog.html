@@ -78,7 +78,7 @@
 							itemtype="http://schema.org/WPSideBar">
 							<div class="sidebar-template__body">
 
-								<div class="sidebar-template__item">
+								<div class="sidebar-template__item sidebar-template__item--over">
 									<div class="sidebar-template__filters filters-sidebar">
 										<div class="box-info box-info--catalog">
 											<div data-spollers class="box-info__body body-box-info">
@@ -153,7 +153,8 @@
 																			<use xlink:href="img/icons/sprite.svg#number"></use>
 																		</svg>
 																	</div>
-																	<input type="number" name="form[]" class="calendar-box-info__input"
+																	<input type="number" name="form[]"
+																		class="calendar-box-info__input input-guests"
 																		placeholder="1 بزرگسال" data-error="فیلد را پر کنید"
 																		data-required>
 																</div>
@@ -164,10 +165,57 @@
 													<button type="button" class="spoller-box__btn-reset">پارامترهای تنظیم
 														مجدد</button>
 												</div>
-
 											</div>
+
+										</div>
+
+									</div>
+
+									<div class="number-guests">
+										<div class="number-guests__control">
+
+											<div class="number-guests__quantity quantity">
+												<button type="button" class="quantity__button quantity__button_minus"></button>
+												<div class="quantity__input">
+													<input autocomplete="off" type="text" name="form[]" value="1">
+												</div>
+												<button type="button" class="quantity__button quantity__button_plus"></button>
+											</div>
+
+											<div class="number-guests__info">
+												<div class="number-guests__adults">بزرگسالان</div>
+												<div class="number-guests__under">زیر 18 سال</div>
+											</div>
+
+										</div>
+										<div class="number-guests__result item-result">
+											<button type="button" class="item-result__btn">
+												<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+														fill="#D9D9D9" />
+													<path d="M15 9L9 15" stroke="black" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path d="M9 9L15 15" stroke="black" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<div class="item-result__text">کودک 1 سال</div>
+										</div>
+										<div class="number-guests__select">
+											<select name="form[]" class="form">
+												<option value="1" selected="selected">سن کودک</option>
+												<option value="2">سال 1</option>
+												<option value="3">سال 2</option>
+												<option value="4">سال 3</option>
+												<option value="5">سال 4</option>
+												<option value="6">سال 5</option>
+												<option value="7">سال 6</option>
+												<option value="8">سال 7</option>
+											</select>
 										</div>
 									</div>
+
 								</div>
 
 								<div class="sidebar-template__item">

@@ -1,5 +1,5 @@
 // Подключение функционала "Чертогов Фрилансера"
-import { isMobile, bodyLockToggle, bodyLock, bodyUnlock, removeClasses } from "./functions.js";
+import { isMobile, bodyLockToggle, bodyLock, bodyUnlock, removeClasses, _slideToggle } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
 //========================================================================================================================================================
@@ -50,7 +50,38 @@ window.onload = function () {
 
 	}
 
+	//========================================================================================================================================================
+
+	let inputGuests = document.querySelector('.input-guests');
+	let numberGuests = document.querySelector('.number-guests');
+	let sidebarItemOver = document.querySelector('.sidebar-template__item--over');
+
+	inputGuests.addEventListener('input', function () {
+		if (inputGuests.value > 1) {
+			numberGuests.classList.add('_active');
+		} else {
+			numberGuests.classList.remove('_active');
+		}
+	});
+
+	inputGuests.addEventListener('click', function () {
+		setTimeout(function () {
+			sidebarItemOver.style.overflow = 'visible';
+		}, 1500);
+	});
+
+	const resultBtn = document.querySelector('.item-result__btn');
+
+	resultBtn.addEventListener("click", function (e) {
+		numberGuests.classList.remove('_active');
+		sidebarItemOver.style.overflow = 'hidden';
+	});
+
+
 }
+//========================================================================================================================================================
+
+
 //========================================================================================================================================================
 
 // gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
