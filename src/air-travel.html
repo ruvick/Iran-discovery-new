@@ -139,25 +139,6 @@
 
 					<div class="actions__inner">
 
-						<!-- <div class="actions__box box-actions">
-							<div class="box-actions__title">محاسبه بیمه درمانی روسیه</div>
-							<form action="#" class="box-actions__form form-box-actions">  
-								<div class="form-box-actions__col">
-									<div class="form-box-actions__result result-box-actions">30.000.000 تومان</div>
-									<div class="form-box-actions__item item-form">
-										<label for="name" class="item-form__label">مدت اعتبار</label>
-										<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-											data-value="" class="item-form__input input">
-									</div>
-									<div class="form-box-actions__item item-form">
-										<label for="name" class="item-form__label">تاریخ تولد</label>
-										<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-											data-value="" class="item-form__input input">
-									</div>
-								</div>
-							</form>
-						</div> -->
-
 						<div class="actions__box box-actions box-actions--size-m">
 							<div class="box-actions__wrapper">
 								<div class="box-actions__img">
@@ -167,12 +148,46 @@
 								<!-- <div class="box-actions__subtitle">داده ها با حروف لاتین مانند گذرنامه پر می شوند</div> -->
 								<form action="#" class="box-actions__form form-box-actions">
 
+
 									<div class="form-box-actions__line">
-										<div class="form-box-actions__item item-form">
-											<label for="name" class="item-form__label">نام و نام خانوادگی </label>
-											<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-												data-value="" class="item-form__input input">
+										<label for="name" class="form-box-actions__label label--city">یک مسیر را انتخاب
+											کنید</label>
+										<div class="form-box-actions__city-inputs inputs-city">
+
+											<div class="inputs-city__item item-city">
+												<div class="item-city__icon">
+													<svg>
+														<use xlink:href="img/icons/sprite.svg#arrow-down"></use>
+													</svg>
+												</div>
+												<div class="item-city__input">
+													<input name="form[]" autocomplete="off" type="text" id="input" placeholder=" ">
+													<label for="input" class="item-city__label">به کجا</label>
+												</div>
+											</div>
+
+											<button type="button" class="inputs-city__btn btn-city">
+												<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M25.039 21.2883L21.289 25.0383C21.1131 25.2142 20.8745 25.3131 20.6257 25.3131C20.377 25.3131 20.1384 25.2142 19.9625 25.0383C19.7865 24.8624 19.6877 24.6238 19.6877 24.375C19.6877 24.1263 19.7865 23.8877 19.9625 23.7118L22.1128 21.5625H5.62574C5.3771 21.5625 5.13864 21.4638 4.96283 21.2879C4.78701 21.1121 4.68824 20.8737 4.68824 20.625C4.68824 20.3764 4.78701 20.1379 4.96283 19.9621C5.13864 19.7863 5.3771 19.6875 5.62574 19.6875H22.1128L19.9625 17.5383C19.7865 17.3624 19.6877 17.1238 19.6877 16.875C19.6877 16.6263 19.7865 16.3877 19.9625 16.2118C20.1384 16.0358 20.377 15.937 20.6257 15.937C20.8745 15.937 21.1131 16.0358 21.289 16.2118L25.039 19.9618C25.1262 20.0488 25.1953 20.1522 25.2425 20.266C25.2897 20.3798 25.314 20.5018 25.314 20.625C25.314 20.7482 25.2897 20.8702 25.2425 20.984C25.1953 21.0979 25.1262 21.2012 25.039 21.2883ZM8.71246 13.7883C8.88837 13.9642 9.12696 14.0631 9.37574 14.0631C9.62452 14.0631 9.86311 13.9642 10.039 13.7883C10.2149 13.6124 10.3138 13.3738 10.3138 13.125C10.3138 12.8763 10.2149 12.6377 10.039 12.4618L7.88863 10.3125H24.3757C24.6244 10.3125 24.8628 10.2138 25.0386 10.0379C25.2145 9.86213 25.3132 9.62367 25.3132 9.37503C25.3132 9.12639 25.2145 8.88794 25.0386 8.71212C24.8628 8.53631 24.6244 8.43753 24.3757 8.43753H7.88863L10.039 6.28831C10.2149 6.1124 10.3138 5.87381 10.3138 5.62503C10.3138 5.37625 10.2149 5.13766 10.039 4.96175C9.86311 4.78584 9.62452 4.68701 9.37574 4.68701C9.12696 4.68701 8.88837 4.78584 8.71246 4.96175L4.96246 8.71175C4.87529 8.79882 4.80614 8.90222 4.75896 9.01603C4.71178 9.12984 4.6875 9.25183 4.6875 9.37503C4.6875 9.49824 4.71178 9.62023 4.75896 9.73404C4.80614 9.84785 4.87529 9.95125 4.96246 10.0383L8.71246 13.7883Z"
+														fill="#0587D6" />
+												</svg>
+											</button>
+
+											<div class="inputs-city__item item-city">
+												<div class="item-city__icon">
+													<svg>
+														<use xlink:href="img/icons/sprite.svg#arrow-down"></use>
+													</svg>
+												</div>
+												<div class="item-city__input">
+													<input name="form[]" autocomplete="off" type="text" id="input" placeholder=" ">
+													<label for="input" class="item-city__label">از کجا</label>
+												</div>
+											</div>
+
 										</div>
+
 									</div>
 
 									<div class="form-box-actions__line">

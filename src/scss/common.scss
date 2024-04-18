@@ -863,3 +863,13 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 		}
 	}
 }
+
+.form-box-actions__city-inputs {
+
+}
+
+.form-box-actions__label.label--city {
+	@media (max-width: em(540)){
+		 display: none; 
+	}
+}
