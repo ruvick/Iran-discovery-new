@@ -191,3 +191,7 @@ textarea.input {
  .item-city__input input:not(:placeholder-shown) ~ .item-city__label {
 	transform: translateY(-15px) translateX(10px) scale(0.65);
  }
+
+ .inputs-city._reverse {  
+	flex-direction: row-reverse;
+ }

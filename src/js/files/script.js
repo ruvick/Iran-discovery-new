@@ -43,6 +43,11 @@ window.onload = function () {
 
 		}
 
+		// Reverse полей ввода
+		if (targetElement.classList.contains('btn-city') || targetElement.closest('.btn-city')) {
+			targetElement.closest('.inputs-city').classList.toggle('_reverse')
+		}
+
 	}
 
 }
