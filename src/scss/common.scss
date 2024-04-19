@@ -423,6 +423,9 @@
 	display: grid; 
 	grid-template-columns: rem(130) rem(130);
 	gap: rem(10);
+	@media (max-width: em(991)){
+		grid-template-columns: 1fr 1fr;
+	}
 	input {
 		width: 100%;
 	}

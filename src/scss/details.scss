@@ -325,9 +325,9 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	@include adaptiveValue("font-size", 24, 14);
+	@include adaptiveValue("font-size", 24, 12);
 	font-weight: 700;
-	line-height: math.div(38.4, 24);
+	line-height: math.div(33.4, 24);
 	text-align: center;
 	color: #fff;
 	z-index: 5;

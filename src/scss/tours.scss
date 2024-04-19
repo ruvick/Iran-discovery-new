@@ -308,6 +308,10 @@
 	display: flex;
 	align-items: center;
 	gap: rem(8);
+	@media (max-width: em(414)){
+			// flex-direction: column;
+			// align-items: flex-end;
+	}
 	svg {
 		width: 24px;
 		flex: 0 0 24px;
@@ -338,6 +342,10 @@
 	justify-content: flex-end;
 	flex-wrap: wrap;
 	gap: rem(20);
+	@media (max-width: em(414)){
+		flex-direction: column;
+		align-items: flex-end;
+	}
 }
 .available-articles__item {
 }
@@ -362,6 +370,7 @@
 
 .icons-card-banner__item-ico {
 	flex-direction: row-reverse;
+	@include adaptiveValue("gap", 10, 6);
 	&:nth-child(1)	{
 		text-align: right;
 		justify-content: flex-end;
@@ -373,8 +382,8 @@
 
 	&:nth-child(2)	{
 		svg {
-			width: rem(35);
-			height: rem(23);
+			width: rem(35); 
+			height: rem(20);
 		}
 	}
 }
