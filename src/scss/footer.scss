@@ -79,6 +79,7 @@
 	// .contacts-footer__item
 
 	&__item {
+		// @include adaptiveValue("font-size", 18, 14);
 		font-size: rem(18);
 	}
 
@@ -102,6 +103,20 @@
 		}
 	}
 }
+
+.contacts-footer__item.phone-contact--email {
+	@media (max-width: em(515)){
+		font-size: rem(15);
+		letter-spacing: -0.03em;
+	}
+}
+.contacts-footer__item.phone-contact--main {
+	@media (max-width: em(515)){
+		font-size: rem(26);
+		letter-spacing: 0.02em;
+	}
+}
+
 .footer {
 
 	// .footer__navigation
@@ -165,7 +180,7 @@
 .navigation-footer {
 	ul {
 		li {
-			display: inline-flex;
+			display: flex;
 			&:not(:last-child){
 				margin-bottom: rem(14);
 			}

@@ -87,6 +87,11 @@
 				max-width: 100%;
 			 }
 		}
+		@media (max-width: em(515)){
+			img {
+				width: 100%;
+			}
+		}
 	}
 }
 
