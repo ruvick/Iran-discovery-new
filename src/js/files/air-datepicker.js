@@ -30,19 +30,22 @@ new AirDatepicker('.detail-calendar', {
 
 new AirDatepicker('.tour-booking-calendar', {
 	// inline: true
-	// language: 'en',
-	// minDate: new Date()
+	range: true,
+	multipleDatesSeparator: ' - ',
 })
 
 new AirDatepicker('.hotel-reservation-calendar', {
-
+	range: true,
+	multipleDatesSeparator: ' - ',
 })
 
 new AirDatepicker('.hotel-reservation-calendar-2', {
-
+	range: true,
+	multipleDatesSeparator: ' - ',
 })
 
 new AirDatepicker('.guide-calendar', {
-
+	range: true,
+	multipleDatesSeparator: ' - ',
 })
 

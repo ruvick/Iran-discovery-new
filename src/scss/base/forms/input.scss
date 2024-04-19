@@ -34,7 +34,7 @@ input[type="time"] {
 .input {
 	width: 100%;
 	display: block;
-	font-size: rem(16);
+	@include adaptiveValue("font-size", 16, 12);
 	font-weight: 400;
 	@include adaptiveValue("height", 56, 44);
 	color: #666;
@@ -83,7 +83,7 @@ textarea.input {
 .input-item__input {
 	flex: 1 1 auto;
 	input {
-		font-size: rem(16);
+		@include adaptiveValue("font-size", 16, 12);
 		font-weight: 400;
 		color: #666;
 		padding: rem(15) rem(20);

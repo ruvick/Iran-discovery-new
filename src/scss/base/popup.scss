@@ -130,7 +130,8 @@ body::after {
 	flex-direction: row-reverse;
 	align-items: center;
 	text-align: right;
-	@include adaptiveValue("gap", 40, 20);
+	@include adaptiveValue("gap", 40, 10);
+	flex-wrap: wrap;
 }
 
 .form-popup__btn {
