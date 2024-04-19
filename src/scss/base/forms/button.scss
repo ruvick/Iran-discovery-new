@@ -39,6 +39,12 @@
 	&.btn--light {
 		color: #0587D6;
 		background: #E7F2FF;
+		@media (any-hover: hover){
+			 &:hover { 
+			 color: #fff; 
+			 background-color: #004495;
+		  } 
+		}
 	}
 }
 

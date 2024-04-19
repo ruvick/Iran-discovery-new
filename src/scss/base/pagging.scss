@@ -54,8 +54,10 @@
 			margin-left: 0;
 		}
 
-		&:hover {
-			color: #221F20;
+		@media (any-hover: hover){
+			 &:hover { 
+				color: #004495;
+		  } 
 		}
 		@media (max-width: 480px){
 			font-size: rem(12);

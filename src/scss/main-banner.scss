@@ -90,3 +90,7 @@
 	align-items: center;
 	flex-direction: column;
 }
+
+.top-title--size-m {
+	@include adaptiveValue("font-size", 48, 28);
+}
