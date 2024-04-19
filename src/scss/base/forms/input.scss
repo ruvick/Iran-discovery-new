@@ -193,5 +193,7 @@ textarea.input {
  }
 
  .inputs-city._reverse {  
-	flex-direction: row-reverse;
+	@media (min-width: em(540)){
+		flex-direction: row-reverse;
+	}
  }

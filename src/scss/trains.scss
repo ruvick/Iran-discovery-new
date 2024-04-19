@@ -100,6 +100,9 @@
 	line-height: math.div(33.6, 24);
 	flex: 1 1 auto;
 	text-align: center;
+	@media (max-width: em(515)){
+		 text-align: right; 
+	}
 }
 .item-box-stages__number {
 	@include adaptiveValue("font-size", 60, 28);

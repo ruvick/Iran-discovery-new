@@ -237,7 +237,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	direction: rtl;
-	@include adaptiveValue("gap", 25, 10);
+	@include adaptiveValue("gap", 25, 10); 
 }
 .control-page__form {
 	gap: rem(20); 
@@ -328,7 +328,7 @@
 
 .box-cost-table__label--bg,
 .box-cost-table__value--bg {
-	font-size: rem(24);
+	@include adaptiveValue("font-size", 24, 16);
 	line-height: math.div(33.6, 24);
 	font-weight: 700;
 	text-align: center;
@@ -874,15 +874,40 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 	}
 }
 
-.form-box-actions__city-inputs {
-
-}
 
 .form-box-actions__label.label--city {
 	@media (max-width: em(540)){
 		 display: none; 
 	}
 }
+.form-box-actions__city-inputs {
+	@media (max-width: em(540)){
+		flex-wrap: wrap;
+		height: auto !important;
+		.item-city {
+			flex: 1 1 auto;
+			width: auto;
+			height: 52px;
+			order: 3;
+			&:nth-child(1)	{
+				// .item-city__icon {
+				// 	display: none;
+				// }
+			}
+			&:nth-child(3)	{
+				width: 100%;
+				border-top: 1px solid #CEE5FF;
+			}
+	  }
+	  .btn-city {
+		order: 1;
+		flex: 0 0 auto;
+
+		display: none;
+	  }
+	}
+}
+
 //========================================================================================================================================================
 
 .number-guests {
