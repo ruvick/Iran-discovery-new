@@ -55,7 +55,7 @@ export function fullVHfix() {
 	}
 }
 // Вспомогательные модули плавного расскрытия и закрытия объекта ======================================================================================================================================================================
-export let _slideUp = (target, duration = 500, showmore = 0) => {
+export let _slideUp = (target, duration = 500, showmore = 0) => { 
 	if (!target.classList.contains('_slide')) {
 		target.classList.add('_slide');
 		target.style.transitionProperty = 'height, margin, padding';

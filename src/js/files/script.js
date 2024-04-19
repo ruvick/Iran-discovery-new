@@ -56,26 +56,32 @@ window.onload = function () {
 	let numberGuests = document.querySelector('.number-guests');
 	let sidebarItemOver = document.querySelector('.sidebar-template__item--over');
 
-	inputGuests.addEventListener('input', function () {
-		if (inputGuests.value > 1) {
-			numberGuests.classList.add('_active');
-		} else {
-			numberGuests.classList.remove('_active');
-		}
-	});
+	if (inputGuests) {
+		inputGuests.addEventListener('input', function () {
+			if (inputGuests.value > 1) {
+				numberGuests.classList.add('_active');
+			} else {
+				numberGuests.classList.remove('_active');
+			}
+		});
 
-	inputGuests.addEventListener('click', function () {
-		setTimeout(function () {
-			sidebarItemOver.style.overflow = 'visible';
-		}, 1500);
-	});
+		inputGuests.addEventListener('click', function () {
+			setTimeout(function () {
+				if (sidebarItemOver) {
+					sidebarItemOver.style.overflow = 'visible';
+				}
+			}, 1500);
+		});
+	}
 
 	const resultBtn = document.querySelector('.item-result__btn');
 
-	resultBtn.addEventListener("click", function (e) {
-		numberGuests.classList.remove('_active');
-		sidebarItemOver.style.overflow = 'hidden';
-	});
+	if (resultBtn) {
+		resultBtn.addEventListener("click", function (e) {
+			numberGuests.classList.remove('_active');
+			sidebarItemOver.style.overflow = 'hidden';
+		});
+	}
 
 
 }

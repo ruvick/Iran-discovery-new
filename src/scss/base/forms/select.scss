@@ -15,7 +15,7 @@
 		text-align: right;
 		color: #C2C2C2;
 		text-align: left;
-		border: 1px solid #C2C2C2;
+		border: rem(1) solid #C2C2C2;
 		background-color: #fff;
 		cursor: pointer;
 		width: 100%;
@@ -36,7 +36,7 @@
 		&:after {
 			content: "";
 			flex: 0 0 rem(15);
-			height: 9px;
+			height: rem(9);
 			transition: $mainTransition;
 			display: flex;
 			justify-content: center;
@@ -76,16 +76,16 @@
 		left: 0;
 		background-color: #fff;
 		border-top: 0;
-		border: 1px solid #C2C2C2;
+		border: rem(1) solid #C2C2C2;
 		border-top: 0;
-		padding: 10px 0px 5px 0px;
+		padding: rem(10) 0px rem(5) 0px;
 	}
 	// .select__scroll
 	&__scroll {
 		overflow-y: auto;
 		overflow-x: hidden;
 		// Максимальная высота
-		max-height: 200px;
+		max-height: rem(200);
 		// Стили скроллбара
 		.simplebar-scrollbar {
 			&::before {
@@ -98,7 +98,7 @@
 		width: 100%;
 		text-align: right;
 		cursor: pointer;
-		padding: 5px 15px;
+		padding: rem(5) rem(15);
 		color: inherit;
 		&._select-selected {
 			background-color: #eee;
@@ -139,4 +139,44 @@
 // Тег
 ._select-tag {
 	cursor: pointer;
+}
+
+.number-guests {
+	.select__title {
+		border: 1px solid #CEE5FF;
+	}
+	.select__options {
+		top: 0;
+		transform: translateY(70px);
+		border: rem(2) solid #CEE5FF;
+		border-radius: rem(10);
+		max-height: rem(252);
+		overflow: auto;
+	}
+	.select__option {
+		width: 100%;
+		text-align: right;
+		cursor: pointer;
+		padding: rem(5) rem(12);
+		color: inherit;
+		font-size: rem(16);
+		line-height: math.div(18.96, 16);
+		color: #444;
+		@media (any-hover: hover){
+			 &:hover { 
+				background: #E7F2FF;
+		  } 
+		}
+  }
+}
+
+.select__options::-webkit-scrollbar {
+	overflow-y: scroll;
+	width: rem(10);
+	background-color: #E7F2FF;
+}
+
+.select__options::-webkit-scrollbar-thumb {
+	background-color: #0587D6;
+	border-radius: rem(40);
 }
