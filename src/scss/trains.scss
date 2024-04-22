@@ -140,7 +140,7 @@
 	// min-height: 981px;
 	@include adaptiveValue("min-height", 1000, 400);
 	.box-stages__inner {
-		@include adaptiveValue("gap", 32, 8);
+		@include adaptiveValue("gap", 20, 8);
 	}
 	.item-box-stages__inner {
 		background-color: #E7F2FF;
@@ -166,10 +166,12 @@
 .box-stages__trajectory {
 	position: absolute;
 	max-width: 100%;
+	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	@include adaptiveValue("top", 150, 50);
-	@include adaptiveValue("left", 140, -100);
+	@include adaptiveValue("top", 135, 50);
+	// @include adaptiveValue("left", 140, -100);
+	left: 0;
 	@media (max-width: em(700)){
 		  display: none;
 	}
