@@ -74,12 +74,34 @@ window.onload = function () {
 		});
 	}
 
+
+	const selectOptions = document.querySelectorAll('.select__option');
+	const itemResultText = document.querySelector('.item-result__text');
+	const itemResult = document.querySelector('.item-result');
 	const resultBtn = document.querySelector('.item-result__btn');
+	const select = document.querySelector('.form');
+	const selectContent = document.querySelector('.select__content');
+
+	selectOptions.forEach(option => {
+		option.addEventListener('click', function () {
+			itemResultText.textContent = option.textContent;
+			itemResult.classList.add('_active');
+			select.value = option.getAttribute('data-value');
+			selectContent.textContent = option.textContent;
+		});
+	});
 
 	if (resultBtn) {
 		resultBtn.addEventListener("click", function (e) {
+			itemResult.classList.remove('_active');
+			itemResultText.textContent = "کودک 1 سال"; // Устанавливаем текст в .item-result__text
+			select.value = '1'; // Устанавливаем значение селекта в '1'
+			selectContent.textContent = document.querySelector('.select__option[data-value="1"]').textContent; // Обновляем отображаемое значение в .select__content
 			numberGuests.classList.remove('_active');
-			sidebarItemOver.style.overflow = 'hidden';
+			if (sidebarItemOver) {
+				sidebarItemOver.style.overflow = 'hidden';
+			}
+			inputGuests.value = ''; // Обнуляем значение у .input-guests
 		});
 	}
 
