@@ -21,6 +21,7 @@ export function rangeInit() {
 				start: [Number(fromValue.value), Number(toValue.value)], // [0,200000]
 				connect: true,
 				// tooltips: [true, true],
+				direction: 'rtl',
 				range: {
 					'min': [Number(fromValue.dataset.rangeFrom)],
 					'max': [Number(toValue.dataset.rangeTo)]
