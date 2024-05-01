@@ -139,6 +139,12 @@
 .box-stages--air {
 	// min-height: 981px;
 	@include adaptiveValue("min-height", 1000, 400);
+	@media (max-width: em(612)){
+		@include adaptiveValue("min-height", 1300, 500);
+	}
+	@media (max-width: em(515)){
+		// @include adaptiveValue("min-height", 1300, 600);
+	}
 	.box-stages__inner {
 		@include adaptiveValue("gap", 20, 8);
 	}
@@ -163,26 +169,66 @@
   }
 }
 
+#plane {
+	transform: translate(45%, 94%);
+}
+
 .box-stages__trajectory {
 	position: absolute;
 	max-width: 100%;
 	width: 100%;
-	height: 100%;
-	overflow: hidden;
+	height: 110%;
+	// overflow: hidden;
 	@include adaptiveValue("top", 135, 50);
 	// @include adaptiveValue("left", 140, -100);
 	left: 0;
-	@media (max-width: em(700)){
-		  display: none;
+	@media (max-width: em(1024)){
+		// @include adaptiveValue("top", 20, 50);
+		top: 20px;
+		height: 113%;
+	}
+	@media (max-width: em(768)){
+		// height: 113%;
+	}
+	@media (max-width: em(540)){
+		 height: 100%; 
+	}
+	@media (max-width: em(515)){
+		 top: 0; 
+	}
+	@media (max-width: em(515)){
+		@include adaptiveValue("top", 135, 50);
 	}
 	svg {
 		width: 100%;
 		height: 100%;
+		@media (max-width: em(1024)){
+			 display: none; 
+		}
 	}
-}
-
-#tractor {
-	transform: translate(45%, 94%);
+	.trajectory {
+		display: none;
+		height: 100%;
+		@media (max-width: em(1024)){
+			  display: block;
+		}
+		@media (max-width: em(612)){
+			 height: 85%; 
+		}
+		@media (max-width: em(515)){
+			 display: none; 
+		}
+	}
+	.trajectory-mob {
+		display: none;
+		@media (max-width: em(515)){
+			 display: block; 
+			 height: 100%;
+			 object-fit: contain;
+			 object-position: right;
+			 transform: translateX(10px);
+		}
+	}
 }
 
 
