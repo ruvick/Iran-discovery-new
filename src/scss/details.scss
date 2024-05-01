@@ -646,11 +646,11 @@
 	font-size: rem(20);
 	font-weight: 600;
 	line-height: math.div(24.38, 20);
-	line-height: 24.38px;
 	svg {
-		width: 10px;
-		height: 17px;
+		width: rem(17);
+		height: rem(17);
 		fill: #C2C2C2;
+		stroke: #C2C2C2;
 		transition: $mainTransition;
 	}
 }
