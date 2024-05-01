@@ -39,7 +39,7 @@
 		@include adaptiveValue("height", 138, 83);
 		width: 100%;
 		border-radius: 50%;
-		overflow: hidden;
+		// overflow: hidden;
 		&:not(:last-child){
 			// margin-bottom: rem(12);
 			@include adaptiveValue("margin-bottom", 12, 6);

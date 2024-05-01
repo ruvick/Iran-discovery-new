@@ -346,6 +346,17 @@ h3 {
 .page__descp-details {
 	@include adaptiveValue("padding-top", 40, 20);
 	@include adaptiveValue("padding-bottom", 40, 20);
+	.box-info {
+		@media (max-width: em(768)){
+			  margin-top: rem(40);
+			  box-shadow: 0px 4px 30px 0px #0000001A;
+		}
+	}
+	.sale-banner {
+		@media (max-width: em(768)){
+			 margin-top: rem(40); 
+		}
+	}
 }
 
 .page__banner-box {
@@ -407,4 +418,17 @@ h3 {
 .page__text-info {
 	@include adaptiveValue("padding-top", 40, 20);
 	@include adaptiveValue("padding-bottom", 40, 20);
+}
+
+.page-tour-detail {
+	.sidebar-template__item {
+		@media (max-width: em(768)){
+			 &:nth-child(1){
+				display: none;
+			 } 
+			 &:nth-child(2){ 
+				display: none;
+			 }
+		}
+	}
 }

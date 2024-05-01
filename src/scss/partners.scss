@@ -19,6 +19,9 @@
 		object-fit: contain;
 		// padding: rem(23);
 		@include adaptiveValue("padding", 23, 10);
+		@media (max-width: em(375)){
+			  height: 90%;
+		}
 	}
 }
 
