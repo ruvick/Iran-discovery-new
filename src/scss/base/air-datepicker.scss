@@ -1,10 +1,20 @@
 .air-datepicker-global-container {
 	z-index: 150 !important;
-	position: absolute !important;
+	@media (min-width:em(1024)){
+		position: absolute !important;
+	}
+	@media (max-width: em(345)){
+
+	}
 }
 .air-datepicker {
-	min-width: rem(353) !important;
-	width: 100%;
+	@media (min-width:em(1024)){
+		min-width: rem(353) !important;
+		width: 100%;
+	}
+}
+@media (min-width:em(1024)){
+	  
 }
 .air-datepicker.-inline- {
 	// position: absolute !important;
@@ -38,13 +48,17 @@
 	stroke: #0587D6 !important;
 }
 .air-datepicker--navigation {
-	padding: rem(12) rem(45) rem(8) rem(45);
+	@media (min-width:em(1024)){
+		padding: rem(12) rem(45) rem(8) rem(45);
+	}
 }
 .air-datepicker-nav {
 	border: none !important;
 }
 .air-datepicker--content {
-	padding: rem(12) rem(45) rem(24) rem(45) !important;
+	@media (min-width:em(1024)){
+		padding: rem(12) rem(45) rem(24) rem(45) !important;
+	}
 }
 .air-datepicker--buttons, .air-datepicker--time {
 	border: none !important;
