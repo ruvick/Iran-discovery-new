@@ -1,7 +1,8 @@
 
-if (document.documentElement.clientWidth > 1024) {
 
-	if (document.querySelector('#flightSVG')) {
+
+if (document.querySelector('#flightSVG')) {
+	if (document.documentElement.clientWidth > 1024) {
 		gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
 		gsap.set("#flightSVG", { scale: 1, autoAlpha: 1 });

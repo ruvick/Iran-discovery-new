@@ -66,6 +66,7 @@
 	},
 	"dependencies": {
 		"air-datepicker": "^3.5.0",
+		"air-datepicker-en": "^2.2.5",
 		"simplebar": "latest"
 	}
 }
