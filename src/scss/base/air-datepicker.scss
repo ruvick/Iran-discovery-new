@@ -133,7 +133,8 @@
 	color: #fff !important;
 	background-color: #0587D6 !important;
 	border-radius: rem(7) !important;
+	order: 2;
 }
-.air-datepicker--buttons, .air-datepicker--time {
+.air-datepicker--buttons, .air-datepicker--time { 
 	padding: 0 rem(45) rem(24) rem(45) !important;
 }
