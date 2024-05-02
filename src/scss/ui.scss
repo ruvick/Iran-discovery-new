@@ -8,7 +8,7 @@
 }
 .ui {
 
-	// .ui__container
+	// .ui__container 
 
 	&__container {
 	}
@@ -16,9 +16,11 @@
 	// .ui__inner
 
 	&__inner {
-		display: grid; 
-		grid-template-columns: repeat(auto-fit, minmax(rem(600), 1fr)); 
-		gap: rem(30);
+		display: flex;
+		flex-direction: column;
+		// display: grid; 
+		// grid-template-columns: repeat(auto-fit, minmax(rem(600), 1fr)); 
+		gap: rem(50);
 	}
 
 	// .ui__item
@@ -26,10 +28,22 @@
 	&__item {
 		display: flex;
 		flex-direction: column;
+		h3 {
+			&:not(:last-child){
+				margin-bottom: rem(20);
+			}
+		}
 	}
 
 	// .ui__col
 
 	&__col {
+
 	}
+}
+
+.ui__col_directions {
+	display: flex;
+	flex-direction: column;
+	gap: rem(50);
 }

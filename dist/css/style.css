@@ -4350,14 +4350,23 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 }
 
 .ui__inner {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(37.5rem, 1fr));
-  gap: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
 }
 .ui__item {
   display: flex;
   flex-direction: column;
 }
+.ui__item h3:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+.ui__col_directions {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+
 .modal-page__inner {
   display: flex;
   align-items: center;

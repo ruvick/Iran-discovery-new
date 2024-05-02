@@ -422,7 +422,7 @@ h3 {
 
 .page-tour-detail {
 	.sidebar-template__item {
-		@media (max-width: em(768)){
+		@media (max-width: em(768)){  
 			 &:nth-child(1){
 				display: none;
 			 } 
