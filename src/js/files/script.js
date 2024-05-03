@@ -43,11 +43,21 @@ window.onload = function () {
 
 		}
 
-		// Reverse полей ввода
-		if (targetElement.classList.contains('btn-city') || targetElement.closest('.btn-city')) {
-			targetElement.closest('.inputs-city').classList.toggle('_reverse')
-		}
+	}
 
+	// Reverse полей ввода
+	let btnCity = document.getElementById('btnCity'); // Получаем кнопку по классу
+	let inpRevOne = document.getElementById('rev1'); // Получаем первый инпут по id
+	let inpRevTwo = document.getElementById('rev2'); // Получаем второй инпут по id
+
+	if (btnCity) {
+		btnCity.addEventListener('click', function () {
+			if (inpRevOne && inpRevTwo) {
+				let reverse = inpRevOne.value; // Сохраняем текущее значение первого инпута
+				inpRevOne.value = inpRevTwo.value; // Присваиваем первому инпуту значение второго
+				inpRevTwo.value = reverse; // Присваиваем второму инпуту сохраненное значение первого
+			}
+		});
 	}
 
 	//========================================================================================================================================================
