@@ -50,13 +50,20 @@ function initSliders() {
 		new Swiper('.main-banner', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation],
+			modules: [Navigation, Autoplay],
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
 			spaceBetween: 0,
 			autoHeight: true,
-			speed: 800,
+			speed: 2000,
 			centeredSlides: true,
 
 			//touchRatio: 0,
@@ -64,15 +71,6 @@ function initSliders() {
 			loop: true,
 			//preloadImages: false,
 			//lazy: true,
-
-			/*
-			// Эффекты
-			effect: 'fade',
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
-			*/
 
 			// Пагинация
 			/*

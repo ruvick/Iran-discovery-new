@@ -26,7 +26,8 @@
 		max-width: rem(843);
 		width: 100%;
 		text-align: center;
-		h1 {
+		h1, h2 {
+			color: #fff;
 			@include adaptiveValue("font-size", 64, 22);
 			font-weight: 700;
 			line-height: math.div(76.8, 64);
@@ -36,6 +37,16 @@
 		}
 	}
 	&__top-title {
+		font-size: rem(24);
+		@include adaptiveValue("font-size", 24, 16);
+		font-weight: 600;
+		line-height: math.div(28.44, 24); 
+		text-align: right;
+		color: #fff;
+	}
+	small {
+		display: flex;
+		justify-content: flex-end;
 		font-size: rem(24);
 		@include adaptiveValue("font-size", 24, 16);
 		font-weight: 600;
@@ -58,6 +69,9 @@
 		.main-banner__body {
 			max-width: 100%;
 			h1 {
+				text-align: right;
+			}
+			h2 {
 				text-align: right;
 			}
 		}
@@ -83,14 +97,31 @@
 	color: #fff;
 }
 
-.main-banner__body--center {
+.main-banner__body--center { 
 	flex: 1 1 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	small {
+		@include adaptiveValue("font-size", 40, 14);
+		font-weight: 700;
+		line-height: math.div(47.4, 40);
+		text-align: center;
+		color: #fff;
+		justify-content: center;
+			@include adaptiveValue("margin-top", 34, 15);
+	}
 }
 
 .top-title--size-m {
 	@include adaptiveValue("font-size", 48, 28);
+}
+.main-banner__body--size-m {
+	small {
+		@include adaptiveValue("font-size", 48, 28);
+	}
+	.main-banner__top-title {
+		@include adaptiveValue("font-size", 48, 28);
+	}
 }
