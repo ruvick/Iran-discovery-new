@@ -6144,10 +6144,19 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 }
 
 .item-types-visas__img-ibg {
-  max-width: 8.4375rem;
+  max-width: 8.75rem;
   width: 100%;
-  height: 140px;
   border-radius: 50%;
+}
+@supports (height: clamp( 6.25rem , 5.4419191919rem  +  4.0404040404vw , 8.75rem )) {
+  .item-types-visas__img-ibg {
+    height: clamp( 6.25rem , 5.4419191919rem  +  4.0404040404vw , 8.75rem );
+  }
+}
+@supports not (height: clamp( 6.25rem , 5.4419191919rem  +  4.0404040404vw , 8.75rem )) {
+  .item-types-visas__img-ibg {
+    height: calc(6.25rem + 2.5 * (100vw - 20rem) / 61.875);
+  }
 }
 @supports (margin-bottom: clamp( 1.125rem , 1.0037878788rem  +  0.6060606061vw , 1.5rem )) {
   .item-types-visas__img-ibg:not(:last-child) {
@@ -6158,6 +6167,9 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
   .item-types-visas__img-ibg:not(:last-child) {
     margin-bottom: calc(1.125rem + 0.375 * (100vw - 20rem) / 61.875);
   }
+}
+.item-types-visas__img-ibg img {
+  object-fit: contain;
 }
 
 .item-types-visas__title {

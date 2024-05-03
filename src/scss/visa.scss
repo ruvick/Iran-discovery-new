@@ -27,16 +27,18 @@
 		box-shadow: 0px 10px 15px 5px #0000001A;
 	}
 }
-.item-types-visas__img-ibg {
-	max-width: rem(135);
+.item-types-visas__img-ibg { 
+	max-width: rem(140);
 	width: 100%;
-	height: 140px;
+	@include adaptiveValue("height", 140, 100);
 	// padding-bottom: 49%;
 	border-radius: 50%;
 	&:not(:last-child){
 		@include adaptiveValue("margin-bottom", 24, 18);
 	}
-
+	img {
+		object-fit: contain;
+	}
 }
 .item-types-visas__title {
 	@include adaptiveValue("font-size", 32, 18);
