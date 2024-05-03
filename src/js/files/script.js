@@ -117,12 +117,12 @@ window.onload = function () {
 
 	// banners-img > 5
 	const bannersImg = document.querySelector('.banners-img');
-	const itemBannersImg = bannersImg.querySelectorAll('.item-banners-img');
 
 	if (bannersImg) {
+		const itemBannersImg = bannersImg.querySelectorAll('.item-banners-img');
 		if (itemBannersImg) {
 			if (itemBannersImg.length > 5) {
-				var fourthItemDescp = itemBannersImg[2].querySelector('.item-banners-img__descp');
+				let fourthItemDescp = itemBannersImg[2].querySelector('.item-banners-img__descp');
 				if (fourthItemDescp) {
 					fourthItemDescp.classList.add('active');
 				}
