@@ -23,7 +23,7 @@
 	grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr)); 
 	@include adaptiveValue("gap", 20, 14);
 	// .banners-tours__card
-	&__card {
+	&__card { 
 	}
 }
 
@@ -113,6 +113,19 @@
 		  }
 	 } 
   }
+}
+
+.card-banner {
+	.card-banner__img-ibg img {
+		transition: $mainTransition;
+	}
+	@media (any-hover: hover){
+		 &:hover { 
+		  .card-banner__img-ibg img {
+			transform: scale(1.05);
+		  }
+	  } 
+	}
 }
 
 .card-banner__icons {

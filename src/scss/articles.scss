@@ -144,7 +144,14 @@
 	@include adaptiveValue("font-size", 22, 16);
 	width: 100%;
 	@include adaptiveValue("padding-top", 10, 5);
-	@include adaptiveValue("padding-bottom", 10, 5);
+	@include adaptiveValue("padding-bottom", 10, 5); 
+}
+.articles--guides {
+	.panel-articles__link {
+		@media (min-width:em(768)){
+			  min-width: rem(200);
+		}
+	}
 }
 .panel-articles__info {
 	display: flex;

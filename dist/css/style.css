@@ -4765,6 +4765,15 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
   }
 }
 
+.card-banner .card-banner__img-ibg img {
+  transition: all 0.4s ease 0s;
+}
+@media (any-hover: hover) {
+  .card-banner:hover .card-banner__img-ibg img {
+    transform: scale(1.05);
+  }
+}
+
 .icons-card-banner {
   display: flex;
   align-items: center;
@@ -5644,6 +5653,12 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 @supports not (padding-bottom: clamp( 0.3125rem , 0.211489899rem  +  0.5050505051vw , 0.625rem )) {
   .panel-articles__link {
     padding-bottom: calc(0.3125rem + 0.3125 * (100vw - 20rem) / 61.875);
+  }
+}
+
+@media (min-width: 48em) {
+  .articles--guides .panel-articles__link {
+    min-width: 12.5rem;
   }
 }
 
