@@ -113,6 +113,22 @@ window.onload = function () {
 			inputGuests.value = ''; // Обнуляем значение у .input-guests
 		});
 	}
+	//=========================================================================================================
+
+	// banners-img > 5
+	const bannersImg = document.querySelector('.banners-img');
+	const itemBannersImg = bannersImg.querySelectorAll('.item-banners-img');
+
+	if (bannersImg) {
+		if (itemBannersImg) {
+			if (itemBannersImg.length > 5) {
+				var fourthItemDescp = itemBannersImg[2].querySelector('.item-banners-img__descp');
+				if (fourthItemDescp) {
+					fourthItemDescp.classList.add('active');
+				}
+			}
+		}
+	}
 
 }
 //========================================================================================================================================================
