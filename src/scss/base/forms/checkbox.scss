@@ -26,7 +26,7 @@
 		display: inline-flex; 
 		align-items: center;
 		position: relative;
-		gap: 10px;
+		gap: rem(10);
 		&:before {
 			content: "";
 			align-self: flex-start;
@@ -42,9 +42,11 @@
 	&__text {
 		direction: rtl;
 		text-align: right;
-		display: flex;
-		flex-wrap: wrap;
+		@include adaptiveValue("font-size", 20, 16);
+		// display: flex;
+		// flex-wrap: wrap;
 		a {
+			display: inline-block;
 			color: #0587D6;
 		}
 	}

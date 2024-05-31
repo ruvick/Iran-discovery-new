@@ -578,6 +578,81 @@ function initSliders() {
 			}
 		});
 
+		new Swiper('.regions__slider--dooble', {
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation, Pagination],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1.1,
+			spaceBetween: 8.5,
+			centeredSlides: true,
+			autoHeight: true,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			// lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагинация
+			pagination: {
+				el: '.typical-slider__swiper-pagination--dooble',
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.regions__button-prev',
+				nextEl: '.regions__button-next',
+			},
+
+			// Брейкпоинты
+
+			breakpoints: {
+				480: {
+					slidesPerView: 1.3,
+					spaceBetween: 10,
+				},
+				540: {
+					slidesPerView: 1.8,
+				},
+				768: {
+					slidesPerView: 2.3,
+					spaceBetween: 15,
+
+				},
+				992: {
+					slidesPerView: 3,
+					centeredSlides: false,
+					spaceBetween: 20,
+				},
+			},
+
+			// События
+			on: {
+
+			}
+		});
+
 		new Swiper('.tour-article__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая

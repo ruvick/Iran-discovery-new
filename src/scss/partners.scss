@@ -18,14 +18,14 @@
 		height: 100%;
 		object-fit: contain;
 		// padding: rem(23);
-		@include adaptiveValue("padding", 23, 10);
+		@include adaptiveValue("padding", 15, 10);
 		@media (max-width: em(375)){
 			  height: 90%;
 		}
 	}
 }
 
-.partners__banners{
+.partners__banners{ 
 	display: grid; 
 	grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr)); 
 	@include adaptiveValue("gap", 20, 8);

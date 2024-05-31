@@ -114,21 +114,21 @@
 }
 
 .box-stages__item {
-	align-self: flex-end;
+	align-self: flex-start;
 	&::before{
 		// left: -39px;
-		@include adaptiveValue("left", -39, -5);
-		right: auto;
+		@include adaptiveValue("right", -39, -5);
+		left: auto;
 		@media (max-width: em(515)){
 			 display: none; 
 		}
 	}
 	&:nth-child(2n) {
-		align-self: flex-start;
+		align-self: flex-end;
 		&::before{
 			// right: -39px;
-			@include adaptiveValue("right", -39, -5);
-			left: auto;
+			@include adaptiveValue("left", -39, -5);
+			right: auto;
 			@media (max-width: em(515)){
 				 display: none; 
 			}
@@ -339,5 +339,12 @@
 	// }			
 	@media (max-width: em(991)){
 		flex: 1 1 auto !important;
+	}
+}
+//========================================================================================================================================================
+
+.actions__container {
+	@media (max-width: em(540)){
+		padding: 0;
 	}
 }

@@ -54,7 +54,19 @@
 }
 .header-box-info__calendar {
 	direction: ltr;
-	height: rem(48);
+	height: rem(48); 
+		input::-webkit-input-placeholder {
+			color: #C2C2C2;
+		}
+		input::-moz-placeholder {
+			color: #C2C2C2;
+		}
+		input:-moz-placeholder {
+			color: #C2C2C2;
+		}
+		input:-ms-input-placeholder {
+			color: #C2C2C2;
+		}
 }
 .header-box-info__buttons {
 }
@@ -378,17 +390,36 @@
 	padding-bottom: rem(4);
 	background-color: #FFD3B3;
 	span {
+		position: relative;
 	@include adaptiveValue("font-size", 20, 16);
 	font-weight: 700;
 	// line-height: math.div(28.44, 20);
 	text-align: center;
 	color: #0587D6;
+	
+	&::before{
+		content:''; 
+		position: absolute;
+		bottom: rem(3);
+		width: 100%;
+		border-bottom: 1px dashed #0587D6;
+		transition: $mainTransition;
+	}
 	}
 	svg {
 		width: rem(36);
 		height: rem(40);
 		margin-left: rem(10);
 		// border: 1px solid #000;
+	}
+	@media (any-hover: hover){
+			&:hover { 
+				span {
+					&::before{
+						border-bottom: 1px dashed #fff;
+					}
+				}
+		  } 
 	}
 }
 
@@ -698,6 +729,14 @@
 .spoller-box__body {
 	.price-filter__body {
 		padding-bottom: 16px;
+	}
+}
+
+.schedule-excursions__item {
+	@media (max-width: em(515)){
+		.spollers__title-right {
+			justify-content: end;
+		}
 	}
 }
 

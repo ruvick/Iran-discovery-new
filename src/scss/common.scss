@@ -471,6 +471,7 @@
 	background: #EFF7FF;
 	border: 1px solid #CEE5FF;
 	border-radius: rem(10);
+	@include adaptiveValue("padding-bottom", 38, 30);
 	.input-item {
 		border: 1px solid #CEE5FF;
 	}
@@ -521,9 +522,9 @@
 	flex-direction: column;
 	gap: rem(26);
 	@media (max-width: em(768)){
-		 .item-form__label {
-			display: none;
-		 } 
+		//  .item-form__label {
+		// 	display: none;
+		//  } 
 	}
 	.checkbox__label:before {
 		background-color: #fff;
@@ -568,10 +569,16 @@
 .form-box-actions__row {
 	display: grid; 
 	grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr)); 
+	align-items: flex-start;
 	gap: rem(21);
 	@media (max-width: em(630)){
 		grid-template-columns: 1fr;
 	}
+}
+
+.form-box-actions__btn {
+	font-size: rem(24);
+	@include adaptiveValue("padding", 9, 5);
 }
 
 .result-box-actions {
