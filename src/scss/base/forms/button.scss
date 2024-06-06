@@ -30,11 +30,16 @@
 		width: 100%;
 	}
 	&.btn--blue{
-		background: linear-gradient(0deg, #017AC3, #017AC3),linear-gradient(313.3deg, #017AC3 -53.88%, #65CFF0 119.28%);
+		background: linear-gradient(313.3deg, #017AC3 -53.88%, #65CFF0 119.28%);
 		&:active {
 			transition: all 0.2s ease 0s;
 			background: #EB4701;
 		}
+		// @media (any-hover: hover){
+		// 	 &:hover { 
+		// 		background: rgba(0, 68, 149, 1);
+		//   } 
+		// }
 	}
 	&.btn--light {
 		color: #0587D6;
