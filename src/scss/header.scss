@@ -364,6 +364,7 @@
 			width: 100%;
 			  &:not(:last-child){
 				margin-right: 0 !important;
+				border-bottom: 1px solid #CEE5FF;
 			  }
 		}
 	}
@@ -412,6 +413,7 @@
 		visibility: hidden;
 		opacity: 0;
 		transition: all 0.3s ease 0s;
+		overflow: hidden;
 	}
 	.menu-open .navigation-header {
 		ul {
