@@ -63,7 +63,8 @@
 }
 .sidebar-template__body {
 	position: sticky;
-	top: rem(215);
+	// top: rem(215);
+	top: rem(35);
 	@media (max-width: 1024px){
 		  position: static;
 	}
