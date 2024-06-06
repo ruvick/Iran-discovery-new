@@ -332,11 +332,14 @@
 	&__list {
 	}
 
-	ul {
-		display: flex;
+	ul { 
+		// display: flex;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 		align-items: center;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		// padding: 0 rem(22.5);
 		@media (max-width: em(991)){
 			  justify-content: start;
 		}
@@ -348,14 +351,15 @@
 
 	li {
 		display: flex;
-		&:not(:last-child){
-			margin-right: rem(35);
-		}
-		@media (max-width: em(991)){
-			&:not(:last-child){
-				margin-right: rem(45);
-			}
-		}
+		justify-content: center;
+		// &:not(:last-child){
+		// 	margin-right: rem(35);
+		// }
+		// @media (max-width: em(991)){
+		// 	&:not(:last-child){
+		// 		margin-right: rem(45);
+		// 	}
+		// }
 		@media (max-width: em(991)){
 			width: 100%;
 			  &:not(:last-child){
