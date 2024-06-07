@@ -104,7 +104,7 @@
 	display: flex;
 	flex-direction: column;
 	// .sidebar-template__item
-	&__item {
+	&__item { 
 		position: relative;
 		border-radius: rem(10);
 		border: rem(2) solid #CEE5FF;
@@ -155,6 +155,12 @@
 				justify-content: flex-end;
 			  }
 		}
+	}
+}
+.sidebar-template__item--banner {
+	overflow: hidden;
+	@media (max-width: em(991)){
+		border-radius: rem(20);
 	}
 }
 .sidebar-template__item--over { 

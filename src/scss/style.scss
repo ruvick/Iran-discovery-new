@@ -346,10 +346,10 @@ h3 {
 }
 
 .page__descp-details {
-	// @include adaptiveValue("padding-top", 20, 10);
+	@include adaptiveValue("padding-top", 20, 10);
 	@include adaptiveValue("padding-bottom", 40, 20);
 	.box-info {
-		@media (max-width: em(768)){
+		@media (max-width: em(991)){
 			  margin-top: rem(40);
 			  box-shadow: 0px 4px 30px 0px #0000001A;
 		}
@@ -437,7 +437,7 @@ h3 {
 
 .page_tour-catalog {
 	.box-info--catalog {
-		@media (max-width: em(768)){
+		@media (max-width: em(991)){
 			  &:not(:last-child){
 				margin-bottom: rem(40);
 			  }
@@ -450,4 +450,8 @@ h3 {
 			 } 
 		}
 	}
+}
+
+.typical-slider {
+	padding: 2px;
 }

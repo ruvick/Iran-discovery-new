@@ -359,10 +359,11 @@
 		line-height: math.div(23.7, 20);
 		text-align: right; 
 		color: #0587D6;
-		padding-bottom: rem(3);
+		padding-bottom: rem(8);
 		border-bottom: 1px solid #E7F2FF;
+		padding-right: rem(20);
 		&:not(:last-child){
-			margin-bottom: rem(8);
+			margin-bottom: rem(8); 
 		}
 	}
 }

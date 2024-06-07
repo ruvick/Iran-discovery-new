@@ -20,9 +20,15 @@
 			@include adaptiveValue("margin-bottom", 36, 20);
 		}
 		li {
+			//styleName: Text;
+			font-size: rem(20);
+			font-weight: 400;
+			line-height: math.div(34, 20);
+			text-align: right;
+			color: #444;
 			&:not(:last-child){
 				@include adaptiveValue("margin-bottom", 15, 8);
-			}
+			} 
 		}
 	}
 
@@ -35,7 +41,7 @@
 
 }
 
-.notification-content {
+.notification-content { 
 	font-size: rem(16);
 	font-weight: 400;
 	line-height: math.div(27.2, 16);
@@ -45,4 +51,10 @@
 	background-color: #E7F2FF;
 	overflow: hidden;
 	border-right: rem(4) solid #0587D6;
+	q::before{
+		display: none;
+	}
+	q::after{
+		display: none;
+	}
 } 
