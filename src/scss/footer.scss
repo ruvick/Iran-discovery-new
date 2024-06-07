@@ -132,13 +132,21 @@
 .navigation-footer {
 
 	// .navigation-footer__inner
-
+	// &__wrapper {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	border-top: 1px solid #DCDBDB;
+	// }
 	&__inner {
 		display: grid; 
-		grid-template-columns: repeat(auto-fit, minmax(rem(210), 1fr)); 
+		grid-template-columns: repeat(auto-fill, minmax(rem(250), rem(250))); 
+		justify-content: center;
 		gap: rem(25);
 		padding: rem(18) 0 rem(44) 0;
 		border-top: 1px solid #DCDBDB;
+		// @media (min-width:em(1024)){
+		// 	  width: 80%;
+		// }
 		@media (max-width: em(540)){
 			grid-template-columns: repeat(auto-fit, minmax(rem(150), 1fr));  
 		}
@@ -149,6 +157,11 @@
 
 		&__col {
 			direction: rtl;
+			@media (min-width:em(1024)){
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 		}
 
 		// .navigation-footer__title
