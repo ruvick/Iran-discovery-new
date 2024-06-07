@@ -39,7 +39,16 @@ window.onload = function () {
 				controlPagePopup.closest('.control-page').classList.remove('_active');
 				bodyUnlock();
 			}
-			//========================================================================================================================================================
+
+			// Проверяем, если клик произошел на элементе с классом cat-button__input
+			if (targetElement.closest('.cat-button__input')) {
+				const controlPage = document.querySelector('.control-page');
+				if (controlPage) {
+					controlPage.classList.remove('_active');
+					bodyUnlock();
+				}
+			}
+			// // Popup чекбоксов END ========================================================================================================================================================
 
 		}
 
