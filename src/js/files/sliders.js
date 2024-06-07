@@ -566,7 +566,7 @@ function initSliders() {
 
 				},
 				992: {
-					slidesPerView: 3,
+					slidesPerView: 4,
 					centeredSlides: false,
 					spaceBetween: 20,
 				},
