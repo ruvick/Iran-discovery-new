@@ -53,10 +53,10 @@
 
 // Убираем скачок при блокировке 
 .lock .header {
-	@media (min-width:em(1025)){
-		left: auto;
-		right: rem(3.3);
-	}
+	// @media (min-width:em(1025)){
+	// 	left: auto;
+	// 	right: rem(3.3);
+	// }
 }
 
 .IsAdmin #panel {
