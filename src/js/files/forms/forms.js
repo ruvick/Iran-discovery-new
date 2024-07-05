@@ -187,7 +187,7 @@ export function formSubmit(options = { validate: true }) {
 					alert("Ошибка");
 					form.classList.remove('_sending');
 				}
-			} else if (form.hasAttribute('data-dev')) {	// Если режим разработки
+			} else if (form.hasAttribute('data-dev')) {    // Если режим разработки
 				e.preventDefault();
 				formSent(form);
 			}
@@ -207,12 +207,20 @@ export function formSubmit(options = { validate: true }) {
 				form: form
 			}
 		}));
-		// Показываем попап, если подключен модуль попапов 
+		// Показываем попап, если подключен модуль попапов
 		// и для формы указана настройка
 		setTimeout(() => {
 			if (flsModules.popup) {
 				const popup = form.dataset.popupMessage;
-				popup ? flsModules.popup.open(popup) : null;
+				if (popup) {
+					flsModules.popup.open(popup);
+					// Проверяем, если попап с id "sending"
+					if (popup === '#sending') {
+						setTimeout(() => {
+							window.location.href = 'home.html';
+						}, 3000); // Перенаправление через 3 секунды
+					}
+				}
 			}
 		}, 0);
 		// Очищаем форму
@@ -274,7 +282,7 @@ export function formRating() {
 			const ratingActiveWidth = index / 0.05;
 			ratingActive.style.width = `${ratingActiveWidth}%`;
 		}
-		// Возможность указать оценку 
+		// Возможность указать оценку
 		function setRating(rating) {
 			const ratingItems = rating.querySelectorAll('.rating__item');
 			for (let index = 0; index < ratingItems.length; index++) {
@@ -313,10 +321,10 @@ export function formRating() {
 					method: 'GET',
 
 					//body: JSON.stringify({
-					//	userRating: value
+					//    userRating: value
 					//}),
 					//headers: {
-					//	'content-type': 'application/json'
+					//    'content-type': 'application/json'
 					//}
 
 				});
