@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar" prefix="og: https://ogp.me/ns/website#">
 @@include('html/_head.htm',{
-"title":"Главная"
+"title":"Главная",
+"description": "Описание страницы"
 })
 
 <body>
@@ -9,17 +10,16 @@
 		@@include('html/_header.htm',{})
 		<main class="page">
 
-			<section class="page__main-banner main-banner swiper">
-				<div class="main-banner__wrapper	swiper-wrapper">
+			<section class="page__main-banner main-banner swiper" itemscope itemtype="https://schema.org/ImageObject">
+				<div class="main-banner__wrapper swiper-wrapper">
 
 					<div class="main-banner__slider swiper-slide">
 						<div class="nuar-blk"></div>
 						<div class="main-banner__slide">
-							<img src="img/test/01.jpg" loading="lazy" alt="Картинка" title="Картинка">
+							<img src="img/test/01.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl">
 						</div>
 						<div class="main-banner__container">
 							<div class="main-banner__descp">
-								<!-- <div class="main-banner__header">123</div> -->
 								<div class="main-banner__body">
 									<h2 itemprop="name">خدمات
 										<br>برای تجارت و گردشگری
@@ -33,11 +33,10 @@
 					<div class="main-banner__slider swiper-slide">
 						<div class="nuar-blk"></div>
 						<div class="main-banner__slide">
-							<img src="img/test/01.jpg" loading="lazy" alt="Картинка" title="Картинка">
+							<img src="img/test/01.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl">
 						</div>
 						<div class="main-banner__container">
 							<div class="main-banner__descp">
-								<!-- <div class="main-banner__header">123</div> -->
 								<div class="main-banner__body">
 									<h2 itemprop="name">خدمات
 										<br>برای تجارت و گردشگری
@@ -55,60 +54,66 @@
 				<div class="info__container">
 					<div class="info__inner">
 
-						<a href="#" class="info__item">
+						<a href="#" class="info__item" itemscope itemtype="https://schema.org/Service">
 							<div class="info__img">
-								<img src="img/icons/content/21.svg" loading="lazy" alt="Картинка" title="Картинка">
+								<img src="img/icons/content/21.svg" loading="lazy" alt="Картинка" title="Картинка"
+									itemprop="image">
 							</div>
-							<div class="info__text">
+							<div class="info__text" itemprop="name">
 								تور گاید روسیه
 							</div>
 						</a>
 
-						<a href="#" class="info__item">
+						<a href="#" class="info__item" itemscope itemtype="https://schema.org/Service">
 							<div class="info__img">
-								<img src="img/icons/content/19.svg" loading="lazy" alt="Картинка" title="Картинка">
+								<img src="img/icons/content/19.svg" loading="lazy" alt="Картинка" title="Картинка"
+									itemprop="image">
 							</div>
-							<div class="info__text">
+							<div class="info__text" itemprop="name">
 								بیمه <br>
 								روسیه
 							</div>
 						</a>
 
-						<a href="#" class="info__item">
+						<a href="#" class="info__item" itemscope itemtype="https://schema.org/Service">
 							<div class="info__img">
-								<img src="img/icons/content/01.svg" loading="lazy" alt="Картинка" title="Картинка">
+								<img src="img/icons/content/01.svg" loading="lazy" alt="Картинка" title="Картинка"
+									itemprop="image">
 							</div>
-							<div class="info__text">
+							<div class="info__text" itemprop="name">
 								حمل و نقل در
 								روسیه
 							</div>
 						</a>
 
-						<a href="#" class="info__item">
+						<a href="#" class="info__item" itemscope itemtype="https://schema.org/Service">
 							<div class="info__img">
-								<img src="img/icons/content/18.svg" loading="lazy" alt="Картинка" title="Картинка">
+								<img src="img/icons/content/18.svg" loading="lazy" alt="Картинка" title="Картинка"
+									itemprop="image">
 							</div>
-							<div class="info__text">
+							<div class="info__text" itemprop="name">
 								هتل های
 								روسیه
 							</div>
 						</a>
 
-						<a href="#" class="info__item">
+						<a href="#" class="info__item" itemscope itemtype="https://schema.org/Service">
 							<div class="info__img">
-								<img src="img/icons/content/27.svg" loading="lazy" alt="Картинка" title="Картинка">
+								<img src="img/icons/content/27.svg" loading="lazy" alt="Картинка" title="Картинка"
+									itemprop="image">
 							</div>
-							<div class="info__text">
+							<div class="info__text" itemprop="name">
 								تورهای <br>
 								روسیه
 							</div>
 						</a>
 
-						<a href="#" class="info__item">
+						<a href="#" class="info__item" itemscope itemtype="https://schema.org/Service">
 							<div class="info__img">
-								<img src="img/icons/content/26.svg" loading="lazy" alt="Картинка" title="Картинка">
+								<img src="img/icons/content/26.svg" loading="lazy" alt="Картинка" title="Картинка"
+									itemprop="image">
 							</div>
-							<div class="info__text">
+							<div class="info__text" itemprop="name">
 								ویزای<br>
 								روسیه
 							</div>
@@ -125,29 +130,31 @@
 
 					<div class="tours__banners banners-tours">
 
-						<a href="" class="banners-tours__card card-banner">
+						<a href="" class="banners-tours__card card-banner" itemscope
+							itemtype="https://schema.org/TouristTrip">
 							<div class="nuar-blk"></div>
 							<div class="card-banner__img">
-								<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+								<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="image">
 							</div>
 							<div class="card-banner__descp">
-								<div class="card-banner__city">منطقه کالینینگراد</div>
-								<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-								<div class="card-banner__prices">30.000.000 تومان</div>
-								<div class="card-banner__time">5 اسفند 1403</div>
+								<div class="card-banner__city" itemprop="name">منطقه کالینینگراد</div>
+								<div class="card-banner__excursion" itemprop="description">تور شهر کالینینگراد</div>
+								<div class="card-banner__prices" itemprop="price">30.000.000 تومان</div>
+								<div class="card-banner__time" itemprop="startDate">5 اسفند 1403</div>
 							</div>
 						</a>
 
-						<a href="" class="banners-tours__card card-banner">
+						<a href="" class="banners-tours__card card-banner" itemscope
+							itemtype="https://schema.org/TouristTrip">
 							<div class="nuar-blk"></div>
 							<div class="card-banner__img">
-								<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+								<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="image">
 							</div>
 							<div class="card-banner__descp">
-								<div class="card-banner__city">منطقه کالینینگراد</div>
-								<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-								<div class="card-banner__prices">30.000.000 تومان</div>
-								<div class="card-banner__time">5 اسفند 1403</div>
+								<div class="card-banner__city" itemprop="name">منطقه کالینینگراد</div>
+								<div class="card-banner__excursion" itemprop="description">تور شهر کالینینگراد</div>
+								<div class="card-banner__prices" itemprop="price">30.000.000 تومان</div>
+								<div class="card-banner__time" itemprop="startDate">5 اسفند 1403</div>
 							</div>
 						</a>
 
@@ -160,91 +167,97 @@
 						<div class="typical-slider__wrapper swiper-wrapper">
 
 							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+								<a href="" class="card-banner" itemscope itemtype="https://schema.org/TouristTrip">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
+										<div class="card-banner__city" itemprop="name">منطقه کالینینگراد</div>
+										<div class="card-banner__excursion" itemprop="description">تور شهر کالینینگراد</div>
+										<div class="card-banner__prices" itemprop="price">30.000.000 تومان</div>
+										<div class="card-banner__time" itemprop="startDate">5 اسفند 1403</div>
 									</div>
 								</a>
 							</div>
 
 							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+								<a href="" class="card-banner" itemscope itemtype="https://schema.org/TouristTrip">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
+										<div class="card-banner__city" itemprop="name">منطقه کالینینگراد</div>
+										<div class="card-banner__excursion" itemprop="description">تور شهر کالینینگراد</div>
+										<div class="card-banner__prices" itemprop="price">30.000.000 تومان</div>
+										<div class="card-banner__time" itemprop="startDate">5 اسفند 1403</div>
 									</div>
 								</a>
 							</div>
 
 							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+								<a href="" class="card-banner" itemscope itemtype="https://schema.org/TouristTrip">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
+										<div class="card-banner__city" itemprop="name">منطقه کالینینگراد</div>
+										<div class="card-banner__excursion" itemprop="description">تور شهر کالینینگراد</div>
+										<div class="card-banner__prices" itemprop="price">30.000.000 تومان</div>
+										<div class="card-banner__time" itemprop="startDate">5 اسفند 1403</div>
 									</div>
 								</a>
 							</div>
 
 							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+								<a href="" class="card-banner" itemscope itemtype="https://schema.org/TouristTrip">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
+										<div class="card-banner__city" itemprop="name">منطقه کالینینگراد</div>
+										<div class="card-banner__excursion" itemprop="description">تور شهر کالینینگراد</div>
+										<div class="card-banner__prices" itemprop="price">30.000.000 تومان</div>
+										<div class="card-banner__time" itemprop="startDate">5 اسفند 1403</div>
 									</div>
 								</a>
 							</div>
 
 							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+								<a href="" class="card-banner" itemscope itemtype="https://schema.org/TouristTrip">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
+										<div class="card-banner__city" itemprop="name">منطقه کالینینگراد</div>
+										<div class="card-banner__excursion" itemprop="description">تور شهر کالینینگراد</div>
+										<div class="card-banner__prices" itemprop="price">30.000.000 تومان</div>
+										<div class="card-banner__time" itemprop="startDate">5 اسفند 1403</div>
 									</div>
 								</a>
 							</div>
 
 							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+								<a href="" class="card-banner" itemscope itemtype="https://schema.org/TouristTrip">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
+										<div class="card-banner__city" itemprop="name">منطقه کالینینگراد</div>
+										<div class="card-banner__excursion" itemprop="description">تور شهر کالینینگراد</div>
+										<div class="card-banner__prices" itemprop="price">30.000.000 تومان</div>
+										<div class="card-banner__time" itemprop="startDate">5 اسفند 1403</div>
 									</div>
 								</a>
 							</div>
@@ -267,7 +280,7 @@
 				</div>
 			</section>
 
-			<section class="page__hotels hotels">
+			<section class="page__hotels hotels" itemscope itemtype="https://schema.org/Hotel">
 				<div class="hotels__container">
 					<h2 class="page__title title" itemprop="name"><a href=""><span>هتل های روسیه</span></a></h2>
 				</div>
@@ -276,16 +289,16 @@
 					<div class="hotels-slider typical-slider swiper">
 						<div class="tours__wrapper swiper-wrapper">
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Hotel">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<!-- <div class="card-banner__city">منطقه کالینینگراد</div> -->
-										<div class="card-banner__excursion">هتل مسکو</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">هتل مسکو</div>
+										<div class="card-banner__prices" itemprop="priceRange">30.000.000 تومان</div>
 										<div class="card-banner__icons icons-card-banner">
 											<div class="icons-card-banner__item-ico">
 												<svg>
@@ -326,16 +339,16 @@
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Hotel">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<!-- <div class="card-banner__city">منطقه کالینینگراد</div> -->
-										<div class="card-banner__excursion">کیهان سن پترزبورگ المپیا</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">کیهان سن پترزبورگ المپیا</div>
+										<div class="card-banner__prices" itemprop="priceRange">30.000.000 تومان</div>
 										<div class="card-banner__icons icons-card-banner">
 											<div class="icons-card-banner__item-ico">
 												<svg>
@@ -376,16 +389,16 @@
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Hotel">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<!-- <div class="card-banner__city">منطقه کالینینگراد</div> -->
-										<div class="card-banner__excursion">هتل سیتی</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">هتل سیتی</div>
+										<div class="card-banner__prices" itemprop="priceRange">30.000.000 تومان</div>
 										<div class="card-banner__icons icons-card-banner">
 											<div class="icons-card-banner__item-ico">
 												<svg>
@@ -426,16 +439,16 @@
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Hotel">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<!-- <div class="card-banner__city">منطقه کالینینگراد</div> -->
-										<div class="card-banner__excursion">هتل مسکو</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">هتل مسکو</div>
+										<div class="card-banner__prices" itemprop="priceRange">30.000.000 تومان</div>
 										<div class="card-banner__icons icons-card-banner">
 											<div class="icons-card-banner__item-ico">
 												<svg>
@@ -476,16 +489,16 @@
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Hotel">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<!-- <div class="card-banner__city">منطقه کالینینگراد</div> -->
-										<div class="card-banner__excursion">هتل مسکو</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">هتل مسکو</div>
+										<div class="card-banner__prices" itemprop="priceRange">30.000.000 تومان</div>
 										<div class="card-banner__icons icons-card-banner">
 											<div class="icons-card-banner__item-ico">
 												<svg>
@@ -498,7 +511,7 @@
 													<use xlink:href="img/icons/sprite.svg#star"></use>
 												</svg>
 												<svg>
-													<use xlink:href="img/icons/sprite.svg#star-empty"></use>
+													<use xlink:href="img/icons/sprite.svg#star"></use>
 												</svg>
 												<svg>
 													<use xlink:href="img/icons/sprite.svg#star-empty"></use>
@@ -526,16 +539,16 @@
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Hotel">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<!-- <div class="card-banner__city">منطقه کالینینگراد</div> -->
-										<div class="card-banner__excursion">هتل مسکو</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">هتل مسکو</div>
+										<div class="card-banner__prices" itemprop="priceRange">30.000.000 تومان</div>
 										<div class="card-banner__icons icons-card-banner">
 											<div class="icons-card-banner__item-ico">
 												<svg>
@@ -592,29 +605,30 @@
 					</button>
 
 				</div>
-
 			</section>
 
-			<section class="page__info-double info">
+			<section class="page__info-double info" itemscope itemtype="https://schema.org/TouristTrip">
 				<div class="info__container">
 					<h2 class="page__title title" itemprop="name"><a href=""><span>سفر در روسیه</span></a></h2>
 					<div class="info__inner info__inner--big">
 
-						<a id="m-trains" href="#" class="info__item">
+						<a id="m-trains" href="#" class="info__item" itemscope itemtype="https://schema.org/Service">
 							<div class="info__img">
-								<img src="img/icons/content/10.svg" loading="lazy" alt="Картинка" title="Картинка">
+								<img src="img/icons/content/10.svg" loading="lazy" alt="Картинка" title="Картинка"
+									itemprop="image">
 							</div>
-							<div class="info__text">
+							<div class="info__text" itemprop="name">
 								خرید بلیط قطار<br>
 								در روسیه
 							</div>
 						</a>
 
-						<a id="m-flights" href="#" class="info__item">
+						<a id="m-flights" href="#" class="info__item" itemscope itemtype="https://schema.org/Service">
 							<div class="info__img">
-								<img src="img/icons/content/17.svg" loading="lazy" alt="Картинка" title="Картинка">
+								<img src="img/icons/content/17.svg" loading="lazy" alt="Картинка" title="Картинка"
+									itemprop="image">
 							</div>
-							<div class="info__text">
+							<div class="info__text" itemprop="name">
 								خرید بلیط هواپیما<br>
 								در روسیه
 							</div>
@@ -626,7 +640,7 @@
 
 			@@include('html/components/_application.htm',{})
 
-			<section class="page__events events">
+			<section class="page__events events" itemscope itemtype="https://schema.org/Event">
 				<div class="events__container">
 					<h2 class="page__title title" itemprop="name"><a href=""><span>فعالیت ها در روسیه</span></a></h2>
 				</div>
@@ -635,80 +649,104 @@
 					<div class="events-slider typical-slider swiper">
 						<div class="tours__wrapper swiper-wrapper">
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Event">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">کنسرت در مسکو </div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">کنسرت در مسکو</div>
+										<div class="card-banner__prices" itemprop="offers" itemscope
+											itemtype="https://schema.org/Offer">
+											<span itemprop="price">30.000.000 تومان</span>
+										</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Event">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">اسکی در مسکو </div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">اسکی در مسکو</div>
+										<div class="card-banner__prices" itemprop="offers" itemscope
+											itemtype="https://schema.org/Offer">
+											<span itemprop="price">30.000.000 تومان</span>
+										</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Event">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">فوتو سشن آرمیتاژ </div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">فوتو سشن آرمیتاژ</div>
+										<div class="card-banner__prices" itemprop="offers" itemscope
+											itemtype="https://schema.org/Offer">
+											<span itemprop="price">30.000.000 تومان</span>
+										</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Event">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">کنسرت در مسکو </div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">فوتو سشن آرمیتاژ</div>
+										<div class="card-banner__prices" itemprop="offers" itemscope
+											itemtype="https://schema.org/Offer">
+											<span itemprop="price">30.000.000 تومان</span>
+										</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Event">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">کنسرت در مسکو </div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">فوتو سشن آرمیتاژ</div>
+										<div class="card-banner__prices" itemprop="offers" itemscope
+											itemtype="https://schema.org/Offer">
+											<span itemprop="price">30.000.000 تومان</span>
+										</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Event">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">کنسرت در مسکو </div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
+										<div class="card-banner__excursion" itemprop="name">فوتو سشن آرمیتاژ</div>
+										<div class="card-banner__prices" itemprop="offers" itemscope
+											itemtype="https://schema.org/Offer">
+											<span itemprop="price">30.000.000 تومان</span>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -729,10 +767,9 @@
 					</button>
 
 				</div>
-
 			</section>
 
-			<section class="page__articles articles">
+			<section class="page__articles articles" itemscope itemtype="https://schema.org/Article">
 				<div class="articles__container">
 					<h2 class="page__title title" itemprop="name"><a href=""><span>مقالات ما</span></a></h2>
 				</div>
@@ -741,16 +778,17 @@
 					<div class="articles-slider typical-slider swiper">
 						<div class="tours__wrapper swiper-wrapper">
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
 								<a href="#" class="article-card">
 									<div class="article-card__img-ibg">
-										<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="article-card__descp">
-										<div class="article-card__title">اسکی در روسیه </div>
-										<ul class="article-card__list">
+										<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
+										<ul class="article-card__list" itemprop="articleBody">
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 										</ul>
@@ -758,16 +796,17 @@
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
 								<a href="#" class="article-card">
 									<div class="article-card__img-ibg">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="article-card__descp">
-										<div class="article-card__title">فوتو سشن کرملین </div>
-										<ul class="article-card__list">
+										<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
+										<ul class="article-card__list" itemprop="articleBody">
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 										</ul>
@@ -775,16 +814,17 @@
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
 								<a href="#" class="article-card">
 									<div class="article-card__img-ibg">
-										<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="article-card__descp">
-										<div class="article-card__title">سورتمه با هاسکی </div>
-										<ul class="article-card__list">
+										<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
+										<ul class="article-card__list" itemprop="articleBody">
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 										</ul>
@@ -792,16 +832,17 @@
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
 								<a href="#" class="article-card">
 									<div class="article-card__img-ibg">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="article-card__descp">
-										<div class="article-card__title">اسکی در روسیه </div>
-										<ul class="article-card__list">
+										<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
+										<ul class="article-card__list" itemprop="articleBody">
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 										</ul>
@@ -809,16 +850,17 @@
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
 								<a href="#" class="article-card">
 									<div class="article-card__img-ibg">
-										<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="article-card__descp">
-										<div class="article-card__title">اسکی در روسیه </div>
-										<ul class="article-card__list">
+										<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
+										<ul class="article-card__list" itemprop="articleBody">
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 										</ul>
@@ -826,16 +868,17 @@
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
 								<a href="#" class="article-card">
 									<div class="article-card__img-ibg">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="article-card__descp">
-										<div class="article-card__title">اسکی در روسیه </div>
-										<ul class="article-card__list">
+										<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
+										<ul class="article-card__list" itemprop="articleBody">
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 											<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 										</ul>
@@ -860,10 +903,9 @@
 					</button>
 
 				</div>
-
 			</section>
 
-			<section class="page__regions regions">
+			<section class="page__regions regions" itemscope itemtype="https://schema.org/Place">
 				<div class="regions__container">
 					<h2 class="page__title title" itemprop="name"><span>مناطق روسیه</span></h2>
 				</div>
@@ -872,98 +914,106 @@
 					<div class="regions__slider typical-slider swiper">
 						<div class="typical-slider__wrapper swiper-wrapper">
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Place">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به بایکال</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Place">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به کازان</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Place">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به سنت پترزبورگ</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Place">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به مورمانسک</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Place">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به بایکال</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Place">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به کازان</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Place">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به سنت پترزبورگ</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="https://schema.org/Place">
 								<a href="" class="card-banner">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به مورمانسک</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
@@ -987,34 +1037,43 @@
 				</div>
 			</section>
 
-			<section class="page__partners partners">
+			<section class="page__partners partners" itemscope itemtype="https://schema.org/Organization">
 				<div class="partners__container">
 					<div class="partners__slider swiper">
 						<div class="partners__wrapper swiper-wrapper">
-							<div class="partners__slide swiper-slide">
-								<img src="img/partners/01.jpg" loading="lazy" alt="Картинка" title="Картинка">
+
+							<div class="partners__slide swiper-slide" itemscope itemtype="https://schema.org/Organization">
+								<img src="img/partners/01.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="logo">
 							</div>
-							<div class="partners__slide swiper-slide">
-								<img src="img/partners/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+
+							<div class="partners__slide swiper-slide" itemscope itemtype="https://schema.org/Organization">
+								<img src="img/partners/02.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="logo">
 							</div>
-							<div class="partners__slide swiper-slide">
-								<img src="img/partners/03.jpg" loading="lazy" alt="Картинка" title="Картинка">
+
+							<div class="partners__slide swiper-slide" itemscope itemtype="https://schema.org/Organization">
+								<img src="img/partners/01.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="logo">
 							</div>
-							<div class="partners__slide swiper-slide">
-								<img src="img/partners/04.jpg" loading="lazy" alt="Картинка" title="Картинка">
+
+							<div class="partners__slide swiper-slide" itemscope itemtype="https://schema.org/Organization">
+								<img src="img/partners/02.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="logo">
 							</div>
-							<div class="partners__slide swiper-slide">
-								<img src="img/partners/01.jpg" loading="lazy" alt="Картинка" title="Картинка">
+
+							<div class="partners__slide swiper-slide" itemscope itemtype="https://schema.org/Organization">
+								<img src="img/partners/01.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="logo">
 							</div>
-							<div class="partners__slide swiper-slide">
-								<img src="img/partners/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+
+							<div class="partners__slide swiper-slide" itemscope itemtype="https://schema.org/Organization">
+								<img src="img/partners/02.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="logo">
 							</div>
-							<div class="partners__slide swiper-slide">
-								<img src="img/partners/03.jpg" loading="lazy" alt="Картинка" title="Картинка">
+
+							<div class="partners__slide swiper-slide" itemscope itemtype="https://schema.org/Organization">
+								<img src="img/partners/01.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="logo">
 							</div>
-							<div class="partners__slide swiper-slide">
-								<img src="img/partners/04.jpg" loading="lazy" alt="Картинка" title="Картинка">
+
+							<div class="partners__slide swiper-slide" itemscope itemtype="https://schema.org/Organization">
+								<img src="img/partners/02.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="logo">
 							</div>
+
 						</div>
 					</div>
 				</div>
