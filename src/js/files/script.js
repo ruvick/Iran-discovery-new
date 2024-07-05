@@ -143,3 +143,20 @@ window.onload = function () {
 //========================================================================================================================================================
 
 
+// Forms ===============================================================
+
+// Ограничение по вводу числа. Не более 50 
+const numberGuestsInput = document.getElementById("numberGuests");
+
+if (numberGuestsInput) {
+	numberGuestsInput.addEventListener("input", function () {
+		let value = parseInt(numberGuestsInput.value, 10);
+
+		if (value > 50) {
+			numberGuestsInput.value = 50;
+		} else if (value < 1) {
+			numberGuestsInput.value = 1;
+		}
+	});
+}
+// Forms End ===============================================================

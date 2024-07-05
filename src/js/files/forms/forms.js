@@ -52,6 +52,14 @@ export function formFieldsInit(options = { viewPass: false }) {
 		}
 	});
 
+	// Ограничение по вводу символов (не более 50, кроме textarea)
+	document.body.addEventListener("input", function (e) {
+		const targetElement = e.target;
+		if (targetElement.tagName === 'INPUT' && targetElement.value.length > 50) {
+			targetElement.value = targetElement.value.slice(0, 50);
+		}
+	});
+
 	// Если включено, добавляем функционал "Показать пароль"
 	if (options.viewPass) {
 		document.addEventListener("click", function (e) {
@@ -105,6 +113,9 @@ export let formValidate = {
 		} else {
 			if (!formRequiredItem.value.trim()) {
 				this.addError(formRequiredItem, "فیلد الزامی است");
+				error++;
+			} else if (formRequiredItem.tagName !== 'TEXTAREA' && formRequiredItem.value.length > 50) {
+				this.addError(formRequiredItem, "Максимальная длина 50 символов");
 				error++;
 			} else {
 				this.removeError(formRequiredItem);

@@ -8,6 +8,9 @@ import 'air-datepicker/air-datepicker.css';
 new AirDatepicker('.calendar', {
 	range: true,
 	multipleDatesSeparator: ' - ',
+	autoClose: true,
+	dateFormat: 'yyyy-MM-dd',
+	// Добавьте другие настройки по необходимости
 	buttons: [
 		{
 			content: 'درخواست کنید',
@@ -36,6 +39,8 @@ new AirDatepicker('.calendar', {
 new AirDatepicker('.calendar-2', {
 	range: true,
 	multipleDatesSeparator: ' - ',
+	autoClose: true,
+	dateFormat: 'yyyy-MM-dd',
 	buttons: [
 		{
 			content: 'درخواست کنید',
@@ -64,6 +69,8 @@ new AirDatepicker('.calendar-2', {
 new AirDatepicker('.calendar-3', {
 	range: true,
 	multipleDatesSeparator: ' - ',
+	autoClose: true,
+	dateFormat: 'yyyy-MM-dd',
 	buttons: [
 		{
 			content: 'درخواست کنید',
@@ -92,6 +99,8 @@ new AirDatepicker('.calendar-3', {
 new AirDatepicker('.calendar-4', {
 	range: true,
 	multipleDatesSeparator: ' - ',
+	autoClose: true,
+	dateFormat: 'yyyy-MM-dd',
 	buttons: [
 		{
 			content: 'درخواست کنید',

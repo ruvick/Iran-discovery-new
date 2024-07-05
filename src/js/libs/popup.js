@@ -1,8 +1,3 @@
-// Модуль попапов
-// (c) Фрилансер по жизни, Хмурый Кот
-// Документация по работе в шаблоне: https://template.fls.guru/template-docs/funkcional-popup.html
-// Сниппет (HTML): pl
-
 // Подключение функционала "Чертогов Фрилансера"
 import { isMobile, bodyLockStatus, bodyLock, bodyUnlock, bodyLockToggle, FLS } from "../files/functions.js";
 import { flsModules } from "../files/modules.js";
@@ -13,7 +8,7 @@ class Popup {
 		let config = {
 			logging: true,
 			init: true,
-			// Для кнопок 
+			// Для кнопок
 			attributeOpenButton: 'data-popup', // Атрибут для кнопки, которая вызывает попап
 			attributeCloseButton: 'data-close', // Атрибут для кнопки, которая закрывает попап
 			// Для сторонних объектов
@@ -131,7 +126,8 @@ class Popup {
 			}
 			// Закрытие на пустом месте (popup__wrapper) и кнопки закрытия (popup__close) для закрытия
 			const buttonClose = e.target.closest(`[${this.options.attributeCloseButton}]`);
-			if (buttonClose || !e.target.closest(`.${this.options.classes.popupContent}`) && this.isOpen) {
+			const isCalendar = e.target.closest('.air-datepicker'); // Проверяем, кликнули ли на календарь
+			if ((buttonClose || (!e.target.closest(`.${this.options.classes.popupContent}`) && this.isOpen)) && !isCalendar) {
 				e.preventDefault();
 				this.close();
 				return;
@@ -206,7 +202,7 @@ class Popup {
 					this.targetOpen.element.querySelector(`[${this.options.youtubePlaceAttribute}]`).appendChild(iframe);
 				}
 				if (this.options.hashSettings.location) {
-					// Получение хэша и его выставление 
+					// Получение хэша и его выставление
 					this._getHash();
 					this._setHash();
 				}
@@ -306,7 +302,7 @@ class Popup {
 
 		this.popupLogging(`Закрыл попап`);
 	}
-	// Получение хэша 
+	// Получение хэша
 	_getHash() {
 		if (this.options.hashSettings.location) {
 			this.hash = this.targetOpen.selector.includes('#') ?

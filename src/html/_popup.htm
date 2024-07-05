@@ -14,14 +14,14 @@
 
 						<div class="form-popup__item item-form">
 							<label for="name" class="item-form__label">نام و نام خانوادگی<span>*</span></label>
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
-								class="item-form__input input" data-required>
+							<input id="name" autocomplete="off" type="text" name="form[]" class="item-form__input input"
+								data-required>
 						</div>
 
 						<div class="form-popup__item item-form item-form--tel">
 							<label for="tel" class="item-form__label">شماره تماس<span>*</span></label>
 							<input id="tel" autocomplete="off" type="tel" name="form[]" placeholder="+98"
-								data-error="فیلد را پر کنید" class="item-form__input input phone" data-required>
+								class="item-form__input input phone" data-required>
 						</div>
 
 						<div class="form-popup__item">
@@ -57,20 +57,20 @@
 
 						<div class="form-popup__item item-form">
 							<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
-								class="item-form__input input" data-required>
+							<input id="name" autocomplete="off" type="text" name="form[]" class="item-form__input input"
+								data-required>
 						</div>
 
 						<div class="form-popup__item item-form">
 							<label for="name" class="item-form__label">پیام رسان <span>*</span></label>
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
-								class="item-form__input input" data-required>
+							<input id="name" autocomplete="off" type="text" name="form[]" class="item-form__input input"
+								data-required>
 						</div>
 
 						<div class="form-popup__item">
 							<div class="form-popup__options options">
 								<div class="options__item">
-									<input hidden id="o_1" class="options__input" type="checkbox" value="1" name="option">
+									<input id="o_1" class="options__input" type="checkbox" value="1" name="option" data-required>
 									<label for="o_1" class="options__label">
 										<svg viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path fill-rule="evenodd" clip-rule="evenodd"
@@ -95,7 +95,7 @@
 										<span class="options__text">واتس اپ</span></label>
 								</div>
 								<div class="options__item">
-									<input hidden id="o_2" class="options__input" type="checkbox" value="2" name="option">
+									<input id="o_2" class="options__input" type="checkbox" value="2" name="option" data-required>
 									<label for="o_2" class="options__label">
 										<svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path fill-rule="evenodd" clip-rule="evenodd"
@@ -114,7 +114,7 @@
 										<span class="options__text">تلگرام</span></label>
 								</div>
 								<div class="options__item">
-									<input hidden id="o_3" class="options__input" type="checkbox" value="3" name="option">
+									<input id="o_3" class="options__input" type="checkbox" value="3" name="option" data-required>
 									<label for="o_3" class="options__label">
 										<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path
@@ -162,17 +162,17 @@
 
 						<div class="form-popup__item item-form">
 							<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
-								class="item-form__input input" data-required>
+							<input id="name" autocomplete="off" type="text" name="form[]" class="item-form__input input"
+								data-required>
 						</div>
 
 						<div class="form-popup__item item-form item-form--tel">
 							<label for="tel" class="item-form__label">شماره تماس <span>*</span></label>
 							<input id="tel" autocomplete="off" type="tel" name="form[]" placeholder="+98"
-								data-error="فیلد را پر کنید" class="item-form__input input phone" data-required>
+								class="item-form__input input phone" data-required>
 						</div>
 
-						<div class="form-popup__item item-form">
+						<div class="form-popup__item form-popup__item--wrapper item-form">
 							<label for="name" class="item-form__label">تاریخ شروع تور<span>*</span></label>
 							<div class="input-item">
 								<div class="input-item__icon">
@@ -181,8 +181,8 @@
 									</svg>
 								</div>
 								<div class="input-item__input">
-									<input autocomplete="off" type="number" name="form[]" class="calendar!"
-										placeholder="تاریخ ها را انتخاب کنید">
+									<input autocomplete="off" type="text" name="form[]" class="calendar"
+										placeholder="تاریخ ها را انتخاب کنید" data-required>
 								</div>
 								<div class="input-item__icon-calendar">
 									<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,7 +197,7 @@
 							</div>
 						</div>
 
-						<div class="form-popup__item item-form item-form--number">
+						<div class="form-popup__item form-popup__item--wrapper item-form item-form--number">
 							<label for="name" class="item-form__label">تعداد مهمان<span>*</span></label>
 							<div class="form-popup__item calendar-box-info item-form input">
 								<div class="calendar-box-info__arrow">
@@ -205,8 +205,10 @@
 										<use xlink:href="img/icons/sprite.svg#number"></use>
 									</svg>
 								</div>
-								<input type="number" class="calendar-box-info__input tour-booking-calendar"
-									placeholder="1 بزرگسال">
+								<!-- <input id="numberGuests" max="50" type="number" autocomplete="off" name="form[]"
+									class="calendar-box-info__input" placeholder="1 بزرگسال" data-required> -->
+								<input id="numberGuests" type="number" autocomplete="off" name="form[]"
+									class="calendar-box-info__input" placeholder="1 بزرگسال" data-required min="1" max="50">
 							</div>
 						</div>
 
@@ -243,17 +245,17 @@
 
 						<div class="form-popup__item item-form">
 							<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
-								class="item-form__input input" data-required>
+							<input id="name" autocomplete="off" type="text" name="form[]" class="item-form__input input"
+								data-required>
 						</div>
 
 						<div class="form-popup__item item-form item-form--tel">
 							<label for="tel" class="item-form__label">شماره تماس <span>*</span></label>
 							<input id="tel" autocomplete="off" type="tel" name="form[]" placeholder="+98"
-								data-error="فیلد را پر کنید" class="item-form__input input phone" data-required>
+								class="item-form__input input phone" data-required>
 						</div>
 
-						<div class="form-popup__item item-form">
+						<div class="form-popup__item form-popup__item--wrapper item-form">
 							<label for="name" class="item-form__label">تاریخ ورود<span>*</span></label>
 							<div class="input-item">
 								<div class="input-item__icon">
@@ -262,8 +264,8 @@
 									</svg>
 								</div>
 								<div class="input-item__input">
-									<input autocomplete="off" type="number" name="form[]" class="calendar-2!"
-										placeholder="تاریخ ورود ">
+									<input autocomplete="off" type="text" name="form[]" class="calendar-2"
+										placeholder="تاریخ ورود " data-required>
 								</div>
 								<div class="input-item__icon-calendar">
 									<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +280,7 @@
 							</div>
 						</div>
 
-						<div class="form-popup__item item-form">
+						<div class="form-popup__item form-popup__item--wrapper item-form">
 							<!-- <label for="name" class="item-form__label">تاریخ ورود<span>*</span></label> -->
 							<div class="input-item">
 								<div class="input-item__icon">
@@ -287,8 +289,8 @@
 									</svg>
 								</div>
 								<div class="input-item__input">
-									<input autocomplete="off" type="number" name="form[]" class="calendar-3!"
-										placeholder="تعداد شب">
+									<input autocomplete="off" type="text" name="form[]" class="calendar-3" placeholder="تعداد شب"
+										data-required>
 								</div>
 								<div class="input-item__icon-calendar">
 									<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -303,7 +305,7 @@
 							</div>
 						</div>
 
-						<div class="form-popup__item item-form item-form--number">
+						<div class="form-popup__item form-popup__item--wrapper item-form item-form--number">
 							<label for="name" class="item-form__label">تعداد مهمان<span>*</span></label>
 							<div class="form-popup__item calendar-box-info item-form input">
 								<div class="calendar-box-info__arrow">
@@ -312,11 +314,11 @@
 									</svg>
 								</div>
 								<input type="number" class="calendar-box-info__input tour-booking-calendar"
-									placeholder="1 بزرگسال">
+									placeholder="1 بزرگسال" data-required>
 							</div>
 						</div>
 
-						<div class="form-popup__item item-form item-form--number">
+						<div class="form-popup__item form-popup__item--wrapper item-form item-form--number">
 							<label for="name" class="item-form__label">انواع اتاق ها<span>*</span></label>
 							<div class="form-popup__item calendar-box-info item-form input">
 								<div class="calendar-box-info__arrow">
@@ -325,7 +327,7 @@
 									</svg>
 								</div>
 								<input type="number" class="calendar-box-info__input tour-booking-calendar"
-									placeholder="اتاق سینگل- یک نفره">
+									placeholder="اتاق سینگل- یک نفره" data-required>
 							</div>
 						</div>
 
@@ -363,16 +365,16 @@
 						<div class="form-popup__item item-form">
 							<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
 							<input id="name" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
-								data-error="فیلد را پر کنید" class="item-form__input input" data-required>
+								class="item-form__input input" data-required>
 						</div>
 
 						<div class="form-popup__item item-form item-form--tel">
 							<label for="tel" class="item-form__label">شماره تماس <span>*</span></label>
 							<input id="tel" autocomplete="off" type="tel" name="form[]" placeholder="+98"
-								data-error="فیلد را پر کنید" class="item-form__input input phone" data-required>
+								class="item-form__input input phone" data-required>
 						</div>
 
-						<div class="form-popup__item item-form item-form--number">
+						<div class="form-popup__item form-popup__item--wrapper item-form item-form--number">
 							<label for="name" class="item-form__label">تعداد مهمان<span>*</span></label>
 							<div class="form-popup__item calendar-box-info item-form input">
 								<div class="calendar-box-info__arrow">
@@ -418,17 +420,17 @@
 
 						<div class="form-popup__item item-form">
 							<label for="name" class="item-form__label">نام و نام خانوادگی <span>*</span></label>
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="فیلد را پر کنید"
-								class="item-form__input input" data-required>
+							<input id="name" autocomplete="off" type="text" name="form[]" class="item-form__input input"
+								data-required>
 						</div>
 
 						<div class="form-popup__item item-form item-form--tel">
 							<label for="tel" class="item-form__label">شماره تماس <span>*</span></label>
 							<input id="tel" autocomplete="off" type="tel" name="form[]" placeholder="+98"
-								data-error="فیلد را پر کنید" class="item-form__input input phone" data-required>
+								class="item-form__input input phone" data-required>
 						</div>
 
-						<div class="form-popup__item item-form">
+						<div class="form-popup__item form-popup__item--wrapper item-form">
 							<label for="name" class="item-form__label">تاریخ <span>*</span></label>
 							<div class="input-item">
 								<div class="input-item__icon">
@@ -437,8 +439,7 @@
 									</svg>
 								</div>
 								<div class="input-item__input">
-									<input autocomplete="off" type="number" name="form[]" class="calendar-4!"
-										data-error="فیلد را پر کنید" data-required>
+									<input autocomplete="off" type="text" name="form[]" class="calendar-4" data-required>
 								</div>
 								<div class="input-item__icon-calendar">
 									<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">

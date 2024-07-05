@@ -72,3 +72,19 @@
 		@include adaptiveValue("height", 24, 20);
 	}
 }
+
+.options__item .form__error {
+	display: none;
+}
+
+.options__item._form-error {
+	.options__label:before {
+		content: "";
+		align-self: flex-start;
+		width: 1.5rem;
+		height: 1.5rem;
+		flex: 0 0 1.5rem;
+		border-radius: 4px;
+		border: 1px solid red;
+	}
+}
