@@ -83,17 +83,28 @@ export let formValidate = {
 		if (formRequiredItem.dataset.required === "email") {
 			formRequiredItem.value = formRequiredItem.value.replace(" ", "");
 			if (this.emailTest(formRequiredItem)) {
-				this.addError(formRequiredItem);
+				this.addError(formRequiredItem, "فیلد معتبر نیست");
 				error++;
 			} else {
 				this.removeError(formRequiredItem);
 			}
 		} else if (formRequiredItem.type === "checkbox" && !formRequiredItem.checked) {
-			this.addError(formRequiredItem);
+			this.addError(formRequiredItem, "فیلد الزامی است");
 			error++;
+		} else if (formRequiredItem.id === "name" && this.specialCharsTest(formRequiredItem)) {
+			this.addError(formRequiredItem, "فیلد معتبر نیست");
+			error++;
+		} else if (formRequiredItem.id === "tel" && formRequiredItem.type === "tel") {
+			const phoneValue = formRequiredItem.value.replace(/\D/g, ''); // Удаляем все нецифровые символы
+			if (!this.phoneTest(phoneValue)) {
+				this.addError(formRequiredItem, "فیلد الزامی است");
+				error++;
+			} else {
+				this.removeError(formRequiredItem);
+			}
 		} else {
 			if (!formRequiredItem.value.trim()) {
-				this.addError(formRequiredItem);
+				this.addError(formRequiredItem, "فیلد الزامی است");
 				error++;
 			} else {
 				this.removeError(formRequiredItem);
@@ -101,14 +112,12 @@ export let formValidate = {
 		}
 		return error;
 	},
-	addError(formRequiredItem) {
+	addError(formRequiredItem, errorMessage) {
 		formRequiredItem.classList.add('_form-error');
 		formRequiredItem.parentElement.classList.add('_form-error');
 		let inputError = formRequiredItem.parentElement.querySelector('.form__error');
 		if (inputError) formRequiredItem.parentElement.removeChild(inputError);
-		if (formRequiredItem.dataset.error) {
-			formRequiredItem.parentElement.insertAdjacentHTML('beforeend', `<div class="form__error">${formRequiredItem.dataset.error}</div>`);
-		}
+		formRequiredItem.parentElement.insertAdjacentHTML('beforeend', `<div class="form__error">${errorMessage}</div>`);
 	},
 	removeError(formRequiredItem) {
 		formRequiredItem.classList.remove('_form-error');
@@ -147,6 +156,12 @@ export let formValidate = {
 	},
 	emailTest(formRequiredItem) {
 		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(formRequiredItem.value);
+	},
+	specialCharsTest(formRequiredItem) {
+		return /[^a-zA-Zа-яА-ЯёЁ\s]/.test(formRequiredItem.value);
+	},
+	phoneTest(phoneValue) {
+		return /^\d+$/.test(phoneValue);
 	}
 }
 /* Отправка форм */
