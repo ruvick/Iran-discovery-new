@@ -95,7 +95,7 @@
 											</div>
 											<div class="input-item__input">
 												<input autocomplete="off" type="text" class="calendar" name="form[]"
-													placeholder="7 روز">
+													placeholder="7 روز" data-required>
 											</div>
 											<div class="input-item__icon-calendar">
 												<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +121,7 @@
 											</div>
 											<div class="input-item__input">
 												<input autocomplete="off" type="text" class="calendar-2" name="form[]"
-													placeholder="dd. mm. yy">
+													placeholder="dd. mm. yy" data-required>
 											</div>
 											<div class="input-item__icon-calendar">
 												<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -153,19 +153,19 @@
 										<div class="form-box-actions__item item-form">
 											<label for="name" class="item-form__label">نام و نام خانوادگی </label>
 											<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-												data-value="" class="item-form__input input">
+												data-value="" class="item-form__input input" data-required>
 										</div>
 									</div>
 									<div class="form-box-actions__row">
 										<div class="form-box-actions__item item-form">
 											<label for="name" class="item-form__label">آدرس ایمیل</label>
-											<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-												data-value="" class="item-form__input input">
+											<input id="name" autocomplete="off" type="text" name="form[]"
+												class="item-form__input input" data-required>
 										</div>
 										<div class="form-box-actions__item item-form item-form--tel">
 											<label for="tel" class="item-form__label">موبایل</label>
 											<input id="tel" autocomplete="off" type="tel" name="form[]" placeholder="+98"
-												class="item-form__input input phone">
+												class="item-form__input input phone" data-required>
 										</div>
 									</div>
 									<div class="form-box-actions__line">
@@ -181,8 +181,8 @@
 										<button type="submit" class="form-box-actions__btn btn">سفارش</button>
 										<div class="form-box-actions__item item-form">
 											<div class="checkbox">
-												<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
-													value="1" name="form[]" checked>
+												<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]"
+													checked data-required>
 												<label for="c_1" class="checkbox__label">
 													<span class="checkbox__text">
 														من با پردازش داده های شخصی مطابق با شرایط <a href="">سیاست حفظ حریم</a>خصوصی

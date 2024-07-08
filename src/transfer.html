@@ -157,7 +157,7 @@
 											کنید</label>
 										<div class="form-box-actions__city-inputs inputs-city">
 
-											<div class="inputs-city__item item-city">
+											<div class="inputs-city__item item-city item-city--wrapper">
 												<div class="item-city__icon">
 													<svg>
 														<use xlink:href="img/icons/sprite.svg#arrow-down"></use>
@@ -165,7 +165,7 @@
 												</div>
 												<div class="item-city__input">
 													<input id="rev1" name="form[]" autocomplete="off" type="text" id="input"
-														placeholder=" ">
+														placeholder=" " data-required>
 													<label for="input" class="item-city__label">مقصد</label>
 												</div>
 											</div>
@@ -178,7 +178,7 @@
 												</svg>
 											</button>
 
-											<div class="inputs-city__item item-city">
+											<div class="inputs-city__item item-city item-city--wrapper">
 												<div class="item-city__icon">
 													<svg>
 														<use xlink:href="img/icons/sprite.svg#arrow-down"></use>
@@ -186,7 +186,7 @@
 												</div>
 												<div class="item-city__input">
 													<input id="rev2" name="form[]" autocomplete="off" type="text" id="input"
-														placeholder=" ">
+														placeholder=" " data-required>
 													<label for="input" class="item-city__label">فرودگاه شرمتیوا</label>
 												</div>
 											</div>
@@ -199,14 +199,15 @@
 										<label for="name" class="form-box-actions__label">تاریخ های سفر</label>
 										<div class="form-box-actions__row">
 
-											<div class="input-item">
+											<div class="input-item item-city--wrapper">
 												<div class="input-item__icon">
 													<svg>
 														<use xlink:href="img/icons/sprite.svg#arrow-down"></use>
 													</svg>
 												</div>
 												<div class="input-item__input input-item__input--time">
-													<input autocomplete="off" type="time" name="form[]" value="00:00">
+													<input autocomplete="off" type="time" name="form[]" placeholder="00:00"
+														data-required>
 												</div>
 												<div class="input-item__icon-calendar">
 													<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -229,7 +230,7 @@
 												</div>
 											</div>
 
-											<div class="input-item">
+											<div class="input-item item-city--wrapper">
 												<div class="input-item__icon">
 													<svg>
 														<use xlink:href="img/icons/sprite.svg#arrow-down"></use>
@@ -237,7 +238,7 @@
 												</div>
 												<div class="input-item__input">
 													<input autocomplete="off" type="text" name="form[]" class="calendar"
-														placeholder="dd. mm. yy ">
+														placeholder="dd. mm. yy " data-required>
 												</div>
 												<div class="input-item__icon-calendar">
 													<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -260,14 +261,13 @@
 										<div class="item-form">
 											<label for="name" class="item-form__label">نام و نام خانوادگی</label>
 											<input id="name" autocomplete="off" type="text" name="form[]"
-												data-error="فیلد را پر کنید" class="item-form__input input" data-required>
+												class="item-form__input input" data-required>
 										</div>
 
 										<div class="item-form">
 											<label for="name" class="item-form__label">برند خودرو</label>
 											<input id="name" autocomplete="off" type="text" name="form[]"
-												data-error="فیلد را پر کنید" class="item-form__input input" placeholder="هیوندای"
-												data-required>
+												class="item-form__input input" placeholder="هیوندای" data-required>
 										</div>
 
 
@@ -278,13 +278,13 @@
 										<div class="item-form">
 											<label for="name" class="item-form__label">آدرس ایمیل</label>
 											<input id="name" autocomplete="off" type="text" name="form[]"
-												data-error="فیلد را پر کنید" class="item-form__input input" data-required>
+												class="item-form__input input" data-required>
 										</div>
 
 										<div class="item-form item-form--tel">
 											<label for="tel" class="item-form__label">موبایل</label>
 											<input id="tel" autocomplete="off" type="tel" name="form[]" placeholder="+98"
-												data-error="فیلد را پر کنید" class="item-form__input input phone" data-required>
+												class="item-form__input input phone" data-required>
 										</div>
 
 									</div>
@@ -293,8 +293,8 @@
 										<button type="submit" class="form-box-actions__btn btn">سفارش</button>
 										<div class="form-box-actions__item item-form">
 											<div class="checkbox">
-												<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
-													value="1" name="form[]" checked>
+												<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]"
+													checked data-required>
 												<label for="c_1" class="checkbox__label">
 													<span class="checkbox__text">
 

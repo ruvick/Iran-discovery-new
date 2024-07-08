@@ -131,7 +131,7 @@ textarea.input {
 	background-color: #fff;
 	border: rem(1) solid #CEE5FF;
 	border-radius: rem(10);
-	overflow: hidden;
+	// overflow: hidden;
 	@include adaptiveValue("height", 60, 44);
 }
 .inputs-city__item {
@@ -239,3 +239,11 @@ textarea.input {
 		}
 }
 
+.item-city--wrapper {
+	position: relative;
+	.form__error {
+		position: absolute;
+		bottom: -20px;
+		right: 0px;
+	}
+}
