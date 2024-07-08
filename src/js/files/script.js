@@ -81,17 +81,21 @@ window.onload = function () {
 	const resultBtn = document.querySelector('.item-result__btn');
 	const select = document.querySelector('.form');
 	const selectContent = document.querySelector('.select__content');
+	const quantityInput = document.querySelector('.quantity__input input');
+	const quantityButtons = document.querySelectorAll('.quantity__button');
 
 	if (inputGuests) {
-		inputGuests.addEventListener('input', function () {
-			if (inputGuests.value > 1) {
-				numberGuests.classList.add('_active');
-			} else {
-				numberGuests.classList.remove('_active');
-			}
+		inputGuests.addEventListener('click', function () {
+			numberGuests.classList.add('_active');
+			setTimeout(function () {
+				if (sidebarItemOver) {
+					sidebarItemOver.style.overflow = 'visible';
+				}
+			}, 500);
 		});
 
-		inputGuests.addEventListener('click', function () {
+		inputGuests.addEventListener('keydown', function () {
+			numberGuests.classList.add('_active');
 			setTimeout(function () {
 				if (sidebarItemOver) {
 					sidebarItemOver.style.overflow = 'visible';
@@ -105,6 +109,45 @@ window.onload = function () {
 				itemResult.classList.add('_active');
 				select.value = option.getAttribute('data-value');
 				selectContent.textContent = option.textContent;
+
+				// Получаем значение из quantity
+				let quantityValue = quantityInput.value;
+
+				// Передаем текстовое значение и значение quantity в поле inputGuests
+				inputGuests.value = `${quantityValue} بزرگسالان, ${option.textContent}`;
+
+				// Закрываем numberGuests
+				numberGuests.classList.remove('_active');
+				if (sidebarItemOver) {
+					sidebarItemOver.style.overflow = 'hidden';
+				}
+			});
+		});
+
+		document.addEventListener('click', function (event) {
+			if (!numberGuests.contains(event.target) && !inputGuests.contains(event.target)) {
+				numberGuests.classList.remove('_active');
+				if (sidebarItemOver) {
+					sidebarItemOver.style.overflow = 'hidden';
+				}
+			}
+		});
+
+		quantityButtons.forEach(button => {
+			button.addEventListener('click', function () {
+				let currentValue = parseInt(quantityInput.value);
+				if (button.classList.contains('quantity__button_plus')) {
+					if (currentValue < 50) { // Ограничение на максимум 50
+						quantityInput.value = currentValue + 1;
+					}
+				} else if (button.classList.contains('quantity__button_minus') && currentValue > 1) {
+					quantityInput.value = currentValue - 1;
+				}
+				// Принудительно обновляем значение в поле inputGuests
+				setTimeout(() => {
+					inputGuests.value = `${quantityInput.value} بزرگسالان, ${selectContent.textContent}`;
+					// inputGuests.value = `${selectContent.textContent}, ${quantityInput.value} بزرگسالان`;
+				}, 0);
 			});
 		});
 	}
@@ -122,23 +165,6 @@ window.onload = function () {
 			inputGuests.value = ''; // Обнуляем значение у .input-guests
 		});
 	}
-	//=========================================================================================================
-
-	// banners-img > 5
-	const bannersImg = document.querySelector('.banners-img');
-
-	if (bannersImg) {
-		const itemBannersImg = bannersImg.querySelectorAll('.item-banners-img');
-		if (itemBannersImg) {
-			if (itemBannersImg.length > 5) {
-				let fourthItemDescp = itemBannersImg[2].querySelector('.item-banners-img__descp');
-				if (fourthItemDescp) {
-					fourthItemDescp.classList.add('active');
-				}
-			}
-		}
-	}
-
 }
 //========================================================================================================================================================
 
