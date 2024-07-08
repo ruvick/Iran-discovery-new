@@ -1,4 +1,4 @@
-// Подключение функционала "Чертогов Фрилансера"
+// Подключение функционала
 import { isMobile, bodyLockToggle, bodyLock, bodyUnlock, removeClasses, _slideToggle } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";

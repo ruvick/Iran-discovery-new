@@ -9,13 +9,15 @@
 		@@include('html/_header.htm',{})
 		<main class="page page-tour-detail">
 
-			<section class="page__main-banner main-banner main-banner--inner swiper">
-				<div class="main-banner__wrapper	swiper-wrapper">
+			<section class="page__main-banner main-banner main-banner--inner swiper" itemscope
+				itemtype="http://schema.org/ImageGallery">
+				<div class="main-banner__wrapper swiper-wrapper">
 
-					<div class="main-banner__slider swiper-slide">
+					<div class="main-banner__slider swiper-slide" itemprop="associatedMedia" itemscope
+						itemtype="http://schema.org/ImageObject">
 						<div class="nuar-blk"></div>
 						<div class="main-banner__slide">
-							<img src="img/test/01.jpg" loading="lazy" alt="Картинка" title="Картинка">
+							<img src="img/test/01.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl">
 						</div>
 						<div class="main-banner__container">
 							<div class="main-banner__descp">
@@ -24,32 +26,38 @@
 										<ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
 											<li class="breadcrumbs__item" itemprop="itemListElement" itemscope
 												itemtype="http://schema.org/ListItem">
-												<a href="home.html" class="breadcrumbs__link" itemprop="name">صفحه اصلی</a>
+												<a href="home.html" class="breadcrumbs__link" itemprop="item">
+													<span itemprop="name">صفحه اصلی</span>
+												</a>
+												<meta itemprop="position" content="1">
 											</li>
 											<li class="breadcrumbs__item" itemprop="itemListElement" itemscope
 												itemtype="http://schema.org/ListItem">
-												<a href="home.html" class="breadcrumbs__link" itemprop="name">تورهای منطقه
-													کالینینگراد</a>
+												<a href="home.html" class="breadcrumbs__link" itemprop="item">
+													<span itemprop="name">تورهای منطقه کالینینگراد</span>
+												</a>
+												<meta itemprop="position" content="2">
 											</li>
 											<li class="breadcrumbs__item" itemprop="itemListElement" itemscope
 												itemtype="http://schema.org/ListItem">
 												<span class="breadcrumbs__current" itemprop="name">سال نو در قلب کونیگزبرگ</span>
+												<meta itemprop="position" content="3">
 											</li>
 										</ul>
 									</nav>
 								</div>
 								<div class="main-banner__body main-banner__body--size-m">
-									<!-- <div class="main-banner__top-title top-title--size-m">تور مسکو</div> -->
 									<h2 itemprop="name"><small>تور مسکو</small>سفر خاطر انگیز به پایتخت روسیه</h2>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="main-banner__slider swiper-slide">
+					<div class="main-banner__slider swiper-slide" itemprop="associatedMedia" itemscope
+						itemtype="http://schema.org/ImageObject">
 						<div class="nuar-blk"></div>
 						<div class="main-banner__slide">
-							<img src="img/test/01.jpg" loading="lazy" alt="Картинка" title="Картинка">
+							<img src="img/test/01.jpg" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl">
 						</div>
 						<div class="main-banner__container">
 							<div class="main-banner__descp">
@@ -58,22 +66,27 @@
 										<ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
 											<li class="breadcrumbs__item" itemprop="itemListElement" itemscope
 												itemtype="http://schema.org/ListItem">
-												<a href="home.html" class="breadcrumbs__link" itemprop="name">صفحه اصلی</a>
+												<a href="home.html" class="breadcrumbs__link" itemprop="item">
+													<span itemprop="name">صفحه اصلی</span>
+												</a>
+												<meta itemprop="position" content="1">
 											</li>
 											<li class="breadcrumbs__item" itemprop="itemListElement" itemscope
 												itemtype="http://schema.org/ListItem">
-												<a href="home.html" class="breadcrumbs__link" itemprop="name">تورهای منطقه
-													کالینینگراد</a>
+												<a href="home.html" class="breadcrumbs__link" itemprop="item">
+													<span itemprop="name">تورهای منطقه کالینینگراد</span>
+												</a>
+												<meta itemprop="position" content="2">
 											</li>
 											<li class="breadcrumbs__item" itemprop="itemListElement" itemscope
 												itemtype="http://schema.org/ListItem">
 												<span class="breadcrumbs__current" itemprop="name">سال نو در قلب کونیگزبرگ</span>
+												<meta itemprop="position" content="3">
 											</li>
 										</ul>
 									</nav>
 								</div>
 								<div class="main-banner__body main-banner__body--size-m">
-									<!-- <div class="main-banner__top-title">تور مسکو</div> -->
 									<h2 itemprop="name"><small>تور مسکو</small>سفر خاطر انگیز به پایتخت روسیه</h2>
 								</div>
 							</div>
@@ -422,58 +435,15 @@
 
 						<div class="main-template__body">
 
-							<!-- <div class="page__control control-page">
-								<div class="control-page__name control-page__name--mob">اساس: </div>
-
-								<div class="control-page__mob mob-control">
-									<div class="mob-control__name">اساس</div>
-									<button class="mob-control__button js-control-popup">
-										<svg>
-											<use xlink:href="img/icons/sprite.svg#reverse"></use>
-										</svg>
-									</button>
-								</div>
-
-								<form action="#" class="control-page__form control-page-popup">
-									<div class="control-page-popup__inner">
-
-										<label type="button" class="control-page__item cat-button">
-											<input class="cat-button__input" checked type="radio" name="radio">
-											<span class="cat-button__btn">
-												<span class="cat-button__name">محبوب ترین</span>
-											</span>
-										</label>
-
-										<label type="button" class="control-page__item cat-button">
-											<input class="cat-button__input" type="radio" name="radio">
-											<span class="cat-button__btn">
-												<span class="cat-button__name">ارزان ترین</span>
-											</span>
-										</label>
-
-										<label type="button" class="control-page__item cat-button">
-											<input class="cat-button__input" type="radio" name="radio">
-											<span class="cat-button__btn">
-												<span class="cat-button__name">گران ترین</span>
-											</span>
-										</label>
-
-									</div>
-
-								</form>
-
-							</div> -->
-
-							<div class="page__descp-details	descp-details">
-
-								<div class="descp-details__text">
-									<p>
+							<div class="page__descp-details descp-details">
+								<div class="descp-details__text" itemscope itemtype="http://schema.org/Article">
+									<p itemprop="articleBody">
 										در طول تعطیلات زمستانی، کالینینگراد شبیه یک شهر از کارت پستال سال نو است، اما حال و هوای
 										جشن در اینجا کاملا متفاوت است. خیابان‌ها با گلدسته‌های رنگارنگ می‌درخشند، فضای جادویی در
 										نمایشگاه‌های سال نو حاکم است و همه جا بوی سوزن کاج و شراب تند به مشام می‌رسد.
 									</p>
-									<h3>چرا به مسکو سفر میکنیم؟‌</h3>
-									<ul class="list-special">
+									<h3 itemprop="headline">چرا به مسکو سفر میکنیم؟‌</h3>
+									<ul class="list-special" itemprop="articleBody">
 										<li>میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵ سال پایتخت شود</li>
 										<li>میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵ سال پایتخت شود</li>
 										<li>میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵ سال پایتخت شود</li>
@@ -482,89 +452,96 @@
 								</div>
 
 								<div data-gallery class="descp-details__banners banners-img">
-
-									<a href="img/test/02.jpg" class="banners-img__item item-banners-img">
+									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope
+										itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+												itemprop="contentUrl">
 										</div>
 										<div class="item-banners-img__descp">
-											<h4>عکس های بیشتر</h4>
+											<h4 itemprop="name">عکس های بیشتر</h4>
 										</div>
 									</a>
 
-									<a href="img/test/02.jpg" class="banners-img__item item-banners-img">
+									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope
+										itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+												itemprop="contentUrl">
 										</div>
 										<div class="item-banners-img__descp">
-											<h4>عکس های بیشتر</h4>
+											<h4 itemprop="name">عکس های بیشتر</h4>
 										</div>
 									</a>
 
-									<a href="img/test/02.jpg" class="banners-img__item item-banners-img">
+									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope
+										itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+												itemprop="contentUrl">
 										</div>
 										<div class="item-banners-img__descp">
-											<h4>عکس های بیشتر</h4>
+											<h4 itemprop="name">عکس های بیشتر</h4>
 										</div>
 									</a>
 
-									<a href="img/test/02.jpg" class="banners-img__item item-banners-img">
+									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope
+										itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+												itemprop="contentUrl">
 										</div>
 										<div class="item-banners-img__descp">
-											<h4>عکس های بیشتر</h4>
+											<h4 itemprop="name">عکس های بیشتر</h4>
 										</div>
 									</a>
 
-									<a href="img/test/02.jpg" class="banners-img__item item-banners-img">
+									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope
+										itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+												itemprop="contentUrl">
 										</div>
 										<div class="item-banners-img__descp">
-											<h4>عکس های بیشتر</h4>
+											<h4 itemprop="name">عکس های بیشتر</h4>
 										</div>
 									</a>
 
-									<a href="img/test/02.jpg" class="banners-img__item item-banners-img">
+									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope
+										itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+											<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка"
+												itemprop="contentUrl">
 										</div>
 										<div class="item-banners-img__descp">
-											<h4>عکس های بیشتر</h4>
+											<h4 itemprop="name">عکس های بیشتر</h4>
 										</div>
 									</a>
-
 								</div>
-
 							</div>
 
 							<div class="page__articles articles">
 								<h2 class="page__title title title-right title--dark" itemprop="name">چه فعالیت هایی در تور مسکو
-									انجام میدهیم؟
-								</h2>
+									انجام میدهیم؟</h2>
 
-								<div class="articles-detail-slider  typical-slider swiper">
+								<div class="articles-detail-slider typical-slider swiper">
 									<div class="tours__wrapper swiper-wrapper">
-
 										<div class="typical-slider__slide swiper-slide">
 											<a href="#" class="article-card" itemscope itemtype="http://schema.org/Article">
 												<div class="article-card__img-ibg" itemprop="image">
 													<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 												<div class="article-card__descp">
-													<div class="article-card__title" itemprop="headline">اسکی در روسیه </div>
+													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
 													<ul class="article-card__list" itemprop="description">
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 													</ul>
@@ -578,10 +555,10 @@
 													<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 												<div class="article-card__descp">
-													<div class="article-card__title" itemprop="headline">اسکی در روسیه </div>
+													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
 													<ul class="article-card__list" itemprop="description">
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 													</ul>
@@ -595,10 +572,10 @@
 													<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 												<div class="article-card__descp">
-													<div class="article-card__title" itemprop="headline">اسکی در روسیه </div>
+													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
 													<ul class="article-card__list" itemprop="description">
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 													</ul>
@@ -612,10 +589,10 @@
 													<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 												<div class="article-card__descp">
-													<div class="article-card__title" itemprop="headline">اسکی در روسیه </div>
+													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
 													<ul class="article-card__list" itemprop="description">
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 													</ul>
@@ -629,10 +606,10 @@
 													<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 												<div class="article-card__descp">
-													<div class="article-card__title" itemprop="headline">اسکی در روسیه </div>
+													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
 													<ul class="article-card__list" itemprop="description">
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 													</ul>
@@ -646,33 +623,18 @@
 													<img src="img/test/03.jpg" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 												<div class="article-card__descp">
-													<div class="article-card__title" itemprop="headline">اسکی در روسیه </div>
+													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
 													<ul class="article-card__list" itemprop="description">
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
-														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است. </li>
+														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است.</li>
 														<li class="article-card__item">در اینجا خلاصه ای از متن مقاله آمده است</li>
 													</ul>
 												</div>
 											</a>
 										</div>
-
-										<!-- <div class="typical-slider__swiper-pagination swiper-pagination"></div> -->
 									</div>
-
-									<!-- <button type="button" class="swiper-button-prev">
-										<svg>
-											<use xlink:href="img/icons/sprite.svg#arrow-left"></use>
-										</svg>
-									</button>
-									<button type="button" class="swiper-button-next">
-										<svg>
-											<use xlink:href="img/icons/sprite.svg#arrow-right"></use>
-										</svg>
-									</button> -->
-
 								</div>
-
 							</div>
 
 							<div class="page__schedule-excursions schedule-excursions">
@@ -1538,101 +1500,82 @@
 
 			<section class="page__tours tours">
 				<div class="tours__container">
-
 					<h3 class="page__title title title-right title--dark" itemprop="name">تورهای روسیه</h3>
-
 				</div>
 
 				<div class="typical-slider__container">
 					<div class="tours-slider typical-slider swiper">
 						<div class="typical-slider__wrapper swiper-wrapper">
 
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="http://schema.org/TouristTrip">
+								<a href="http://example.com/tour-kaliningrad" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="کارتینکا" title="کارتینکا"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
+										<div class="card-banner__city" itemprop="name">منطقه کالینینگراد</div>
+										<div class="card-banner__excursion" itemprop="description">تور شهر کالینینگراد</div>
+										<div class="card-banner__prices" itemprop="offers" itemscope
+											itemtype="http://schema.org/Offer">
+											<span itemprop="price">30.000.000 تومان</span>
+											<meta itemprop="priceCurrency" content="IRR">
+										</div>
+										<div class="card-banner__time" itemprop="startDate" content="1403-12-05">5 اسفند 1403
+										</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="http://schema.org/TouristTrip">
+								<a href="http://example.com/tour-baikal" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="کارتینکا" title="کارتینکا"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="http://schema.org/TouristTrip">
+								<a href="http://example.com/tour-kazan" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="کارتینکا" title="کارتینکا"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به کازان</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="http://schema.org/TouristTrip">
+								<a href="http://example.com/tour-st-petersburg" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="کارتینکا" title="کارتینکا"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به سنت پترزبورگ</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="http://schema.org/TouristTrip">
+								<a href="http://example.com/tour-murmansk" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="کارتینکا" title="کارتینکا"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
-									<div class="nuar-blk"></div>
-									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
-									</div>
-									<div class="card-banner__descp">
-										<div class="card-banner__city">منطقه کالینینگراد</div>
-										<div class="card-banner__excursion">تور شهر کالینینگراد</div>
-										<div class="card-banner__prices">30.000.000 تومان</div>
-										<div class="card-banner__time">5 اسفند 1403</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به مورمانسک</div>
 									</div>
 								</a>
 							</div>
@@ -1651,81 +1594,86 @@
 							<use xlink:href="img/icons/sprite.svg#arrow-right"></use>
 						</svg>
 					</button>
-
 				</div>
 
 				<div class="typical-slider__container">
 					<div class="regions__slider regions__slider--dooble typical-slider swiper">
 						<div class="typical-slider__wrapper swiper-wrapper">
 
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="http://schema.org/TouristTrip">
+								<a href="http://example.com/tour-baikal" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="کارتینکا" title="کارتینکا"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به بایکال </div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="http://schema.org/TouristTrip">
+								<a href="http://example.com/tour-kazan" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="کارتینکا" title="کارتینکا"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به کازان</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به کازان</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="http://schema.org/TouristTrip">
+								<a href="http://example.com/tour-st-petersburg" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="کارتینکا" title="کارتینکا"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به سنت پترزبورگ</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به سنت پترزبورگ</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="http://schema.org/TouristTrip">
+								<a href="http://example.com/tour-murmansk" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="کارتینکا" title="کارتینکا"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به مورمانسک</div>
+										<div class="card-banner__excursion" itemprop="name">سفر به مورمانسک</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="http://schema.org/TouristTrip">
+								<a href="http://example.com/tour-baikal" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="کارتینکا" title="کارتینکا"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به بایکال </div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
 
-							<div class="typical-slider__slide swiper-slide">
-								<a href="" class="card-banner">
+							<div class="typical-slider__slide swiper-slide" itemscope itemtype="http://schema.org/TouristTrip">
+								<a href="http://example.com/tour-baikal" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<img src="img/test/02.jpg" loading="lazy" alt="Картинка" title="Картинка">
+										<img src="img/test/02.jpg" loading="lazy" alt="کارتینکا" title="کارتینکا"
+											itemprop="image">
 									</div>
 									<div class="card-banner__descp">
-										<div class="card-banner__excursion">سفر به بایکال </div>
+										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
 									</div>
 								</a>
 							</div>
@@ -1747,7 +1695,6 @@
 						</svg>
 					</button>
 				</div>
-
 			</section>
 
 		</main>
