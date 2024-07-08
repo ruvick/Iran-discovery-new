@@ -242,8 +242,17 @@ textarea.input {
 .item-city--wrapper {
 	position: relative;
 	.form__error {
-		position: absolute;
+		position: absolute; 
 		bottom: -20px;
 		right: 0px;
 	}
+}
+
+.input-file__label,
+.input-file {
+	cursor: pointer;
+}
+
+#myfile {
+	display: none;
 }

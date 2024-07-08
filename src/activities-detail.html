@@ -412,7 +412,7 @@
 							<form action="#" class="page__action-board action-board">
 								<div class="action-board__item">
 									<div class="action-board__price price-item">30.000.000 تومان</div>
-									<button type="button" data-popup="#tour-booking" class="action-board__btn btn">سفارش
+									<button type="submit" class="action-board__btn btn">سفارش
 									</button>
 								</div>
 								<div class="action-board__item">
@@ -427,7 +427,7 @@
 										</select>
 									</div> -->
 
-									<div class="item-form item-form--number">
+									<div class="item-form item-form--number item-form--number--wrapper">
 										<label for="name" class="item-form__label">تعداد بازدیدکنندگان</label>
 										<div class="calendar-box-info item-form input">
 											<div class="calendar-box-info__arrow">
@@ -435,7 +435,8 @@
 													<use xlink:href="img/icons/sprite.svg#number"></use>
 												</svg>
 											</div>
-											<input type="number" class="calendar-box-info__input" placeholder="1 بزرگسال">
+											<input id="numberGuests" type="number" class="calendar-box-info__input"
+												placeholder="1 بزرگسال" min="1" max="50" data-required>
 										</div>
 									</div>
 

@@ -265,8 +265,41 @@
 										<div class="form-box-actions__input input-box-actions">
 											<div class="input-box-actions__line">
 												<div class="input-box-actions__text">یا به اینجا منتقل کنید</div>
-												<button type="button" class="input-box-actions__btn btn btn--light">آپلود
-													فایل</button>
+
+												<label id="mylabel" class="input-file input-box-actions__btn btn btn--light">
+													<div class="input-file__label">
+														<span id="file-name" class="input-file__upload _icon-paper-clip"
+															placeholder="File.txt"> آپلود فایل </span>
+														<input id="myfile" type="file" name="file" onchange="getFileName();">
+													</div>
+													<div class="input-file__notification"></div>
+												</label>
+
+												<script>
+													const notification = document.querySelector('.input-file__notification');
+
+													// Получение файла
+													function getFileName() {
+														const fileInput = document.getElementById('myfile');
+														const fileName = fileInput.files[0] ? fileInput.files[0].name : 'آپلود فایل';
+														document.getElementById('file-name').innerHTML = fileName;
+														emptyFile();
+													}
+
+													// Проверка файла
+													function emptyFile() {
+														const fileInput = document.getElementById('myfile');
+														if (fileInput.files.length === 0) {
+															console.log('Пустой файл');
+															notification.style.opacity = "1";
+															notification.innerHTML = "Файл не выбран";
+														} else {
+															notification.style.opacity = "0";
+															notification.innerHTML = "";
+														}
+													}
+												</script>
+
 											</div>
 										</div>
 									</div>

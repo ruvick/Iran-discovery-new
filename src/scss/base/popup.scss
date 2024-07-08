@@ -208,3 +208,23 @@ body::after {
 		overflow: auto;
 	}
 }
+
+.item-form--number--wrapper {
+	position: relative;
+	.item-form._form-error {
+		border: rem(1) solid red;
+	}
+	.form__error {
+		position: absolute;
+		bottom: rem(-20);
+		right: rem(10);
+	}
+}
+
+.item-choice {
+	.form__error {
+		position: absolute;
+		bottom: rem(-20);
+		right: rem(10);
+	}
+}
