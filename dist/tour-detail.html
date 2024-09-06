@@ -7,9 +7,9 @@
 	<meta itemprop="description" name="description" content="راهنمای تور">
 	<meta itemprop="keywords" name="keywords" content="راهنمای تور">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240709173715">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240906162033">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css?_v=20240709173715">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css?_v=20240906162033">
 
 	<!-- Open Graph -->
 	<meta property="og:title" content="Tour detail">
@@ -79,7 +79,7 @@
 									</button>
 								</div>
 								<a href="index.html" class="actions-header__logo logo">
-									<div class="logo__icon" itemprop="logo"><img src="img/icons/content/logo.svg?_v=1720535835477" loading="lazy" alt="Лого"></div>
+									<div class="logo__icon" itemprop="logo"><img src="img/icons/content/logo.svg?_v=1725628833530" loading="lazy" alt="Лого"></div>
 								</a>
 							</div>
 						</div>
@@ -119,7 +119,7 @@
 					<div class="main-banner__slider swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 						<div class="nuar-blk"></div>
 						<div class="main-banner__slide">
-							<picture><source srcset="img/test/01.webp" type="image/webp"><img src="img/test/01.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
+							<picture><source srcset="img/test/01.webp" type="image/webp"><img src="img/test/01.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
 						</div>
 						<div class="main-banner__container">
 							<div class="main-banner__descp">
@@ -155,7 +155,7 @@
 					<div class="main-banner__slider swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 						<div class="nuar-blk"></div>
 						<div class="main-banner__slide">
-							<picture><source srcset="img/test/01.webp" type="image/webp"><img src="img/test/01.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
+							<picture><source srcset="img/test/01.webp" type="image/webp"><img src="img/test/01.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
 						</div>
 						<div class="main-banner__container">
 							<div class="main-banner__descp">
@@ -256,22 +256,37 @@
 												</div> -->
 
 												<div class="header-box-info__calendar item-form">
-													<div class="input-item">
+													<select name="form[]" class="form">
+														<option value="1" selected="selected">Выберите дату</option>
+														<option value="2">مسکو</option>
+														<option value="3">سنت پیتربورگ</option>
+														<option value="4">کازان</option>
+														<option value="5">مورمانسک</option>
+														<option value="6">بایکال</option>
+													</select>
+
+													<!-- <div class="input-item">
 														<div class="input-item__icon">
 															<svg>
 																<use xlink:href="img/icons/sprite.svg#arrow-down"></use>
 															</svg>
 														</div>
 														<div class="input-item__input">
-															<input id="tour-booking-calendar" autocomplete="off" type="text" name="form[]" class="calendar" placeholder="تاریخ">
+															<input id="tour-booking-calendar" autocomplete="off" type="text"
+																name="form[]" class="calendar" placeholder="تاریخ">
 														</div>
 														<div class="input-item__icon-calendar">
 															<svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M3.125 11.875H26.875M3.125 11.875V25C3.125 25.3315 3.2567 25.6495 3.49112 25.8839C3.72554 26.1183 4.04348 26.25 4.375 26.25H25.625C25.9565 26.25 26.2745 26.1183 26.5089 25.8839C26.7433 25.6495 26.875 25.3315 26.875 25V11.875M3.125 11.875V5.625C3.125 5.29348 3.2567 4.97554 3.49112 4.74112C3.72554 4.5067 4.04348 4.375 4.375 4.375H25.625C25.9565 4.375 26.2745 4.5067 26.5089 4.74112C26.7433 4.97554 26.875 5.29348 26.875 5.625V11.875" stroke="#0587D6" stroke-width="1.8" stroke-linejoin="round" />
-																<path d="M10 2.5V7.5M20 2.5V7.5M17.5 21.25H21.25M8.75 21.25H12.5M17.5 16.25H21.25M8.75 16.25H12.5" stroke="#0587D6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+																<path
+																	d="M3.125 11.875H26.875M3.125 11.875V25C3.125 25.3315 3.2567 25.6495 3.49112 25.8839C3.72554 26.1183 4.04348 26.25 4.375 26.25H25.625C25.9565 26.25 26.2745 26.1183 26.5089 25.8839C26.7433 25.6495 26.875 25.3315 26.875 25V11.875M3.125 11.875V5.625C3.125 5.29348 3.2567 4.97554 3.49112 4.74112C3.72554 4.5067 4.04348 4.375 4.375 4.375H25.625C25.9565 4.375 26.2745 4.5067 26.5089 4.74112C26.7433 4.97554 26.875 5.29348 26.875 5.625V11.875"
+																	stroke="#0587D6" stroke-width="1.8" stroke-linejoin="round" />
+																<path
+																	d="M10 2.5V7.5M20 2.5V7.5M17.5 21.25H21.25M8.75 21.25H12.5M17.5 16.25H21.25M8.75 16.25H12.5"
+																	stroke="#0587D6" stroke-width="1.8" stroke-linecap="round"
+																	stroke-linejoin="round" />
 															</svg>
 														</div>
-													</div>
+													</div> -->
 												</div>
 
 											</div>
@@ -384,7 +399,7 @@
 
 								<div class="sidebar-template__item">
 									<div class="sidebar-template__sale-banner sale-banner -ibg" data-da=".descp-details,768,3">
-										<picture><source srcset="img/stocks/01.webp" type="image/webp"><img src="img/stocks/01.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+										<picture><source srcset="img/stocks/01.webp" type="image/webp"><img src="img/stocks/01.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 									</div>
 								</div>
 
@@ -394,43 +409,43 @@
 											<a href="#" class="tizers__item">
 												<div class="tizers__text">ویزای <br>روسیه</div>
 												<div class="tizers__img">
-													<img src="img/icons/content/26.svg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка">
+													<img src="img/icons/content/26.svg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 											</a>
 											<a href="#" class="tizers__item">
 												<div class="tizers__text">تورهای <br>روسیه</div>
 												<div class="tizers__img">
-													<img src="img/icons/content/27.svg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка">
+													<img src="img/icons/content/27.svg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 											</a>
 											<a href="#" class="tizers__item">
 												<div class="tizers__text">هتل های <br>روسیه</div>
 												<div class="tizers__img">
-													<img src="img/icons/content/18.svg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка">
+													<img src="img/icons/content/18.svg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 											</a>
 											<a href="#" class="tizers__item">
 												<div class="tizers__text">حمل و نقل <br>در روسیه</div>
 												<div class="tizers__img">
-													<img src="img/icons/content/01.svg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка">
+													<img src="img/icons/content/01.svg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 											</a>
 											<a href="#" class="tizers__item">
 												<div class="tizers__text">بیمه در <br> روسیه</div>
 												<div class="tizers__img">
-													<img src="img/icons/content/19.svg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка">
+													<img src="img/icons/content/19.svg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 											</a>
 											<a href="#" class="tizers__item">
 												<div class="tizers__text">برنامه های <br> فرهنگی و تفریحی</div>
 												<div class="tizers__img">
-													<img src="img/icons/content/20.svg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка">
+													<img src="img/icons/content/20.svg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 											</a>
 											<a href="#" class="tizers__item">
 												<div class="tizers__text">تورگاید در <br>روسیه</div>
 												<div class="tizers__img">
-													<img src="img/icons/content/21.svg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка">
+													<img src="img/icons/content/21.svg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка">
 												</div>
 											</a>
 										</div>
@@ -490,7 +505,7 @@
 									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
+											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
 										</div>
 										<div class="item-banners-img__descp">
 											<h4 itemprop="name">عکس های بیشتر</h4>
@@ -500,7 +515,7 @@
 									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
+											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
 										</div>
 										<div class="item-banners-img__descp">
 											<h4 itemprop="name">عکس های بیشتر</h4>
@@ -510,7 +525,7 @@
 									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
+											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
 										</div>
 										<div class="item-banners-img__descp">
 											<h4 itemprop="name">عکس های بیشتر</h4>
@@ -520,7 +535,7 @@
 									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
+											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
 										</div>
 										<div class="item-banners-img__descp">
 											<h4 itemprop="name">عکس های بیشتر</h4>
@@ -530,7 +545,7 @@
 									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
+											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
 										</div>
 										<div class="item-banners-img__descp">
 											<h4 itemprop="name">عکس های بیشتر</h4>
@@ -540,7 +555,7 @@
 									<a href="img/test/02.jpg" class="banners-img__item item-banners-img" itemscope itemtype="http://schema.org/ImageObject">
 										<div class="nuar-blk"></div>
 										<div class="item-banners-img__image">
-											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
+											<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка" itemprop="contentUrl"></picture>
 										</div>
 										<div class="item-banners-img__descp">
 											<h4 itemprop="name">عکس های بیشتر</h4>
@@ -558,7 +573,7 @@
 										<div class="typical-slider__slide swiper-slide">
 											<a href="#" class="article-card" itemscope itemtype="http://schema.org/Article">
 												<div class="article-card__img-ibg" itemprop="image">
-													<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+													<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 												</div>
 												<div class="article-card__descp">
 													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
@@ -575,7 +590,7 @@
 										<div class="typical-slider__slide swiper-slide">
 											<a href="#" class="article-card" itemscope itemtype="http://schema.org/Article">
 												<div class="article-card__img-ibg" itemprop="image">
-													<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+													<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 												</div>
 												<div class="article-card__descp">
 													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
@@ -592,7 +607,7 @@
 										<div class="typical-slider__slide swiper-slide">
 											<a href="#" class="article-card" itemscope itemtype="http://schema.org/Article">
 												<div class="article-card__img-ibg" itemprop="image">
-													<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+													<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 												</div>
 												<div class="article-card__descp">
 													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
@@ -609,7 +624,7 @@
 										<div class="typical-slider__slide swiper-slide">
 											<a href="#" class="article-card" itemscope itemtype="http://schema.org/Article">
 												<div class="article-card__img-ibg" itemprop="image">
-													<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+													<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 												</div>
 												<div class="article-card__descp">
 													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
@@ -626,7 +641,7 @@
 										<div class="typical-slider__slide swiper-slide">
 											<a href="#" class="article-card" itemscope itemtype="http://schema.org/Article">
 												<div class="article-card__img-ibg" itemprop="image">
-													<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+													<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 												</div>
 												<div class="article-card__descp">
 													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
@@ -643,7 +658,7 @@
 										<div class="typical-slider__slide swiper-slide">
 											<a href="#" class="article-card" itemscope itemtype="http://schema.org/Article">
 												<div class="article-card__img-ibg" itemprop="image">
-													<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+													<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 												</div>
 												<div class="article-card__descp">
 													<div class="article-card__title" itemprop="headline">اسکی در روسیه</div>
@@ -705,14 +720,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -721,14 +736,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -770,14 +785,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -786,14 +801,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -835,14 +850,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -851,14 +866,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -900,14 +915,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -916,14 +931,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -984,14 +999,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -1000,14 +1015,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -1049,14 +1064,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -1065,14 +1080,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -1114,14 +1129,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -1130,14 +1145,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -1179,14 +1194,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -1195,14 +1210,14 @@
 															<div class="banners-detail__col">
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
 																</div>
 																<div class="banners-detail__item-ibg item-small">
 																	<div class="nuar-blk"></div>
-																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1720535835477" loading="lazy" alt="Картинка" title="Картинка"></picture>
+																	<picture><source srcset="img/test/03.webp" type="image/webp"><img src="img/test/03.jpg?_v=1725628833530" loading="lazy" alt="Картинка" title="Картинка"></picture>
 																	<div class="banners-detail__title">
 																		<h4>عکس های بیشتر</h4>
 																	</div>
@@ -1489,7 +1504,7 @@
 								<a href="http://example.com/tour-kaliningrad" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
+										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
 									</div>
 									<div class="card-banner__descp">
 										<div class="card-banner__city" itemprop="name">منطقه کالینینگراد</div>
@@ -1508,7 +1523,7 @@
 								<a href="http://example.com/tour-baikal" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
+										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
 									</div>
 									<div class="card-banner__descp">
 										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
@@ -1520,7 +1535,7 @@
 								<a href="http://example.com/tour-kazan" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
+										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
 									</div>
 									<div class="card-banner__descp">
 										<div class="card-banner__excursion" itemprop="name">سفر به کازان</div>
@@ -1532,7 +1547,7 @@
 								<a href="http://example.com/tour-st-petersburg" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
+										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
 									</div>
 									<div class="card-banner__descp">
 										<div class="card-banner__excursion" itemprop="name">سفر به سنت پترزبورگ</div>
@@ -1544,7 +1559,7 @@
 								<a href="http://example.com/tour-murmansk" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
+										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
 									</div>
 									<div class="card-banner__descp">
 										<div class="card-banner__excursion" itemprop="name">سفر به مورمانسک</div>
@@ -1576,7 +1591,7 @@
 								<a href="http://example.com/tour-baikal" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
+										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
 									</div>
 									<div class="card-banner__descp">
 										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
@@ -1588,7 +1603,7 @@
 								<a href="http://example.com/tour-kazan" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
+										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
 									</div>
 									<div class="card-banner__descp">
 										<div class="card-banner__excursion" itemprop="name">سفر به کازان</div>
@@ -1600,7 +1615,7 @@
 								<a href="http://example.com/tour-st-petersburg" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
+										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
 									</div>
 									<div class="card-banner__descp">
 										<div class="card-banner__excursion" itemprop="name">سفر به سنت پترزبورگ</div>
@@ -1612,7 +1627,7 @@
 								<a href="http://example.com/tour-murmansk" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
+										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
 									</div>
 									<div class="card-banner__descp">
 										<div class="card-banner__excursion" itemprop="name">سفر به مورمانسک</div>
@@ -1624,7 +1639,7 @@
 								<a href="http://example.com/tour-baikal" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
+										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
 									</div>
 									<div class="card-banner__descp">
 										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
@@ -1636,7 +1651,7 @@
 								<a href="http://example.com/tour-baikal" class="card-banner" itemprop="url">
 									<div class="nuar-blk"></div>
 									<div class="card-banner__img">
-										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1720535835477" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
+										<picture><source srcset="img/test/02.webp" type="image/webp"><img src="img/test/02.jpg?_v=1725628833530" loading="lazy" alt="کارتینکا" title="کارتینکا" itemprop="image"></picture>
 									</div>
 									<div class="card-banner__descp">
 										<div class="card-banner__excursion" itemprop="name">سفر به بایکال</div>
@@ -1699,7 +1714,7 @@
 						</div>
 					</div>
 					<a href="index.html" class="contacts-footer__logo logo" itemprop="logo">
-						<div class="logo__icon"><img src="img/icons/content/logo.svg?_v=1720535835477" loading="lazy" alt="Лого" title="Лого"></div>
+						<div class="logo__icon"><img src="img/icons/content/logo.svg?_v=1725628833530" loading="lazy" alt="Лого" title="Лого"></div>
 					</a>
 				</div>
 			</div>
@@ -2286,7 +2301,7 @@
 	<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 	<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 	<script src="https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js"></script>
-	<script src="js/app.min.js?_v=20240709173715"></script>
+	<script src="js/app.min.js?_v=20240906162033"></script>
 </body>
 
 </html>
